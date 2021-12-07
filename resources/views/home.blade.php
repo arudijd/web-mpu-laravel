@@ -4,8 +4,10 @@
     <section class="jumbotron-home">
         <div class="jumbotron">
             <div class="row justify-content-center">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="row justify-content-center">
                 <h1 class="display-4">Stable, Strong , Safe</h1>
-                <p class="lead">lorem ipsum lalasilustum</p>
             </div>
         </div>
     </section>
@@ -50,32 +52,11 @@
         <section class="transisi-jumbotron">
             <img src="img/transisi jumbotron home.png" alt="transisi" width="100%">
         </section>
-
-        <section class="kami-mpu">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <h1>Kami MPU</h1>
-                    <hr><br>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 mean">
-                        <h2>Kami Dibentuk Oleh Tim yang Handal</h2>
-                        <p>&emsp;Consulting represents success at realizing the company is going in the wrong direction. The only time the company fails is when it is not possible to do a turnaround anymore. We help companies pivot into more profitable directions where they can expand and grow. It is inevitable that companies will end up making a few mistakes; we help them correct these mistakes.</p>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-6 pic">
-                        <img src="img/home/kami-mpu.png" alt="kami-mpu" class="" width="115%" height="auto">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <img src="img/transisi home.png" alt="transisi" width="100%" style="margin-top: 100px;">
         
         <section class="produk-mpu">
             <div class="container">
                 <div class="row justify-content-center">
-                    <h1>Service Kami</h1>
+                    <h1>Produk Kami</h1>
                     <hr><br>
                     <p class="main-p">Service kami adalah yang terbaik dan berpengalaman</p>
                 </div>
@@ -110,7 +91,6 @@
                 </div>
             </div>
         </section>
-        <img  class="img-rotation" src="img/transisi home.png" alt="transisi" width="100%" style="transform: rotate(-180deg); margin-top: -10px;">
 
         <section class="client-kami">
             <div class="container">

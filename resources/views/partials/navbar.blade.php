@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparant">
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark ">
     <div class="container">
         <div class="col-md-4  justify-content-left">
             <a class="navbar-brand" href="/">
