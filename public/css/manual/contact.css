@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "Tillana-bold";
+    src: url('../../font/tillana-bold.ttf');
+}
+@font-face {
+    font-family: "Tillana-extrabold";
+    src: url('../../font/tillana-extrabold.ttf');
+}
+@font-face {
+    font-family: "Tillana-medium";
+    src: url('../../font/tillana-medium.ttf');
+}
+@font-face {
+    font-family: "Tillana-regular";
+    src: url('../../font/tillana-regular.ttf');
+}
+@font-face {
+    font-family: "Tillana-semibold";
+    src: url('../../font/tillana-semibold.ttf');
+}
+
+.jumbotron{
+    background-color: black;
+    height: 512px;
+    margin-top: -150px;
+}
+
+.jumbotron h1{
+    font-family: "Tillana-bold";
+    color: #FFFFFF;
+}
+
+.transisi-jumbotron{
+    margin-top: -35px;
+}
+
+@media (min-width: 576px) {  }
+@media (min-width: 768px) { 
+
+ }
+@media (min-width: 1000px) { 
+    .jumbotron h1{
+        position: absolute;
+        width: 398px;
+        height: 99px;
+        top: 207px;
+        font-size: 50px;
+        line-height: 99px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    .jumbotron p{             
+        position: absolute;
+        width: 737px;
+        height: 49px;
+        top: 285px;
+
+        font-family: "Tillana-semibold";
+        font-size: 20px;
+        line-height: 49px;
+        display: flex;
+
+        color: #FFFFFF;
+    }
+
+    .nav-item a{
+        font-family: "Tillana-medium";
+        margin-right: 15px;
+    }
+   
+    .navbar-2{
+       height: 80px;
+    }
+   
+    nav .btn{
+       width: 122px;
+       height: 36px;
+       margin-left: 150px;
+       background-color: #A10206;
+       border-radius: 10px;
+       font-family: "Tillana-semibold";
+       border-color: #A10206;
+       font-size: small;
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .kritik-logo .container .row h1{
+      margin-top: 100px;
+      font-family: "Tillana-bold";
+      font-size: 30px;
+      color: #A10206;
+      margin-left: 20px;
+    }
+
+    .kritik-logo .container .text-box{
+      margin-top: 20px;
+    }
+
+    .kritik-logo .container .row textarea{
+      border-color: #979797 !important;
+      border-radius: 5px;
+    }
+
+    .kritik-logo .container form .row .nama{
+      margin-top: 20px;
+      border-color: #979797 !important;
+      border-radius: 5px;
+    }
+
+    .kritik-logo .container form .row .judul{
+      margin-top: 20px;
+      border-color: #979797 !important;
+      border-radius: 5px;
+    }
+
+    .kritik-logo .container form .row .email{
+      margin-top: 20px;
+      border-color: #979797 !important;
+      border-radius: 5px;
+    }
+
+    .kritik-logo .container form .row .button-verification button{
+      margin-top: 20px;
+      border-radius: 20px;
+      width: 80%;
+    }
+
+    .kritik-logo .container form .row .button-verification button:hover{
+      background-color: #A10206;
+      border-color: #A10206;
+    }
+
+    .kritik-logo .container .alamat{
+      margin-top: -10px;
+    }
+
+    .kritik-logo .container .alamat .world, .kritik-logo .container .alamat .maps, .kritik-logo .container .alamat .phone{
+      margin-top: 25px;
+    }
+
+    .kritik-logo .container .alamat .phone img{
+      margin-left: -15px;
+      /* align-content: center; */
+    }
+
+    .kritik-logo .container .alamat .world img{
+      margin-left: -8px;
+    }
+
+    .kritik-logo .container .alamat h3{
+      width: 242px;
+      height: 20px;
+      font-family: "Tillana-bold";
+      font-size: 12px;
+      line-height: 20px;
+      color: #000000;
+      margin-top: 5px;
+    }
+
+    .kritik-logo .container .alamat h4{
+      font-family: "Tillana-bold";
+      font-size: 12px;
+      color: #979797;
+    }
+
+    .maps-mpu{
+      margin-top: 100px;
+    }
+
+     footer{
+        position: absolute;
+        width: 100%;
+        height: 322px;
+        background: #000000;
+      }
+    
+      footer .judul h3{ 
+        position: absolute;
+        width: 190px;
+        height: 23px;
+        font-family: "Tillana-bold";
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+    
+      footer .deskripsi p{
+        position: absolute;
+        width: 483.67px;
+        height: 51px;
+        margin-top: 20px;
+    
+        font-family: "Tillana-semibold";
+        font-size: 10px;
+        line-height: 30px;
+        text-align: center;
+    
+        color: #CAC0C9;
+      }
+    
+      footer .container .sosmed img{
+        margin-top: 50px;
+        margin-left: -10px;
+      }
+    
+      footer .container .sosmed .col-sm-5{
+        margin-left: 30px;
+      }
+    
+      footer .container .list hr{
+        position: absolute;
+        width: 86%;
+        height: 0px;
+        margin-top: 60px;
+    
+        border: 1px solid #DADADA;
+      }
+    
+      footer .container .navigation{
+        position: absolute;
+        width: 106.95px;
+        height: 30px;
+        margin-top: 70px;
+    
+        font-family: "Tillana-bold";
+        font-size: 18px;
+        line-height: 30px;
+    
+        color: #A10206;
+      }
+    
+      footer .container .sub-navigation{
+        margin-top: 95px;
+        margin-left: 50px;
+    
+      }
+      
+      footer .container .sub-navigation .col-sm-6 p a span{
+        font-family: "Tillana-semibold";
+        font-size: 13px;
+        color: #CAC0C9;
+      }
+    
+      footer .container .sub-navigation .col-sm-4 p{
+        font-family: "Tillana-semibold";
+        font-size: 13px;
+        color: #ffffff;
+      }
+    
+      footer .container .sub-navigation .col-sm-4 p span{
+        color: #A10206;
+      }
+   
+}

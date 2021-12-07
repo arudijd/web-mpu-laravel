@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Tillana-bold";
+  src: url('../../font/tillana-bold.ttf');
+}
+
+@font-face {
+  font-family: "Tillana-extrabold";
+  src: url('../../font/tillana-extrabold.ttf');
+}
+
+@font-face {
+  font-family: "Tillana-medium";
+  src: url('../../font/tillana-medium.ttf');
+}
+
+@font-face {
+  font-family: "Tillana-regular";
+  src: url('../../font/tillana-regular.ttf');
+}
+
+@font-face {
+  font-family: "Tillana-semibold";
+  src: url('../../font/tillana-semibold.ttf');
+}
+
+.jumbotron {
+  background-color: black;
+  height: 512px;
+  margin-top: -150px;
+}
+
+.jumbotron h1 {
+  font-family: "Tillana-bold";
+  color: #FFFFFF;
+}
+
+.transisi-jumbotron {
+  margin-top: -35px;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1000px) {
+  .jumbotron h1 {
+    position: absolute;
+    width: 398px;
+    height: 99px;
+    top: 207px;
+    font-size: 50px;
+    line-height: 99px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .jumbotron p {
+    position: absolute;
+    width: 737px;
+    height: 49px;
+    top: 285px;
+
+    font-family: "Tillana-semibold";
+    font-size: 20px;
+    line-height: 49px;
+    display: flex;
+
+    color: #FFFFFF;
+  }
+
+  .nav-item a {
+    font-family: "Tillana-medium";
+    margin-right: 15px;
+  }
+
+  .navbar-2 {
+    height: 80px;
+  }
+
+  nav .btn {
+    width: 122px;
+    height: 36px;
+    margin-left: 150px;
+    background-color: #A10206;
+    border-radius: 10px;
+    font-family: "Tillana-semibold";
+    border-color: #A10206;
+    font-size: small;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .all-produk h3 {
+    margin-top: 20px;
+    font-family: "Tillana-bold";
+    font-style: normal;
+    font-size: 20px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+
+  .all-produk p {
+    font-family: "Tillana-medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+
+  .all-produk button {
+    /* margin-top: -50px; */
+
+    font-family: "Tillana-bold";
+    font-size: 10px;
+    line-height: 23px;
+    /* identical to box height */
+  }
+
+  .all-produk .btn-produk {
+    border-radius: 20px;
+  }
+
+  .all-produk h5 {
+    font-family: "Tillana-medium";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+
+    color: #979797;
+  }
+
+  .all-produk i {
+    margin-top: 20px;
+  }
+
+
+
+  .link .container .row h6 {
+
+    font-family: "Tillana-bold";
+    color: #979797;
+  }
+
+  .link .container .row .active-text h6 {
+    color: #A10206 !important;
+  }
+
+  footer {
+    position: absolute;
+    width: 100%;
+    height: 322px;
+    background: #000000;
+  }
+
+  footer .judul h3 {
+    position: absolute;
+    width: 190px;
+    height: 23px;
+    font-family: "Tillana-bold";
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+
+  footer .deskripsi p {
+    position: absolute;
+    width: 483.67px;
+    height: 51px;
+    margin-top: 20px;
+
+    font-family: "Tillana-semibold";
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #CAC0C9;
+  }
+
+  footer .container .sosmed img {
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+
+  footer .container .sosmed .col-sm-5 {
+    margin-left: 30px;
+  }
+
+  footer .container .list hr {
+    position: absolute;
+    width: 86%;
+    height: 0px;
+    margin-top: 60px;
+
+    border: 1px solid #DADADA;
+  }
+
+  footer .container .navigation {
+    position: absolute;
+    width: 106.95px;
+    height: 30px;
+    margin-top: 70px;
+
+    font-family: "Tillana-bold";
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #A10206;
+  }
+
+  footer .container .sub-navigation {
+    margin-top: 95px;
+    margin-left: 50px;
+
+  }
+
+  footer .container .sub-navigation .col-sm-6 p a span {
+    font-family: "Tillana-semibold";
+    font-size: 13px;
+    color: #CAC0C9;
+  }
+
+  footer .container .sub-navigation .col-sm-4 p {
+    font-family: "Tillana-semibold";
+    font-size: 13px;
+    color: #ffffff;
+  }
+
+  footer .container .sub-navigation .col-sm-4 p span {
+    color: #A10206;
+  }
+
+}
