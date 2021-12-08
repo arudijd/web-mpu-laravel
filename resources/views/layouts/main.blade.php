@@ -37,50 +37,13 @@
                                 Jl. Pahlawan No.28, Cemp. Putih, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412
                             </p>
                 </div>
-                <div class="row justify-content-center sosmed">
-                    <div class="col-sm-5">
-                        <center>
-                            <a href="">
-                                <img class="wa" src="img/logo-wa.png" alt="wa" width="5%" height="auto">
-                            </a>&emsp;
-                            <a href="">
-                                <img class="ig" src="img/logo-instagram.png" alt="ig" width="5%" height="auto">
-                            </a>&emsp;
-                            <a href="">
-                                <img class="twitter" src="img/logo-twitter.png" alt="twitter" width="5%" height="auto">
-                            </a>&emsp;
-                            <a href="">
-                                <img class="fb" src="img/logo-fb.png" alt="fb" width="5%" height="auto">
-                            </a>&emsp;      
-                        </center>
-                    </div>
-                </div>
                 <div class="row list justify-content-center">
                     <hr>
                 </div>
-                <div class="row justify-content-left navigation">
-                    <h6>Navigation</h6>
-                </div>
-                <div class="row sub-navigation">
-                    <div class="col-sm-6 justify-content-left">
-                        <p>
-                            <a href="">
-                                <span>Who we are ?</span>
-                            </a>&emsp;
-                            <a href="">
-                                <span>Service Us</span>
-                            </a>&emsp;
-                            <a href="">
-                                <span>Projects</span>
-                            </a>&emsp;
-                            <a href="">
-                                <span>Business hours</span>
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-4 justify-content-right">
-                        <p class="text-right">Copyright 2020. <span>Mitra Prima Utama</span></p>
+                
+                <div class="row sub-navigation justify-content-center">
+                    <div class="col-sm-4 justify-content-center">
+                        <p class="text-center">Copyright 2020. <span>Mitra Prima Utama</span></p>
                     </div>
                 </div>
             </div>

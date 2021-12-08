@@ -35,8 +35,8 @@
 
 .jumbotron-home .jumbotron img {
   margin-top: 100px;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   bottom: 20px;
   display: flex;
   align-content: flex-start;
@@ -1001,7 +1001,6 @@
 
   footer .container .sub-navigation {
     margin-top: 95px;
-    margin-left: 50px;
 
   }
 

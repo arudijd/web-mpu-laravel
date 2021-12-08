@@ -31,7 +31,7 @@
                     </p>
                 </div>
                 <div class="col-md-4"></div>
-                <div class="col-md-4 justify-content-right">
+                <div class="col-md-4 justify-content-right align-items-center ">
                     <img src="img/profil/profil.jpeg" alt="" width="130%" height="auto">
                 </div>
             </div>
@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 operasi">
-                    <h2 class="text-center">15</h2>
+                    <h2 class="text-center">20</h2>
                     <p class="text-center">Tahun Beroperasi</p>
                 </div>
                 <div class="col-md-3 client">
@@ -63,23 +63,31 @@
     
     <section class="visi-misi">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/profil/visi profil.png" alt="visi-misi" width="100%" height="auto">
+            <div class="row justify-content-center">
+                <div class="col-md-3 align-content-center align-items-center">
+                    <h1 class="text-center">Visi Kami</h1>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-1  align-items-center">
+                    <div class="vl"></div>
+                </div>
+                <div class="col-md-8 align-items-center">
                     <div class="visi">
-                        <h1 class="text-center">Visi Kami</h1>
-                        <hr>
-                            <p>- Mengutamakan Kepuasan Pelanggan.<br>
-                                - Menjadi perusahaan yang inovatif dalam percaturan bisnis nasional</p>
+                            <p>Memberikan Jasa Konsultasi dan Teknologi Informasi yang berkualitas dan professional melalui inovasi yang berkelanjutan</p>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-3 align-items-center">
+                    <h1 class="text-center">Misi Kami</h1>
+                </div>
+                <div class="col-md-1 align-items-center">
+                    <div class="vl"></div>
+                </div>
+                <div class="col-md-8 align-items-center">
                     <div class="misi">
-                        <h1 class="text-center">Misi Kami</h1>
-                        <hr>
-                            <p>- Memberikan Jasa Konsultasi dan Teknologi 
-                                Informasi yang berkualitas dan professional 
-                                melalui inovasi yang berkelanjutan.</p>
+                            <p>-Mengutamakan kepuasan pelanggan<br>
+                                -Menjadi perusahaan yang inovatif dalam percaturan bisis Nasional
+                            </p>
                     </div>
                 </div>
             </div>
