@@ -16,115 +16,45 @@
 
 <section class="ruang-lingkup">
     <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <img class="img-1" src="img/client/client laptop.png" alt="client-laptop" width="750px" height="auto">
-            </div>
-            <div class="col-md-5 desc">
+        <div class="row justify-content-center">
+            <div class="col-md-3 desc">
                 <h3>Ruang Lingkup</h3>
-                <div class="row mt-4">
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>Pengembangan SIstem Aplikasi berbasis Teknologi Informasi (Software)
-                        </p>
-                    </div>
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>Pengembangan Infrastruktur pendukung Teknologi Informasi   (Hardware)
-                        </p>
-                    </div>
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>
-                            Pengembangan Sumber Daya Manusia (SDM)
-                        </p>
-                    </div>
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>
-                            Konsultasi Management / Survey / Pendataan
-                        </p>
-                    </div>
-                </div>
             </div>
+            <div class="col-md-1">
+                <div class="vl"></div>
+            </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Pengembangan SIstem Aplikasi berbasis Teknologi Informasi (Software)</li>
+                    <li>Pengembangan Infrastruktur pendukung Teknologi Informasi (Hardware)</li>
+                    <li>Pengembangan Sumber Daya Manusia (SDM)</li>
+                    <li>Konsultasi Management / Survey / Pendataan</li>
+                </ul>
+            </div>
+        
         </div>
         
-        <div class="row">
-            <div class="col-md-5 desc-2">
-                <h3>Dengan Desain yang Sempurna</h3>
-                <div class="row">
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>Pengembangan SIstem Aplikasi berbasis Teknologi Informasi (Software)
-                        </p>
-                    </div>
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>Pengembangan Infrastruktur pendukung Teknologi Informasi   (Hardware)
-                        </p>
-                    </div>
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>
-                            Pengembangan Sumber Daya Manusia (SDM)
-                        </p>
-                    </div>
-                    <div class="col-sm-1">
-                        -
-                    </div>
-                    <div class="col-sm-11">
-                        <p>
-                            Konsultasi Management / Survey / Pendataan
-                        </p>
-                    </div>
-                </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3 desc">
+                <h3>Sasaran</h3>
             </div>
-            <div class="col-md-7">
-                <img class="img-2" src="img/client/client laptop 3.png" alt="client-laptop" width="750px" height="auto">
+            <div class="col-md-1">
+                <div class="vl"></div>
             </div>
+            <div class="col-md-8">
+                <ul>
+                    <li>Sistem Aplikasi berbasis Teknologi Informasi (Software)</li>
+                    <li>Pengembangan Infrastruktur pendukung Teknologi Informasi (Hardware)</li>
+                    <li>Sumber Daya Manusia (SDM)</li>
+                    <li>Management / Survey / Pendataan</li>
+                </ul>
+            </div>
+        
+        </div>
         </div>
     </div>
 </section>
 
-
-<section class="pilar-mpu">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">Pilar Kami</h3>
-                <hr>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5 ml-4">
-            <div class="col-md-3 border-pilar mr-5">
-                <h6 class="text-left mt-4">Carefully Planned</h6>
-                <p class="text-left mt-4">One cannot have successful launching without thorough planning.</p>
-            </div>
-            <div class="col-md-3 border-pilar mr-5">
-                <h6 class="text-left mt-4">Carefully Planned</h6>
-                <p class="text-left mt-4">One cannot have successful launching without thorough planning. We carefully plan our service to suit your schedule and goals.</p> 
-            </div>
-            <div class="col-md-3 border-pilar mr-5">
-                <h6 class="text-left mt-4">Carefully Planned</h6>
-                <p class="text-left mt-4">One cannot have successful launching an our service to suit your schedule and goals.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="list-client-mpu">
     <div class="container">

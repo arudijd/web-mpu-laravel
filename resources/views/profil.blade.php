@@ -77,7 +77,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-3 align-items-center">
+                <div class="col-md-3 d-flex justify-content-center">
                     <h1 class="text-center">Misi Kami</h1>
                 </div>
                 <div class="col-md-1 align-items-center">
