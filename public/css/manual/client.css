@@ -111,6 +111,7 @@
   .ruang-lingkup .vl {
     border-left: 6px solid #A10206;
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
     border-radius: 10px;

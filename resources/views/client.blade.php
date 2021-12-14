@@ -20,7 +20,7 @@
             <div class="col-md-3 desc">
                 <h3>Ruang Lingkup</h3>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 d-flex align-items-center">
                 <div class="vl"></div>
             </div>
             <div class="col-md-8">
@@ -38,15 +38,16 @@
             <div class="col-md-3 desc">
                 <h3>Sasaran</h3>
             </div>
-            <div class="col-md-1">
+            <div class="col-md-1 d-flex align-items-center">
                 <div class="vl"></div>
             </div>
             <div class="col-md-8">
                 <ul>
-                    <li>Sistem Aplikasi berbasis Teknologi Informasi (Software)</li>
-                    <li>Pengembangan Infrastruktur pendukung Teknologi Informasi (Hardware)</li>
-                    <li>Sumber Daya Manusia (SDM)</li>
-                    <li>Management / Survey / Pendataan</li>
+                    <li>Mempermudah & meningkatkan kapasitas proses administrasi pengelolaan Pajak Daerah / Retribusi Daerah secara efektif dan efisien</li>
+                    <li>Tersedianya penatausahaan administrasi perpajakan yang rapi, informatif dan akuntabel</li>
+                    <li>Meningkatkan pelayanan kepada Wajib Pajak</li>
+                    <li>Meningkatkan kepatuhan Wajib Pajak dalam melakukan kewajiban perpajakannya</li>
+                    <li>Mempermudah Fiscux dalam melakukan intensifikasi maupun ekstensifikasi</li>
                 </ul>
             </div>
         

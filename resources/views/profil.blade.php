@@ -64,30 +64,31 @@
     <section class="visi-misi">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-3 align-content-center align-items-center">
+                <div class="col-md-3 d-flex align-items-center">
                     <h1 class="text-center">Visi Kami</h1>
                 </div>
-                <div class="col-md-1  align-items-center">
+                <div class="col-md-1 d-flex align-items-center">
                     <div class="vl"></div>
                 </div>
-                <div class="col-md-8 align-items-center">
+                <div class="col-md-8 d-flex align-items-center">
                     <div class="visi">
                             <p>Memberikan Jasa Konsultasi dan Teknologi Informasi yang berkualitas dan professional melalui inovasi yang berkelanjutan</p>
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-3 d-flex justify-content-center">
+                <div class="col-md-3 d-flex align-items-center">
                     <h1 class="text-center">Misi Kami</h1>
                 </div>
-                <div class="col-md-1 align-items-center">
+                <div class="col-md-1 d-flex align-items-center">
                     <div class="vl"></div>
                 </div>
-                <div class="col-md-8 align-items-center">
+                <div class="col-md-8 d-flex">
                     <div class="misi">
-                            <p>-Mengutamakan kepuasan pelanggan<br>
-                                -Menjadi perusahaan yang inovatif dalam percaturan bisis Nasional
-                            </p>
+                            <ol class="list-group list-group-numbered ml-3">
+                                <li>Mengutamakan kepuasan pelanggan</li>
+                                <li>Menjadi perusahaan yang inovatif dalam percaturan bisnis nasional</li>
+                            </ol>
                     </div>
                 </div>
             </div>

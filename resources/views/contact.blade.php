@@ -121,34 +121,47 @@
                         <div class="row">
                             <div class="col-md-12 maps">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
                                         <img src="img/contact/maps logo home.png" alt="maps" width="50%" height="auto">
                                     </div>
                                     <div class="col-md-9">
                                         <h3 class="text-center">Jl. Pahlawan No.28, Cempaka putih</h3>
-                                        <h4 class="text-center">Kec. Ciputat Timur</h4>
+                                        <h4 class="text-center">Kec. Ciputat Timur, Tangerang Selatan, Banten</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 jam">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                        <img src="img/contact/jam (2).png" alt="time" width="50%" height="auto">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="text-center">Senin - Jumat</h3>
+                                        <h4 class="text-center">08.00 - 17.00</h4>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 world">
+                                <div class="row">
+                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                        <img src="img/contact/mail (2).png" alt="world" width="80%" height="auto">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h3 class="text-center">pt.mitra_prima_utama@yahoo.com</h3>
+                                        <h4 class="text-center">Kirim Pesan Kapan Saja!</h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12 phone">
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
                                         <img src="img/contact/phone logo home.png" alt="phone" width="90%" height="auto">
                                     </div>
                                     <div class="col-md-9">
                                         <h3 class="text-center">(021) 74704232</h3>
                                         <h4 class="text-center">Sen s/d Jum 8am s/d 5pm</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 world">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img src="img/contact/world logo home.png" alt="world" width="80%" height="auto">
-                                    </div>
-                                    <div class="col-md-9">
-                                        <h3 class="text-center">pt.mitra_prima_utama@yahoo.com</h3>
-                                        <h4 class="text-center">Kirim Pesan Kapan Saja!</h4>
                                     </div>
                                 </div>
                             </div>

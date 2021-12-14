@@ -146,18 +146,11 @@
       margin-top: -10px;
     }
 
-    .kritik-logo .container .alamat .world, .kritik-logo .container .alamat .maps, .kritik-logo .container .alamat .phone{
+    .kritik-logo .container .alamat .world, .kritik-logo .container .alamat .maps, .kritik-logo .container .alamat .phone, .kritik-logo .container .alamat .jam{
       margin-top: 25px;
     }
 
-    .kritik-logo .container .alamat .phone img{
-      margin-left: -15px;
-      /* align-content: center; */
-    }
-
-    .kritik-logo .container .alamat .world img{
-      margin-left: -8px;
-    }
+    
 
     .kritik-logo .container .alamat h3{
       width: 242px;
