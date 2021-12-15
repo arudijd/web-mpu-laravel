@@ -42,3 +42,10 @@ Route::get('/contact', function () {
     ]);
     
 });
+
+Route::get('/produk', function() {
+    return view('produk', [
+        "title"=> "Produk",
+        "css" => "produk.css"
+    ]);
+});

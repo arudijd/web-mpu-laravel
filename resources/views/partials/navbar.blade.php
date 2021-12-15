@@ -14,7 +14,7 @@
                     <a class="nav-link {{ ($title === "Profil" ? 'active' : '') }}"  href="/profil">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($title === "Produk" ? 'active' : '') }}"  href="produk.html">Produk</a>
+                    <a class="nav-link {{ ($title === "Produk" ? 'active' : '') }}"  href="/produk">Produk</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">Client</a>

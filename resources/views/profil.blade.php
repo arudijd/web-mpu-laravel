@@ -16,23 +16,17 @@
     
     <section class="kisah-kami">
         <div class="container">
-            <div class="row justify-content-left">
-                <h1>Kisah Kami</h1>
-            </div>
             <div class="row">
-                <!--<div class="col-md-1"></div>-->
-                <div class="col-md-3">
-                    <p>
-                        PT. MITRA PRIMA UTAMA mulai dirintis sejak awal tahun 1990-an dan aktif memulai kegiatan sejak awal tahun 2001 hingga sekarang.
-                        Kami tercatat sebagai anggota KADIN pada awal tahun 2002.
-                        Perusahaan kami didiirikan oleh beberapa tenaga ahli yang telah lama bekerja di perusahaan konsultan Nasional.
-                        Kami memiliki komitmen yang jelas dan kuat dalam memberkan solusi terbaik dan optimal kepada setiap pelanggan yang terdiri dari sektor pemerintah dan swasta, guna untuk membantu pencapaian tujuan usahanya.
-                        Dengan dukungan tenaga ahli yang profesional dan berkopetensi di bidangnya, kami dapat menjadi perusahaan konsultan yang berperan aktif dalam pembangunan dan bisnis di Indonesia.
-                    </p>
-                </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4 justify-content-right align-items-center ">
+                <div class="col-md-4 d-flex justify-content-right align-items-center ">
                     <img src="img/profil/profil.jpeg" alt="" width="130%" height="auto">
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-3 ">
+                    <p class="paragraph">
+                        <b> PT MITRA PRIMA UTAMA</b> mulai dirintis sejak awal tahun 1990-an oleh beberapa tenaga ahli yang telah lama bekerja di perusahaan konsultan Nasional. Pada awal tahun 2001, kami mulai aktif melakukan kegiatan sejak awal tahun 2001 dan tercatat sebagai anggota KADIN pada awal 2002.
+                        Kami memiliki komitmen yang jelas dan kuat dalam memberkan solusi terbaik dan optimal kepada setiap pelanggan yang terdiri dari sektor pemerintah dan swasta, guna untuk membantu pencapaian tujuan usahanya.
+                    </p>
+                    
                 </div>
             </div>
         </div>
@@ -83,7 +77,7 @@
                 <div class="col-md-1 d-flex align-items-center">
                     <div class="vl"></div>
                 </div>
-                <div class="col-md-8 d-flex">
+                <div class="col-md-8 d-flex aling-items-center">
                     <div class="misi">
                             <ol class="list-group list-group-numbered ml-3">
                                 <li>Mengutamakan kepuasan pelanggan</li>
