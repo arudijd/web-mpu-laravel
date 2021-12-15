@@ -122,7 +122,7 @@
                             <div class="col-md-12 maps">
                                 <div class="row">
                                     <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                        <img src="img/contact/maps logo home.png" alt="maps" width="50%" height="auto">
+                                        <img src="img/contact/loc (2).png" alt="maps" width="50%" height="auto">
                                     </div>
                                     <div class="col-md-9">
                                         <h3 class="text-center">Jl. Pahlawan No.28, Cempaka putih</h3>
@@ -156,12 +156,48 @@
                             </div>
                             <div class="col-md-12 phone">
                                 <div class="row">
-                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                        <img src="img/contact/phone logo home.png" alt="phone" width="90%" height="auto">
+                                    <div class="col-md-3 ">
+                                        <img src="img/contact/phone logo home.png" alt="phone" height="auto" width="100%">
                                     </div>
                                     <div class="col-md-9">
-                                        <h3 class="text-center">(021) 74704232</h3>
-                                        <h4 class="text-center">Sen s/d Jum 8am s/d 5pm</h4>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h3>(021) 74704232</h3>
+                                                <h4>KANTOR</h4>
+                                            </div>
+                                            <div class="col-md-5">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h3>0811-1652-95</h3>
+                                                <h4>NUR M. BUSRO</h4>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <h3>0812-9464-507</h3>
+                                                <h4>RUDY</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h3>0812-8103-332</h3>
+                                                <h4>MUHSON</h4>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <h3>0813-8400-5656</h3>
+                                                <h4>ERANITA</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h3>0812-9868-6601</h3>
+                                                <h4>MAHFUD</h4>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <h3>0813-8707-8803</h3>
+                                                <h4>OZY</h4>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
