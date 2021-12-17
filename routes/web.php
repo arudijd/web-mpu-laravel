@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProdukController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,9 +44,4 @@ Route::get('/contact', function () {
     
 });
 
-Route::get('/produk', function() {
-    return view('produk', [
-        "title"=> "Produk",
-        "css" => "produk.css"
-    ]);
-});
+Route::get('/produk', [ProdukController::class, 'index']);

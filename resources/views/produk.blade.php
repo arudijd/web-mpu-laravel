@@ -29,6 +29,22 @@
 </section>
 
 <section class="all-produk mt-5">
-   
+   <div class="container">
+        <div class="row">
+            @foreach($produk as $p)
+            <div class="col-md-6 mb-5 mt-3">
+                <img src="img/produk/{{ $p->image_produk }}" alt="" width="550px" height="280px">
+                <br>
+                <h3>{{ $p->nama_produk }}</h3>
+                <br>
+                <h5>{{ $p->jenis_produk }}</h5>
+                <button class="btn btn-outline-dark btn-produk mt-3">Lean More
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+            </div>
+    @endforeach
+        </div>
+    
+   </div>
 </section>
 @endsection
