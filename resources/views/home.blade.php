@@ -14,9 +14,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <hr>
-                </div>
-                <div class="row justify-content-center">
-                    <p>adalah perusahaan swasta Nasional yang bergerak dalam bidang konsultasi manajemen, teknologi informasi dan pengembangan sumber daya manusia. </p>
+                    <p>Perusahaan Swasta Nasional yang bergerak dalam bidang Konsultasi Manajemen, Teknologi Informasi dan Pengembangan Sumber Daya Manusia.  </p>
                 </div>
             </div>
             <div class="container container-2">

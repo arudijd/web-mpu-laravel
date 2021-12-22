@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "Poppins-bold";
+    src: url('../../font/Poppins-bold.ttf');
+  }
+  
+  @font-face {
+    font-family: "Poppins-extrabold";
+    src: url('../../font/Poppins-extrabold.ttf');
+  }
+  
+  @font-face {
+    font-family: "Poppins-medium";
+    src: url('../../font/Poppins-medium.ttf');
+  }
+  
+  @font-face {
+    font-family: "Poppins-regular";
+    src: url('../../font/Poppins-regular.ttf');
+  }
+  
+  @font-face {
+    font-family: "Poppins-semibold";
+    src: url('../../font/Poppins-semibold.ttf');
+  }
+  
+  .navbar {
+    background-color: #3D3E4080;
+    height: 100px;
+  }
+  
+  .jumbotron{
+      background-color: black;
+      height: 512px;
+      margin-top: -150px;
+  }
+  
+  .jumbotron h1{
+      font-family: "Poppins-bold";
+      color: #FFFFFF;
+  }
+  
+  .transisi-jumbotron{
+      margin-top: -35px;
+  }
+
+  .deskripsi .container {
+      width: 100%;
+      height: 500px;
+  }
+
+  .deskripsi .container .row .col p{
+      font-family: "Poppins-medium";
+      color: red;
+  }
+
+  
+
+  
+  
+  @media (min-width: 576px) {  
+
+  }
+  @media (min-width: 768px) { 
+  
+   }
+   @media (min-width: 1000px){
+    .jumbotron h1{
+        position: absolute;
+        width: 398px;
+        height: 99px;
+        top: 207px;
+        font-size: 50px;
+        line-height: 99px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    .jumbotron p{             
+        position: absolute;
+        width: 737px;
+        height: 49px;
+        top: 285px;
+
+        font-family: "Poppins-semibold";
+        font-size: 20px;
+        line-height: 49px;
+        display: flex;
+
+        color: #FFFFFF;
+    }
+
+    .nav-item a{
+        font-family: "Poppins-medium";
+        margin-right: 15px;
+    }
+   
+    .navbar-2{
+       height: 80px;
+    }
+   
+    nav .btn{
+       width: 122px;
+       height: 36px;
+       margin-left: 150px;
+       background-color: #A10206;
+       border-radius: 10px;
+       font-family: "Poppins-semibold";
+       border-color: #A10206;
+       font-size: small;
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .deskripsi .row {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+
+    .deskripsi .row .paragraph{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins-medium";
+        color: #000000;
+        font-size: 18px;
+    }
+
+    .deskripsi .container .row .col img{
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+    }
+
+    .keunggulan {
+        align-content: center;
+        margin-top: 100px;
+        width: 100%;
+        height: 813px;
+    }
+
+    .keunggulan h1 {
+        position: absolute;
+        width: 222px;
+        height: 27px;
+        /* margin-left: -50px; */
+
+
+        font-family: "Poppins-Bold";
+        font-style: normal;
+        font-size: 30px;
+        line-height: 49px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        color: #CC0001;
+
+    }
+
+    .keunggulan hr {
+        position: absolute;
+        width: 100px;
+        height: 3.77px;
+        margin-top: 40px;
+        /* margin-left: -50px; */
+
+
+        background: #A10206;
+        border-radius: 20px;
+      }
+
+    
+
+    footer {
+        position: absolute;
+        width: 100%;
+        height: 322px;
+
+        background: #000000;
+    }
+
+    footer .judul h3 {
+        width: 190px;
+        height: 23px;
+        font-family: "Poppins-bold";
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+
+    footer .deskripsi p {
+        position: absolute;
+        width: 483.67px;
+        height: 51px;
+        margin-top: 20px;
+
+        font-family: "Poppins-semibold";
+        font-size: 10px;
+        line-height: 30px;
+        text-align: center;
+
+        color: #CAC0C9;
+    }
+
+    footer .container .sosmed img {
+        margin-top: 50px;
+        margin-left: -10px;
+    }
+
+    footer .container .sosmed .col-sm-5 {
+        margin-left: 30px;
+    }
+
+    footer .container .list hr {
+        position: absolute;
+        width: 86%;
+        height: 0px;
+        margin-top: 60px;
+
+        border: 1px solid #DADADA;
+    }
+
+    footer .container .navigation {
+        position: absolute;
+        width: 106.95px;
+        height: 30px;
+        margin-top: 70px;
+
+        font-family: "Poppins-bold";
+        font-size: 18px;
+        line-height: 30px;
+
+        color: #A10206;
+    }
+
+    footer .container .sub-navigation {
+        margin-top: 95px;
+
+    }
+
+    footer .container .sub-navigation .col-sm-6 p a span {
+        font-family: "Poppins-semibold";
+        font-size: 13px;
+        color: #CAC0C9;
+    }
+
+    footer .container .sub-navigation .col-sm-4 p {
+        font-family: "Poppins-semibold";
+        font-size: 13px;
+        color: #ffffff;
+    }
+
+    footer .container .sub-navigation .col-sm-4 p span {
+        color: #A10206;
+    }
+    
+   }
