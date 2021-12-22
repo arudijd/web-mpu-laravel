@@ -13,17 +13,15 @@
     <link rel="shortcut icon" href="img/shortcut-mpu.ico">
     <title>Mitra Prima Utama</title>
   </head>
-  <body>
 
-    
-    
+  <body>
     <div class="container-baru">
         @include('partials.navbar')
         @yield('container')
     </div>
         
 
-        <img src="img/transisi home.png" alt="transisi" width="100%" style="margin-top: 100px;">
+        <img src="img/transisi home.png" alt="transisi" width="100%">
         <footer class="footer">
             <div class="container">
                 <div class="row justify-content-center">
@@ -38,9 +36,10 @@
                             </p>
                 </div>
                 <div class="row list justify-content-center">
-                    <hr>
+                    <div class="col-11 garis">
+                        <hr>
+                    </div>
                 </div>
-                
                 <div class="row sub-navigation justify-content-center">
                     <div class="col-sm-4 justify-content-center">
                         <p class="text-center">Copyright 2020. <span>Mitra Prima Utama</span></p>
@@ -50,12 +49,9 @@
         </footer>
 
         <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="fontawesome/js/all.js"></script>
-        
-        
-    
-    
+        <script src="fontawesome/js/all.js"></script> 
 </body>
 </html>
