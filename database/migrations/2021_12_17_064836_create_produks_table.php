@@ -19,7 +19,7 @@ class CreateProduksTable extends Migration
             $table->string('jenis_produk');
             $table->string('image_produk');
             $table->string('slug');
-            $table->text('excerpt');
+            
         });
     }
 

@@ -15,13 +15,13 @@
 <section class="link mt-5">
     <div class="container">
         <div class="row justify-content-center">
-            <a href="#" class="text-center active-text">
+            <a href="/produk" class="text-center {{ ($subtitle === "Semua" ? 'active-text' : '') }}">
                 <h6>Semua Produk</h6>
             </a>&emsp;
-            <a href="produk/produk-app.html" class="text-center">
+            <a href="/aplikasi" class="text-center {{ ($subtitle === "Apps" ? 'active-text' : '') }}">
                 <h6>Produk Aplikasi</h6>
             </a>&emsp;
-            <a href="produk/produk-nonapp.html" class="text-center">
+            <a href="/non-aplikasi" class="text-center {{ ($subtitle === "Nonapps" ? 'active-text' : '') }}">
                 <h6>Produk Non Aplikasi</h6>
             </a>
         </div>
@@ -38,9 +38,11 @@
                 <h3>{{ $p->nama_produk }}</h3>
                 <br>
                 <h5>{{ $p->jenis_produk }}</h5>
-                <button class="btn btn-outline-dark btn-produk mt-3">Lean More
-                    <i class="fa fa-arrow-right"></i>
-                </button>
+                <a href="/detil">
+                    <button class="btn btn-outline-dark btn-produk mt-3">Learn More
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </a>
             </div>
     @endforeach
         </div>

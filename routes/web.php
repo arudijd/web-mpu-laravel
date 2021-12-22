@@ -44,4 +44,22 @@ Route::get('/contact', function () {
     
 });
 
+Route::get('/detil', function (){
+    return view('detil', [
+        "title" => "Produk",
+        "css" => "detil.css"
+    ]);
+});
+
+Route::get('/admin', function () {
+    return view('admin/login');
+});
+
 Route::get('/produk', [ProdukController::class, 'index']);
+
+Route::get('/aplikasi', [ProdukController::class, 'appsOnly']);
+
+Route::get('/non-aplikasi', [ProdukController::class, 'nonappsOnly']);
+
+
+    
