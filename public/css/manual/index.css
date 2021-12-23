@@ -36,6 +36,10 @@ body {
     background: hsla(0, 2%, 9%, 0.801);
 }
 
+.navbar .nav-item a {
+    font-size: smaller;
+}
+
 .container-baru {
     height: fit-content;
 }
@@ -75,7 +79,7 @@ nav .btn {
 .home {
     background-image: url(../../../img/home/jumbotron.png);
     background-size: cover;
-    max-width: 100%;
+    height: 100%;
 }
 
 .home img {
