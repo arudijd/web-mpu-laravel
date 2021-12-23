@@ -26,12 +26,41 @@
     <section class="keunggulan">
         <div class="row justify-content-center">
             <h1>Keunggulan</h1>
-            <hr><br>
+            <hr><br><br><br><br>
         </div>
-        <div class="row">
-            
+        <div class="d-flex row justify-content-center text-center produk">
+            <div class="col-11 col-sm-6 col-lg-3 produk1">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="img/home/produk aplikasi.png" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul keunggulan</h5>
+                        <p class="card-text">Kami menyediakan produk Aplikasi Pajak/Retribusi Daerah yang mempermudah dalam penyelenggaraannya</p>
+                        
+                    </div>
+                </div>
+            </div><div class="col-11 col-sm-6 col-lg-3 produk1">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="img/home/produk aplikasi.png" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul keunggulan</h5>
+                        <p class="card-text">Kami menyediakan produk Aplikasi Pajak/Retribusi Daerah yang mempermudah dalam penyelenggaraannya</p>
+                        
+                    </div>
+                </div>
+            </div><div class="col-11 col-sm-6 col-lg-3 produk1">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="img/home/produk aplikasi.png" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul keunggulan</h5>
+                        <p class="card-text">Kami menyediakan produk Aplikasi Pajak/Retribusi Daerah yang mempermudah dalam penyelenggaraannya</p>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+<
  
 
 

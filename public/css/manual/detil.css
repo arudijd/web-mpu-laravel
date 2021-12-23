@@ -31,7 +31,6 @@
   .jumbotron{
       background-color: black;
       height: 512px;
-      margin-top: -150px;
   }
   
   .jumbotron h1{
@@ -137,7 +136,7 @@
 
     .keunggulan {
         align-content: center;
-        margin-top: 100px;
+        margin-top: -100px;
         width: 100%;
         height: 813px;
     }
@@ -173,6 +172,67 @@
         background: #A10206;
         border-radius: 20px;
       }
+
+    .keunggulan .card {
+        background: #c4c4c4;
+        background: -webkit-linear-gradient(
+            to bottom,
+            #fafafa,
+            #fafafa,
+            #c4c4c4,
+            #474949
+        );
+        background: linear-gradient(to bottom, #fafafa, #fafafa, #c4c4c4, #474949);
+        border-radius: 20px;
+    }
+    .keunggulan .produk1 .card {
+        margin-bottom: 30px;
+    }
+    
+    .keunggulan .produk1 .card img {
+        margin-top: 13%;
+        margin-left: 15%;
+        margin-bottom: 9px;
+    }
+    
+    .keunggulan .produk2 .card img {
+        margin-top: 13%;
+        margin-left: 15%;
+    }
+    
+    .keunggulan .card-title {
+        font-family: "Poppins-bold";
+        font-size: 16px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .keunggulan .card-text {
+        font-family: "Poppins-semibold";
+        font-size: 11px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .keunggulan .card button {
+        border-color: #000000;
+        border-radius: 20px;
+        align-content: center;
+    }
+    
+    .keunggulan .card button span {
+        font-family: "Poppins-bold";
+        font-style: normal;
+        font-size: x-small;
+        color: #000000;
+    }
+    
+    .keunggulan .card button:hover {
+        border-color: #f1f1ef;
+        color: white;
+        background-color: #fafafa;
+    }
 
     
 
