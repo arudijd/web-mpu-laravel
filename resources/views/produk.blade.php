@@ -1,10 +1,15 @@
 @extends('layouts.main')
 @section('container')
-<div class="jumbotron">
-    <div class="container">
-        <div class="row justify-content-center">
-            <h1 class="justify-content-center">Produk Kami</h1>
-            <p class="lead justify-content-center">Dapatkan Layanan dan Aplikasi terbaik dari Kami</p>
+
+<div class="jumbotron ustify-content-center">
+    <div class="container text-item">
+        <div class="container text-item">
+            <div class="row d-flex justify-content-center">
+                <h1>Produk Kami</h1>
+            </div>
+            <div class="row d-flex justify-content-center text-center">
+                <p>Dapatkan Layanan dan Aplikasi terbaik dari Kami</p>
+            </div>
         </div>
     </div>
 </div>
@@ -32,13 +37,13 @@
    <div class="container">
         <div class="row">
             @foreach($produk as $p)
-            <div class="col-md-6 mb-5 mt-3">
-                <img src="img/produk/{{ $p->image_produk }}" alt="" width="550px" height="280px">
+            <div class="col-12 col-sm-6 col-md-6 mb-5 mt-3">
+                <img src="img/produk/{{ $p->image_produk }}" class="rounded" alt="" width="100%" >
                 <br>
                 <h3>{{ $p->nama_produk }}</h3>
                 <br>
                 <h5>{{ $p->jenis_produk }}</h5>
-                <a href="/detil">
+                <a href="detil/{{ $p->slug }}">
                     <button class="btn btn-outline-dark btn-produk mt-3">Learn More
                         <i class="fa fa-arrow-right"></i>
                     </button>

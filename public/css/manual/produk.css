@@ -22,220 +22,148 @@
   font-family: "Poppins-semibold";
   src: url('../../font/Poppins-semibold.ttf');
 }
+
+html,
+body {
+    width: 100% !important;
+    padding: 0px;
+    font-family: "poppins-regular";
+}
+
+.navbar {
+  background: hsla(0, 2%, 9%, 0.801);
+}
+
+.navbar .nav-item a {
+  font-size: smaller;
+}
+
 .jumbotron {
   background-color: black;
   height: 512px;
-  margin-top: -150px;
 }
 
 .jumbotron h1 {
   font-family: "Poppins-bold";
   color: #FFFFFF;
+  margin-top: 200px;
+}
+.jumbotron p {
+  font-family: "Poppins-medium";
+  color: #ffffff;
 }
 
 .transisi-jumbotron {
   margin-top: -35px;
 }
 
-@media (min-width: 576px) {}
+/* link filter */
+.link .container .row h6 {
 
-@media (min-width: 768px) {}
+  font-family: "Poppins-bold";
+  color: #979797;
+}
 
-@media (min-width: 1000px) {
-  .jumbotron h1 {
-    position: absolute;
-    width: 398px;
-    height: 99px;
-    top: 207px;
-    font-size: 50px;
-    line-height: 99px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+.link .container .row .active-text h6 {
+  color: #A10206 !important;
+}
 
-  }
+/* all product */
+.all-produk h3 {
+  margin-top: 20px;
+  font-family: "Poppins-bold";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 49px;
+  display: flex;
+  align-items: center;
 
-  .jumbotron p {
-    position: absolute;
-    width: 737px;
-    height: 49px;
-    top: 285px;
+  color: #000000;
+}
 
-    font-family: "Poppins-semibold";
-    font-size: 20px;
-    line-height: 49px;
-    display: flex;
+.all-produk p {
+  font-family: "Poppins-medium";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
 
-    color: #FFFFFF;
-  }
+  color: #000000;
+}
 
-  .nav-item a {
-    font-family: "Poppins-medium";
-    margin-right: 15px;
-  }
+.all-produk button {
 
-  .navbar-2 {
-    height: 80px;
-  }
+  font-family: "Poppins-bold";
+  font-size: 10px;
+  line-height: 23px;
 
-  nav .btn {
-    width: 122px;
-    height: 36px;
-    margin-left: 150px;
-    background-color: #A10206;
-    border-radius: 10px;
-    font-family: "Poppins-semibold";
-    border-color: #A10206;
-    font-size: small;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
+}
 
-  .all-produk h3 {
-    margin-top: 20px;
-    font-family: "Poppins-bold";
-    font-style: normal;
-    font-size: 20px;
-    line-height: 49px;
-    display: flex;
-    align-items: center;
+.all-produk .btn-produk {
+  border-radius: 20px;
+}
 
-    color: #000000;
-  }
+.all-produk h5 {
+  font-family: "Poppins-medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
 
-  .all-produk p {
-    font-family: "Poppins-medium";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
+  color: #979797;
+}
 
-    color: #000000;
-  }
+.all-produk i {
+  margin-top: 20px;
+}
 
-  .all-produk button {
-    /* margin-top: -50px; */
+/* Footer */
 
-    font-family: "Poppins-bold";
-    font-size: 10px;
-    line-height: 23px;
-    /* identical to box height */
-  }
+footer {
+  width: 100%;
+  background: #000000;
+  margin-top: -2px;
+}
 
-  .all-produk .btn-produk {
-    border-radius: 20px;
-  }
+footer .judul h3 {
+  width: 190px;
+  font-family: "Poppins-bold";
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
 
-  .all-produk h5 {
-    font-family: "Poppins-medium";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 33px;
-    display: flex;
-    align-items: center;
+footer .deskripsi p {
+  width: 483.67px;
+  height: 51px;
+  margin-top: 20px;
+  font-family: "Poppins-regular";
+  font-size: 14px;
+  text-align: center;
+  color: #cac0c9;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-    color: #979797;
-  }
+.footer .container .row hr {
+  height: 0px;
+  margin-top: 20px;
+  border: 1px solid #dadada;
+}
 
-  .all-produk i {
-    margin-top: 20px;
-  }
+footer .container .sub-navigation .col-sm-4 p {
+  font-family: "Poppins-semibold";
+  font-size: 13px;
+  color: #cac0c9;
+}
 
-
-
-  .link .container .row h6 {
-
-    font-family: "Poppins-bold";
-    color: #979797;
-  }
-
-  .link .container .row .active-text h6 {
-    color: #A10206 !important;
-  }
-
-  footer {
-    position: absolute;
-    width: 100%;
-    height: 322px;
-    background: #000000;
-  }
-
-  footer .judul h3 {
-    position: absolute;
-    width: 190px;
-    height: 23px;
-    font-family: "Poppins-bold";
-    font-size: 14px;
-    color: #FFFFFF;
-  }
-
-  footer .deskripsi p {
-    position: absolute;
-    width: 483.67px;
-    height: 51px;
-    margin-top: 20px;
-
-    font-family: "Poppins-semibold";
-    font-size: 10px;
-    line-height: 30px;
-    text-align: center;
-
-    color: #CAC0C9;
-  }
-
-  footer .container .sosmed img {
-    margin-top: 50px;
-    margin-left: -10px;
-  }
-
-  footer .container .sosmed .col-sm-5 {
-    margin-left: 30px;
-  }
-
-  footer .container .list hr {
-    position: absolute;
-    width: 86%;
-    height: 0px;
-    margin-top: 60px;
-
-    border: 1px solid #DADADA;
-  }
-
-  footer .container .navigation {
-    position: absolute;
-    width: 106.95px;
-    height: 30px;
-    margin-top: 70px;
-
-    font-family: "Poppins-bold";
-    font-size: 18px;
-    line-height: 30px;
-
-    color: #A10206;
-  }
-
-  footer .container .sub-navigation {
-    margin-top: 95px;
-    margin-left: 50px;
-
-  }
-
-  footer .container .sub-navigation .col-sm-6 p a span {
-    font-family: "Poppins-semibold";
-    font-size: 13px;
-    color: #CAC0C9;
-  }
-
-  footer .container .sub-navigation .col-sm-4 p {
-    font-family: "Poppins-semibold";
-    font-size: 13px;
-    color: #ffffff;
-  }
-
-  footer .container .sub-navigation .col-sm-4 p span {
-    color: #A10206;
-  }
-
+footer .container .sub-navigation .col-sm-4 span {
+  font-family: "Poppins-semibold";
+  font-size: 13px;
+  margin-left: 2px;
+  color: #a10206;
 }

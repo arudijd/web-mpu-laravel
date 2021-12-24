@@ -31,7 +31,6 @@
   .jumbotron{
       background-color: black;
       height: 512px;
-      margin-top: -150px;
   }
   
   .jumbotron h1{
@@ -53,6 +52,14 @@
       color: red;
   }
 
+    .tujuan-aplikasi h3{
+        font-family: "Poppins-semibold";
+        color: #A10206;
+    }
+
+    .tujuan-aplikasi li {
+        font-family: "Poppins-regular";
+    }
   
 
   
@@ -137,9 +144,9 @@
 
     .keunggulan {
         align-content: center;
-        margin-top: 100px;
+        margin-top: -100px;
         width: 100%;
-        height: 813px;
+        height: 600px;
     }
 
     .keunggulan h1 {
@@ -158,7 +165,7 @@
         align-content: center;
         justify-content: center;
 
-        color: #CC0001;
+        color: #A10206;
 
     }
 
@@ -173,6 +180,96 @@
         background: #A10206;
         border-radius: 20px;
       }
+
+    .keunggulan .card {
+        background: #c4c4c4;
+        background: -webkit-linear-gradient(
+            to bottom,
+            #fafafa,
+            #fafafa,
+            #c4c4c4,
+            #474949
+        );
+        background: linear-gradient(to bottom, #fafafa, #fafafa, #c4c4c4, #474949);
+        border-radius: 20px;
+    }
+    .keunggulan .produk1 .card {
+        margin-bottom: 30px;
+    }
+    
+    .keunggulan .produk1 .card img {
+        margin-top: 13%;
+        margin-left: 15%;
+        margin-bottom: 9px;
+    }
+    
+    .keunggulan .produk2 .card img {
+        margin-top: 13%;
+        margin-left: 15%;
+    }
+    
+    .keunggulan .card-title {
+        font-family: "Poppins-bold";
+        font-size: 16px;
+        line-height: 33px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .keunggulan .card-text {
+        font-family: "Poppins-semibold";
+        font-size: 11px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .keunggulan .card button {
+        border-color: #000000;
+        border-radius: 20px;
+        align-content: center;
+    }
+    
+    .keunggulan .card button span {
+        font-family: "Poppins-bold";
+        font-style: normal;
+        font-size: x-small;
+        color: #000000;
+    }
+    
+    .keunggulan .card button:hover {
+        border-color: #f1f1ef;
+        color: white;
+        background-color: #fafafa;
+    }
+
+    .tujuan-aplikasi{
+        margin-bottom: 200px;
+    }
+    
+      .tujuan-aplikasi .row {
+        margin: 100px;
+      }
+    
+      .tujuan-aplikasi .row .desc {
+        display: flex;
+        width: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+    
+      }
+    
+      .tujuan-aplikasi .vl {
+        border-left: 6px solid #A10206;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        height: 100px;
+        position: absolute;
+      }
+
 
     
 

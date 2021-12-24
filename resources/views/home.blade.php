@@ -9,14 +9,14 @@
     </section>
         <section class="aplikasi-utama-mpu">
             <div class="container-fluid arti-mpu">
-                <div class="row justify-content-center">
+                <div class="row d-flex justify-content-center">
                     <h1>PT Mitra Prima Utama</h1> 
                 </div>
-                <div class="row justify-content-center">
+                <div class="row d-flex justify-content-center">
                     <hr>
                 </div>
-                <div class="row justify-content-center">
-                <p>Perusahaan Swasta Nasional yang bergerak dalam bidang Konsultasi Manajemen, Teknologi Informasi dan Pengembangan Sumber Daya Manusia.  </p>
+                <div class="row d-flex justify-content-center">
+                    <p>Perusahaan Swasta Nasional yang bergerak dalam bidang Konsultasi Manajemen, Teknologi Informasi dan Pengembangan Sumber Daya Manusia.  </p>
                 </div>
             </div>
             <div class="container container-2">

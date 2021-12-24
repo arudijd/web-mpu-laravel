@@ -10,7 +10,7 @@ class ProdukController extends Controller
     public function index(){
         return view('produk', [
             "title" => "Produk",
-            "css" => "produk.css",
+            "css" => "/css/manual/produk.css",
             "subtitle" => "Semua",
             "produk" => Produk::all()
         ]);
@@ -20,7 +20,7 @@ class ProdukController extends Controller
 
         return view('produk', [
             "title" => "Produk",
-            "css" => "produk.css",
+            "css" => "/css/manual/produk.css",
             "subtitle" => "Apps",
             "produk" => Produk::where('jenis_produk', 'LIKE', 'Aplikasi')->get()
         ]);
@@ -30,7 +30,7 @@ class ProdukController extends Controller
 
         return view('produk', [
             "title" => "Produk",
-            "css" => "produk.css",
+            "css" => "/css/manual/produk.css",
             "subtitle" => "Nonapps",
             "produk" => Produk::where('jenis_produk', 'LIKE', 'Non Aplikasi')->get()
         ]);
