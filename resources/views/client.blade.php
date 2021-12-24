@@ -1,57 +1,57 @@
 @extends('layouts.main')
 @section('container')
-    
-<div class="jumbotron">
-    <div class="container">
-        <div class="row justify-content-center">
-            <h1 class="justify-content-center">Client Kami</h1>
-            <p class="lead justify-content-center">Let’s get to know each other better, start with you.</p>
+
+<div class="container-baru">
+    <div class="jumbotron justify-content-center">
+        <div class="container text-item">
+            <div class="row d-flex justify-content-center">
+                <h1>Client Kami</h1>
+            </div>
+            <div class="row d-flex justify-content-center text-center">
+                <p>Let’s get to know each other better, start with you.</p>
+            </div>
         </div>
     </div>
-</div>
-<section class="transisi-jumbotron">
-    <img src="img/transisi jumbotron home.png" alt="transisi" width="100%">
-</section>
+    <section class="transisi-jumbotron">
+        <img src="img/transisi jumbotron home.png" alt="transisi" width="100%">
+    </section>
 
 
 <section class="ruang-lingkup">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-3 desc">
-                <h3>Ruang Lingkup</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
+               <h4 class="text-center">Ruang Lingkup</h4>
             </div>
-            <div class="col-md-1 d-flex align-items-center">
-                <div class="vl"></div>
-            </div>
-            <div class="col-md-8">
+            <!-- <div class="col-1 col-sm-1 col-md-1 d-flex align-items-center lin">
+                <div class="vl" height></div>
+            </div> -->
+            <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">
                 <ul>
-                    <li>Pengembangan SIstem Aplikasi berbasis Teknologi Informasi (Software)</li>
+                    <li>Pengembangan Sistem Aplikasi berbasis Teknologi Informasi (Software)</li>
                     <li>Pengembangan Infrastruktur pendukung Teknologi Informasi (Hardware)</li>
                     <li>Pengembangan Sumber Daya Manusia (SDM)</li>
                     <li>Konsultasi Management / Survey / Pendataan</li>
                 </ul>
             </div>
-        
         </div>
         
-        <div class="row justify-content-center">
-            <div class="col-md-3 desc">
-                <h3>Sasaran</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
+               <h4 class="text-center">Sasaran</h>
             </div>
-            <div class="col-md-1 d-flex align-items-center">
-                <div class="vl"></div>
-            </div>
-            <div class="col-md-8">
+            <!-- <div class="col-1 col-sm-1 col-md-1 d-flex align-items-center lin">
+                <div class="vl" height></div>
+            </div> -->
+            <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">
                 <ul>
-                    <li>Mempermudah & meningkatkan kapasitas proses administrasi pengelolaan Pajak Daerah / Retribusi Daerah secara efektif dan efisien</li>
+                <li>Mempermudah & meningkatkan kapasitas proses administrasi pengelolaan Pajak Daerah / Retribusi Daerah secara efektif dan efisien</li>
                     <li>Tersedianya penatausahaan administrasi perpajakan yang rapi, informatif dan akuntabel</li>
                     <li>Meningkatkan pelayanan kepada Wajib Pajak</li>
                     <li>Meningkatkan kepatuhan Wajib Pajak dalam melakukan kewajiban perpajakannya</li>
                     <li>Mempermudah Fiscux dalam melakukan intensifikasi maupun ekstensifikasi</li>
                 </ul>
             </div>
-        
-        </div>
         </div>
     </div>
 </section>
@@ -72,150 +72,150 @@
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000" >
           <div class="row justify-content-center ml-3">
-              <div class="col-md-1">
+              <div class="col-1 col-md-1">
               </div>
-              <div class="col-md-2">
+              <div class="col-2 col-md-2">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
           </div>
           <div class="row justify-content-center ml-3">
             <div class="col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
         </div>
         <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
+            <div class="col-1 col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-        </div>
-        <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-        </div>
-        <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
-            </div>
-            <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="10000">
         <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
+            <div class="col-1 col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
+          </div>
+        </div>
+        <div class="row justify-content-center ml-3">
+            <div class="col-1 col-md-1">
+            </div>
+            <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+        </div>
+        <div class="row justify-content-center ml-3">
+            <div class="col1 col-md-1">
+            </div>
+            <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+          <div class="col-2 col-md-2">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+        <div class="row justify-content-center ml-3">
+            <div class="col-1 col-md-1">
+            </div>
+            <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
         </div>    
         <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
+            <div class="col-1 col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
         </div>
         <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
+            <div class="col-1 col-md-1">
             </div>
-            <div class="col-md-2">
+            <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
-          <div class="col-md-2">
+          <div class="col-2 col-md-2">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
           </div>
         </div>      

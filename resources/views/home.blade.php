@@ -3,7 +3,7 @@
 
 <div class="container-baru"> 
 <!-- jumbotron -->
-    <section class="jumbotron home text-center">
+    <section class="jumbotron home text-center ">
         <img src="img/logo.png" class="img-thumbnail" alt="logo">
         <h1 class="display-6">Stable, Strong , Safe</h1>
     </section>
@@ -35,7 +35,7 @@
                             <img src="img/home/simpatda.png" alt="simpatda" >
                             <div class="card-body">
                                 <h5 class="card-title">&nbsp;SIMPATDA</h5>
-                                <p class="card-text">Adalah Aplikasi Online Pajak Lainnya</p>
+                                <p class="card-text aa">Adalah Aplikasi Online Pajak Lainnya</p>
                             </div>
                         </div>
                     </div>        

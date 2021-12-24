@@ -233,6 +233,7 @@ nav .btn {
     font-size: 11px;
     text-align: center;
     color: #000000;
+    min-height: 50px;
 }
 
 .produk-mpu .card button {
@@ -311,7 +312,6 @@ nav .btn {
     .row
     .client-desc
     .client-all
-    .
     .client-kami
     .row
     .client-desc
