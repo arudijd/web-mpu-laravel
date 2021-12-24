@@ -7,10 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/manual/{{$css}}">
-    <link rel="shortcut icon" href="img/shortcut-mpu.ico">
+    <link rel="stylesheet" href="{{ asset("/css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="{{ asset("$css") }}">
+    <link rel="shortcut icon" href="/img/shortcut-mpu.ico">
     <title>Mitra Prima Utama</title>
   </head>
 
@@ -48,7 +48,7 @@
             </div>
         </footer>
 
-        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="{{ asset("js/jquery-3.4.1.slim.min.js") }}"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.js"></script>

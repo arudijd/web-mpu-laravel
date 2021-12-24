@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DetilController;
 use App\Http\Controllers\ProdukController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,21 +18,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home', [
         "title" => "Home",
-        "css" => "index.css"
+        "css" => "/css/manual/index.css"
     ]);
 });
 
 Route::get('/profil' , function () {
     return view('profil', [
         "title" => "Profil",
-        "css" => "profil.css"
+        "css" => "/css/manual/profil.css"
     ]);
 });
 
 Route::get('/client', function () {
     return view('client', [
         "title" => "Client",
-        "css" => "client.css"
+        "css" => "/css/manual/client.css"
     ]);
     
 });
@@ -39,17 +40,12 @@ Route::get('/client', function () {
 Route::get('/contact', function () {
     return view('contact', [
         "title" => "Contact",
-        "css" => "contact.css"
+        "css" => "/css/manual/contact.css"
     ]);
     
 });
 
-Route::get('/detil', function (){
-    return view('detil', [
-        "title" => "Produk",
-        "css" => "detil.css"
-    ]);
-});
+Route::get('detil/{detil:slug}', [DetilController::class, 'index']);
 
 Route::get('/admin', function () {
     return view('admin/login');
@@ -60,6 +56,8 @@ Route::get('/produk', [ProdukController::class, 'index']);
 Route::get('/aplikasi', [ProdukController::class, 'appsOnly']);
 
 Route::get('/non-aplikasi', [ProdukController::class, 'nonappsOnly']);
+
+
 
 
     

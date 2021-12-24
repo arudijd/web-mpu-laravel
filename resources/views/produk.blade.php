@@ -43,7 +43,7 @@
                 <h3>{{ $p->nama_produk }}</h3>
                 <br>
                 <h5>{{ $p->jenis_produk }}</h5>
-                <a href="/detil">
+                <a href="detil/{{ $p->slug }}">
                     <button class="btn btn-outline-dark btn-produk mt-3">Learn More
                         <i class="fa fa-arrow-right"></i>
                     </button>
