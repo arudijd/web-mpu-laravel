@@ -1,11 +1,13 @@
 @extends('layouts.main')
 @section('container')
     
-<div class="jumbotron">
-    <div class="container">
-        <div class="row justify-content-center">
-            <h1 class="justify-content-center">Contact Kami</h1>
-            <p class="lead justify-content-center">Let’s get to know each other better, start with you.</p>
+<div class="jumbotron justify-content-center">
+    <div class="container text-item">
+        <div class="row d-flex justify-content-center">
+            <h1>Contact Kami</h1>
+        </div>
+        <div class="row d-flex justify-content-center text-center">
+            <p>Hubungi kami kapan saja...</p>
         </div>
     </div>
 </div>
@@ -16,26 +18,26 @@
 <section class="kritik-logo">
     <div class="container">
         <div class="row">
-            <h1>Kritik Dan Saran</h1>
+            <h1>Kritik dan Saran</h1>
         </div>
-        <div class="row">
-            <div class="col-lg-8">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-11 col-md-8 col-lg-8 col-xl-8 kritik-saran">
                 <form action="" method="post">
                     <div class="row">
-                        <div class="col-md-12">
-                            <textarea name="Pesan" class="border" id="pesan" cols="75%" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Masukan Pesan'" placeholder=" Masukan Pesan" required></textarea>
+                        <!-- Pesan -->
+                        <div class="col-12 d-flex justify-content-center">
+                            <textarea class="form-control name="Pesan" class="border" id="pesan" cols="75%" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Masukan Pesan'" placeholder=" Masukan Pesan" required></textarea>
                         </div>
-                        <div class="col-md-5">
-                            <input class="form-control nama" name="name" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Nama Anda'" placeholder="Masukan Nama Anda">
+                        <div class="col-6 col-lg-6">
+                            <input class="form-control nama" name="name" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Nama Anda'" placeholder="Masukan Nama">
                         </div>
-                        <div class="col-md-auto"></div>
-                        <div class="col-md-6">
-                            <input class="form-control email" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Email Address'" placeholder="Email" required>
+                        <div class="col-6 col-lg-6">
+                            <input class="form-control email" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Email'" placeholder="Email" required>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-12 col-sm-8 col-md-8 col-lg-9">
                             <input class="form-control judul" name="subject" id="judul" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Judul'" placeholder="Masukan Judul">
                         </div>
-                        <div class="col-md-3 button-verification">
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-3 button-verification">
                             <button type="button" class="btn btn-outline-danger" id="submit-verification" data-toggle="modal" data-target="#modal-verification"><span>Submit </span><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
                         </div> 
                         
@@ -49,54 +51,54 @@
                                 <div class="modal-body">
                                   <div class="container">
                                       <div class="row">
-                                          <div class="col-sm-12">
+                                          <div class="col-12">
                                               <div class="row">
-                                                  <div class="col-sm-3">
+                                                  <div class="col-3">
                                                       <p>Nama</p>
                                                   </div>
-                                                  <div class="col-sm-1">
+                                                  <div class="col-1">
                                                       <p>:</p>
                                                   </div>
-                                                  <div class="col-sm-8">
+                                                  <div class="col-8">
                                                       <p id="modal-nama"></p>
                                                   </div>
                                               </div>
                                           </div>
-                                          <div class="col-sm-12">
+                                          <div class="col-12">
                                             <div class="row">
-                                                <div class="col-sm-3">
+                                                <div class="col-3">
                                                     <p>Email</p>
                                                 </div>
-                                                <div class="col-sm-1">
+                                                <div class="col-1">
                                                     <p>:</p>
                                                 </div>
-                                                <div class="col-sm-8">
+                                                <div class="col-8">
                                                     <p id="modal-email"></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12">
+                                        <div class="col-12">
                                             <div class="row">
-                                                <div class="col-sm-3">
+                                                <div class="col-3">
                                                     <p>Judul</p>
                                                 </div>
-                                                <div class="col-sm-1">
+                                                <div class="col-1">
                                                     <p>:</p>
                                                 </div>
-                                                <div class="col-sm-8">
+                                                <div class="col-8">
                                                     <p id="modal-judul"></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-12">
+                                        <div class="col-12">
                                             <div class="row">
-                                                <div class="col-sm-3">
+                                                <div class="col-3">
                                                     <p>Pesan</p>
                                                 </div>
-                                                <div class="col-sm-1">
+                                                <div class="col-1">
                                                     <p>:</p>
                                                 </div>
-                                                <div class="col-sm-8">
+                                                <div class="col-8">
                                                     <p id="modal-pesan"></p>
                                                 </div>
                                             </div>
@@ -115,85 +117,86 @@
                     </div>
                 </form>
             </div>
-            <div class="col-lg-4">
+            <!-- kontak -->
+            <div class="col-11 col-sm-11 col-md-4 col-lg-4 col-xl-4 kontak">
                 <div class="row">
-                    <div class="col-md-12 alamat">
+                    <div class="col-12 alamat">
                         <div class="row">
-                            <div class="col-md-12 maps">
+                            <div class="col-12 maps">
                                 <div class="row">
-                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                        <img src="img/contact/loc (2).png" alt="maps" width="50%" height="auto">
+                                    <div class="col-3 d-flex align-items-center justify-content-center">
+                                        <img src="img/contact/loc (2).png" alt="maps" class="img-thumbnail" width="32px" height="auto">
                                     </div>
-                                    <div class="col-md-9">
-                                        <h3 class="text-center">Jl. Pahlawan No.28, Cempaka putih</h3>
-                                        <h4 class="text-center">Kec. Ciputat Timur, Tangerang Selatan, Banten</h4>
+                                    <div class="col-9">
+                                        <h3 class="text-left">Jl. Pahlawan No.28, Cempaka putih</h3>
+                                        <h4 class="text-left">Kec. Ciputat Timur, Tangerang Selatan, Banten</h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 jam">
+                            <div class="col-12 jam">
                                 <div class="row">
-                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                        <img src="img/contact/jam (2).png" alt="time" width="50%" height="auto">
+                                    <div class="col-3 d-flex align-items-center justify-content-center">
+                                        <img src="img/contact/jam (2).png" alt="time" class="img-thumbnail" width="32px" height="auto">
                                     </div>
-                                    <div class="col-md-9">
-                                        <h3 class="text-center">Senin - Jumat</h3>
-                                        <h4 class="text-center">08.00 - 17.00</h4>
+                                    <div class="col-9">
+                                        <h3 class="text-left">Senin - Jumat</h3>
+                                        <h4 class="text-left">08.00 - 17.00</h4>
 
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="col-md-12 world">
+                            <div class="col-12 world">
                                 <div class="row">
-                                    <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                        <img src="img/contact/mail (2).png" alt="world" width="80%" height="auto">
+                                    <div class="col-3 d-flex align-items-center justify-content-center">
+                                        <img src="img/contact/mail (2).png" alt="world" class="img-thumbnail" width="65px" height="auto">
                                     </div>
-                                    <div class="col-md-9">
-                                        <h3 class="text-center">pt.mitra_prima_utama@yahoo.com</h3>
-                                        <h4 class="text-center">Kirim Pesan Kapan Saja!</h4>
+                                    <div class="col-9">
+                                        <h3 class="text-left">pt.mitra_prima_utama@yahoo.com</h3>
+                                        <h4 class="text-left">Kirim Pesan Kapan Saja!</h4>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 phone">
+                            <div class="col-12 phone">
                                 <div class="row">
-                                    <div class="col-md-3 ">
-                                        <img src="img/contact/phone logo home.png" alt="phone" height="auto" width="100%">
+                                    <div class="col-3 d-flex align-items-start justify-content-center">
+                                        <img src="img/contact/phone logo home.png" alt="phone" class="img-thumbnail" height="auto" width="65px">
                                     </div>
-                                    <div class="col-md-9">
+                                    <div class="col-9">
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-4 col-md-12 col-lg-6">
                                                 <h3>(021) 74704232</h3>
                                                 <h4>KANTOR</h4>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                                 <h3>0811-1652-95</h3>
                                                 <h4>NUR M. BUSRO</h4>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                                 <h3>0812-9464-507</h3>
                                                 <h4>RUDY</h4>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                                 <h3>0812-8103-332</h3>
                                                 <h4>MUHSON</h4>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                                 <h3>0813-8400-5656</h3>
                                                 <h4>ERANITA</h4>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                                 <h3>0812-9868-6601</h3>
                                                 <h4>MAHFUD</h4>
                                             </div>
-                                            <div class="col-md-5">
+                                            <div class="col-6 col-md-12 col-lg-6">
                                                 <h3>0813-8707-8803</h3>
                                                 <h4>OZY</h4>
                                             </div>

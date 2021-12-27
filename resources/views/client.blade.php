@@ -23,9 +23,6 @@
             <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
                <h4 class="text-center">Ruang Lingkup</h4>
             </div>
-            <!-- <div class="col-1 col-sm-1 col-md-1 d-flex align-items-center lin">
-                <div class="vl" height></div>
-            </div> -->
             <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">
                 <ul>
                     <li>Pengembangan Sistem Aplikasi berbasis Teknologi Informasi (Software)</li>
@@ -40,9 +37,6 @@
             <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
                <h4 class="text-center">Sasaran</h>
             </div>
-            <!-- <div class="col-1 col-sm-1 col-md-1 d-flex align-items-center lin">
-                <div class="vl" height></div>
-            </div> -->
             <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">
                 <ul>
                 <li>Mempermudah & meningkatkan kapasitas proses administrasi pengelolaan Pajak Daerah / Retribusi Daerah secara efektif dan efisien</li>
