@@ -21,11 +21,11 @@
     </div>
         
 
-        <img src="img/transisi home.png" alt="transisi" width="100%">
+        <img src="{{ asset("img/transisi home.png") }}" alt="transisi" width="100%">
         <footer class="footer">
             <div class="container">
                 <div class="row justify-content-center">
-                    <img src="img/logo.png" alt="" width="10%" height="auto">
+                    <img src="{{ asset("img/logo.png") }}" alt="" width="10%" height="auto">
                 </div>
                 <div class="row justify-content-center judul">
                     <h3>PT. MITRA PRIMA UTAMA</h3>

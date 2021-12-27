@@ -23,25 +23,42 @@
     src: url('../../font/Poppins-semibold.ttf');
   }
   
+  html,
+  body {
+      width: 100% !important;
+      padding: 0px;
+      font-family: "poppins-regular";
+  }
+  
   .navbar {
-    background-color: #3D3E4080;
-    height: 100px;
+    background: hsla(0, 2%, 9%, 0.801);
   }
   
-  .jumbotron{
-      background-color: black;
-      height: 512px;
+  .navbar .nav-item a {
+    font-size: smaller;
   }
   
-  .jumbotron h1{
-      font-family: "Poppins-bold";
-      color: #FFFFFF;
+  .jumbotron {
+    background-color: black;
+    height: 512px;
   }
-  
-  .transisi-jumbotron{
-      margin-top: -35px;
+ 
+  .jumbotron .namaproduk{
+    margin-top: 200px;
+  }
+  .jumbotron h1 {
+    font-family: "Poppins-bold";
+    color: #FFFFFF;
   }
 
+  .jumbotron p {
+    font-family: "Poppins-medium";
+    color: #ffffff;
+  }
+  
+  .transisi-jumbotron {
+    margin-top: -35px;
+  }
   .deskripsi .container {
       width: 100%;
       height: 500px;

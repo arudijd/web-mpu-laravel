@@ -1,8 +1,9 @@
 @extends('layouts.main')
 @section('container')
-    <div class="jumbotron">
+
+    <div class="jumbotron justify-content-center">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row d-flex justify-content-center namaproduk">
                 <h1 class="justify-content-center">{{ $detil->nama_produk }}</h1>
             </div>
         </div>
@@ -10,7 +11,6 @@
     <section class="transisi-jumbotron">
         <img src="{{ asset("img/transisi jumbotron home.png") }}" alt="transisi" width="100%">
     </section>
-    
     <section class="deskripsi">
             <div class="row d-flex justify-content-center">
                     <div class="col-md-5 d-flex align-items-center">

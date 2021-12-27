@@ -38,7 +38,7 @@
         
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
-               <h4 class="text-center">Sasaran</h>
+               <h4 class="text-center">Sasaran</h4>
             </div>
             <!-- <div class="col-1 col-sm-1 col-md-1 d-flex align-items-center lin">
                 <div class="vl" height></div>
