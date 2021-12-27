@@ -149,7 +149,7 @@
                             <div class="col-12 world">
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center justify-content-center">
-                                        <img src="img/contact/mail (2).png" alt="world" class="img-thumbnail" width="65px" height="auto">
+                                        <img src="img/contact/mail (2).png" alt="world" class="img-thumbnail" width="50px" height="auto">
                                     </div>
                                     <div class="col-9">
                                         <h3 class="text-left">pt.mitra_prima_utama@yahoo.com</h3>
