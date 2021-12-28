@@ -44,7 +44,7 @@
                 <br>
                 <h5>{{ $p->jenis_produk }}</h5>
                 <a href="detil/{{ $p->slug }}">
-                    <button class="btn btn-outline-dark btn-produk mt-3">Learn More
+                    <button class="btn btn-outline-dark btn-produk mt-3">Selengkapnya
                         <i class="fa fa-arrow-right"></i>
                     </button>
                 </a>

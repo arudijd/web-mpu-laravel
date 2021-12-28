@@ -83,11 +83,13 @@
                             <div class="card-body">
                                 <h5 class="card-title">Produk Aplikasi</h5>
                                 <p class="card-text">Kami menyediakan produk Aplikasi Pajak/Retribusi Daerah yang mempermudah dalam penyelenggaraannya</p>
-                                <button type="button" class="btn btn-outline-warning">
-                                    <span>Selengkapnya
-                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                <a href="aplikasi" aria-pressed="true">
+                                    <button type="button" class="btn btn-outline-warning">    
+                                        <span >Selengkapnya
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -97,11 +99,13 @@
                             <div class="card-body">
                                 <h5 class="card-title">Produk Non Aplikasi</h5>
                                 <p class="card-text">Kami menyediakan layanan Konsultasi Perpajakan dan penyelengaraan Pelatihan/Workshop dengan berbagai materi Perpajakan</p>
-                                <button type="button" class="btn btn-outline-warning">
-                                    <span>Selengkapnya
-                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                <a href="non-aplikasi" aria-pressed="true">
+                                    <button type="button" class="btn btn-outline-warning">
+                                        <span>Selengkapnya
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -144,11 +148,13 @@
                                 <p>Dan Kami mempunyai 50 Client Aplikasi Lainya</p>
                             </div>
                             <div class="row btn-s">
-                                <button type="button" class="btn btn-outline-warning">
-                                    <span>Selengkapnya
-                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                    </span>
-                                </button>
+                                <a href="client" aria-pressed="true">
+                                    <button type="button" class="btn btn-outline-warning">
+                                        <span>Selengkapnya
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </a>
                             </div>   
                         </div>
                     </div>
