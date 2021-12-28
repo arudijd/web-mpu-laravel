@@ -45,7 +45,7 @@ Route::get('/contact', function () {
     
 });
 
-Route::get('detil/{detil:slug}', [DetilController::class, 'index']);
+Route::get('produk/detil/{detil:slug}', [DetilController::class, 'index']);
 
 Route::get('/admin', function () {
     return view('admin/login');
@@ -53,9 +53,9 @@ Route::get('/admin', function () {
 
 Route::get('/produk', [ProdukController::class, 'index']);
 
-Route::get('/aplikasi', [ProdukController::class, 'appsOnly']);
+Route::get('/produk/aplikasi', [ProdukController::class, 'appsOnly']);
 
-Route::get('/non-aplikasi', [ProdukController::class, 'nonappsOnly']);
+Route::get('/produk/non-aplikasi', [ProdukController::class, 'nonappsOnly']);
 
 
 

@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('container')
 
-<div class="jumbotron ustify-content-center">
+<div class="jumbotron justify-content-center">
     <div class="container text-item">
         <div class="container text-item">
             <div class="row d-flex justify-content-center">
@@ -14,7 +14,7 @@
     </div>
 </div>
 <section class="transisi-jumbotron">
-    <img src="img/transisi jumbotron home.png" alt="transisi" width="100%">
+    <img src="{{ asset("img/transisi jumbotron home.png") }}" alt="transisi" width="100%">
 </section>
 
 <section class="link mt-5">
@@ -23,10 +23,10 @@
             <a href="/produk" class="text-center {{ ($subtitle === "Semua" ? 'active-text' : '') }}">
                 <h6>Semua Produk</h6>
             </a>&emsp;
-            <a href="/aplikasi" class="text-center {{ ($subtitle === "Apps" ? 'active-text' : '') }}">
+            <a href="/produk/aplikasi" class="text-center {{ ($subtitle === "Apps" ? 'active-text' : '') }}">
                 <h6>Produk Aplikasi</h6>
             </a>&emsp;
-            <a href="/non-aplikasi" class="text-center {{ ($subtitle === "Nonapps" ? 'active-text' : '') }}">
+            <a href="/produk/non-aplikasi" class="text-center {{ ($subtitle === "Nonapps" ? 'active-text' : '') }}">
                 <h6>Produk Non Aplikasi</h6>
             </a>
         </div>
@@ -38,7 +38,7 @@
         <div class="row">
             @foreach($produk as $p)
             <div class="col-12 col-sm-6 col-md-6 mb-5 mt-3">
-                <img src="img/produk/{{ $p->image_produk }}" class="rounded" alt="" width="100%" >
+                <img src="{{ asset("img/produk/$p->image_produk") }}" class="rounded" alt="" width="100%" >
                 <br>
                 <h3>{{ $p->nama_produk }}</h3>
                 <br>
