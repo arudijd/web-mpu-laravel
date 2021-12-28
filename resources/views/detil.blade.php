@@ -23,24 +23,23 @@
     </section>
 
     <section class="keunggulan">
-        <div class="container">
-            <div class="row justify-content-center">
-                <h1>Keunggulan</h1> 
-            </div>
-            <div class="row justify-content-center">
-                <hr><br><br><br><br>
-            </div>        
-            <div class="d-flex row justify-content-center text-center produk">
-                <div class="col-11 col-sm-6 col-lg-3 produk1">
-                    <div class="card shadow p-3 mb-5 bg-body rounded">
-                        <img src="{{ asset("img/home/produk aplikasi.png") }}" alt="produk aplikasi" class="rounded" width="70%" height="auto">
-                        <div class="card-body">
-                            <h5 class="card-title">Judul keunggulan</h5>
-                            <p class="card-text">{{ $detil->keunggulan }}</p>
-                        </div>
+        <div class="row justify-content-center">
+            <h1>Keunggulan</h1>
+            <hr><br><br><br><br>
+        </div>
+        <div class="d-flex row justify-content-center text-center produk">
+            @foreach ($detil->keunggulan as $keunggulan)
+            <div class="col-11 col-sm-6 col-lg-3 produk1">
+                <div class="card shadow p-3 mb-5 bg-body rounded">
+                    <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $keunggulan->judul_keunggulan }}</h5>
+                        <p class="card-text">{{ $keunggulan->detil_keunggulan }}</p>
                     </div>
                 </div>
             </div>
+            @endforeach
+            
         </div>
     </section>
 
@@ -50,11 +49,11 @@
                 <div class="col-4 col-sm-3 col-md-3 d-flex justify-content-center align-items-center desc">
                     <h3 class="text-center">Tujuan</h3>
                 </div>
-                <div class="col-11 col-sm-9 col-md-9 d-flex align-items-center">
-                    <div class="tujuan">
-                        {{ $detil->tujuan }}
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure illum, laboriosam molestiae porro quasi eaque aliquam quibusdam illo sapiente iusto veniam ab at cum dolore, rem distinctio consequatur quisquam inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione pariatur iure cumque iste a, necessitatibus similique, harum voluptatum illum unde voluptatibus at voluptatem explicabo eaque optio incidunt animi dolores nihil.</p>
-                    </div>
+                <div class="col-md-1 d-flex align-items-center">
+                    <div class="vl"></div>
+                </div>
+                <div class="col-md-8">
+                     {{ $detil->tujuan }} 
                 </div>
             </div>
         </div>

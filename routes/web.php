@@ -48,7 +48,11 @@ Route::get('/contact', function () {
 Route::get('produk/detil/{detil:slug}', [DetilController::class, 'index']);
 
 Route::get('/admin', function () {
-    return view('admin/login');
+    return view('admin.login');
+});
+
+Route::post('/admin/index', function () {
+    return view('admin.index');
 });
 
 Route::get('/produk', [ProdukController::class, 'index']);
