@@ -279,9 +279,10 @@ nav .btn {
 }
 
 .client-kami .row .client-desc hr {
-    width: 101px;
-    height: 3px;
-    margin-top: -6px;
+    position: absolute;
+    width: 100px;
+    height: 3.77px;
+    margin-top: 40px;
     background: #a10206;
     border-radius: 20px;
 }

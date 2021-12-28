@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item ">
-                <a class="nav-link {{ ($title === "Home" ? 'active' : '') }}" href="/">Home</a>
+                <a class="nav-link {{ ($title === "Home" ? 'active' : '') }}" href="/">Beranda</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link {{ ($title === "Profil" ? 'active' : '') }}"  href="/profil">Profil</a>
@@ -19,10 +19,10 @@
                 <a class="nav-link {{ ($title === "Produk" ? 'active' : '') }}"  href="/produk">Produk</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">Client</a>
+                <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">klien</a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link {{ ($title === "Contact" ? 'active' : '') }}"  href="/contact">Contact</a>
+                <a class="nav-link {{ ($title === "Contact" ? 'active' : '') }}"  href="/contact">Kontak</a>
             </li>
         </ul>
     </div>

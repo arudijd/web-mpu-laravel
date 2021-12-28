@@ -1,358 +1,301 @@
 @font-face {
     font-family: "Poppins-bold";
-    src: url('../../font/Poppins-bold.ttf');
-  }
-  
-  @font-face {
+    src: url("../../font/Poppins-bold.ttf");
+}
+
+@font-face {
     font-family: "Poppins-extrabold";
-    src: url('../../font/Poppins-extrabold.ttf');
-  }
-  
-  @font-face {
+    src: url("../../font/Poppins-extrabold.ttf");
+}
+
+@font-face {
     font-family: "Poppins-medium";
-    src: url('../../font/Poppins-medium.ttf');
-  }
-  
-  @font-face {
+    src: url("../../font/Poppins-medium.ttf");
+}
+
+@font-face {
     font-family: "Poppins-regular";
-    src: url('../../font/Poppins-regular.ttf');
-  }
-  
-  @font-face {
+    src: url("../../font/Poppins-regular.ttf");
+}
+
+@font-face {
     font-family: "Poppins-semibold";
-    src: url('../../font/Poppins-semibold.ttf');
+    src: url("../../font/Poppins-semibold.ttf");
+}
+
+/* .navbar {
+    background: hsla(0, 2%, 9%, 0.801);
   }
   
-  .navbar {
-    background-color: #3D3E4080;
-    height: 100px;
-  }
-  
-  .jumbotron{
-      background-color: black;
-      height: 512px;
-  }
-  
-  .jumbotron h1{
-      font-family: "Poppins-bold";
-      color: #FFFFFF;
-  }
-  
-  .transisi-jumbotron{
-      margin-top: -35px;
-  }
+  .navbar .nav-item a {
+    font-size: smaller;
+  } */
 
-  .deskripsi .container {
-      width: 100%;
-      height: 500px;
-  }
+.jumbotron {
+    background-color: black;
+    height: 412px;
+}
 
-  .deskripsi .container .row .col p{
-      font-family: "Poppins-medium";
-      color: red;
-  }
+.jumbotron h1 {
+    font-family: "Poppins-bold";
+    color: #ffffff;
+    margin-top: 200px;
+}
+.jumbotron p {
+    font-family: "Poppins-medium";
+    color: #ffffff;
+}
 
-    .tujuan-aplikasi h3{
-        font-family: "Poppins-semibold";
-        color: #A10206;
-    }
+.transisi-jumbotron {
+    margin-top: -45px;
+}
 
-    .tujuan-aplikasi li {
-        font-family: "Poppins-regular";
-    }
-  
+/* deskripsi produk */
+.deskripsi {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-  
-  
-  @media (min-width: 576px) {  
+.deskripsi .row img {
+    margin-bottom: 20px;
+}
 
-  }
-  @media (min-width: 768px) { 
-  
-   }
-   @media (min-width: 1000px){
-    .jumbotron h1{
-        position: absolute;
-        width: 398px;
-        height: 99px;
-        top: 207px;
-        font-size: 50px;
-        line-height: 99px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    
-    }
+/* Keunggulan produk */
+.keunggulan {
+    align-content: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+}
 
-    .jumbotron p{             
-        position: absolute;
-        width: 737px;
-        height: 49px;
-        top: 285px;
+.keunggulan h1 {
+    position: absolute;
+    width: 222px;
+    height: 27px;
 
-        font-family: "Poppins-semibold";
-        font-size: 20px;
-        line-height: 49px;
-        display: flex;
+    font-family: "Poppins-Bold";
+    font-style: normal;
+    font-size: 30px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #a10206;
+}
 
-        color: #FFFFFF;
-    }
+.keunggulan hr {
+    position: absolute;
+    width: 100px;
+    height: 3.77px;
+    margin-top: 40px;
 
-    .nav-item a{
+    background: #a10206;
+    border-radius: 20px;
+}
+
+.keunggulan .card {
+    background: #c4c4c4;
+    background: -webkit-linear-gradient(
+        to bottom,
+        #fafafa,
+        #fafafa,
+        #c4c4c4,
+        #474949
+    );
+    background: linear-gradient(to bottom, #fafafa, #fafafa, #c4c4c4, #474949);
+    border-radius: 20px;
+}
+.keunggulan .produk1 .card {
+    margin-bottom: 30px;
+}
+
+.keunggulan .produk1 .card img {
+    margin-top: 13%;
+    margin-left: 15%;
+    margin-bottom: 9px;
+}
+
+.keunggulan .produk2 .card img {
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+.keunggulan .card-title {
+    font-family: "Poppins-bold";
+    font-size: 16px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+
+.keunggulan .card-text {
+    font-family: "Poppins-semibold";
+    font-size: 11px;
+    text-align: center;
+    color: #000000;
+}
+
+.keunggulan .card button {
+    border-color: #000000;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.keunggulan .card button span {
+    font-family: "Poppins-bold";
+    font-style: normal;
+    font-size: x-small;
+    color: #000000;
+}
+
+.keunggulan .card button:hover {
+    border-color: #f1f1ef;
+    color: white;
+    background-color: #fafafa;
+}
+
+/* Hubungin kami */
+.hubungi-kami {
+    margin-top: 200px;
+}
+.hubungi-kami .row {
+    margin-bottom: 100px;
+    border-top: 3px solid #aaaaaa;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 30px;
+}
+
+.hubungi-kami .row h5 {
+    font-size: 12px;
+    font-family: "Poppins-semibold";
+    color: black;
+}
+
+.hubungi-kami .row button {
+    font-size: small;
+}
+/* Footer */
+footer {
+    width: 100%;
+    background: #000000;
+    margin-top: -2px;
+}
+
+footer .judul h3 {
+    width: 190px;
+    font-family: "Poppins-bold";
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+footer .deskripsi p {
+    width: 483.67px;
+    height: 51px;
+    margin-top: 20px;
+    font-family: "Poppins-regular";
+    font-size: 14px;
+    text-align: center;
+    color: #cac0c9;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer .container .row hr {
+    height: 0px;
+    margin-top: 20px;
+    border: 1px solid #dadada;
+}
+
+footer .container .sub-navigation .col-sm-4 p {
+    font-family: "Poppins-semibold";
+    font-size: 13px;
+    color: #cac0c9;
+}
+
+footer .container .sub-navigation .col-sm-4 span {
+    font-family: "Poppins-semibold";
+    font-size: 13px;
+    margin-left: 2px;
+    color: #a10206;
+}
+@media (max-width: 576px) {
+    /* Deskripsi produk */
+    .deskripsi .row .paragraph {
         font-family: "Poppins-medium";
-        margin-right: 15px;
-    }
-   
-    .navbar-2{
-       height: 80px;
-    }
-   
-    nav .btn{
-       width: 122px;
-       height: 36px;
-       margin-left: 150px;
-       background-color: #A10206;
-       border-radius: 10px;
-       font-family: "Poppins-semibold";
-       border-color: #A10206;
-       font-size: small;
-       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
-
-    .deskripsi .row {
-        display: flex;
-        justify-content: center;
-        
-    }
-
-
-    .deskripsi .row .paragraph{
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Poppins-medium";
         color: #000000;
-        font-size: 18px;
-    }
-
-    .deskripsi .container .row .col img{
-        align-items: center;
-        justify-content: center;
-        width: 20px;
-    }
-
-    .keunggulan {
-        align-content: center;
-        margin-top: -100px;
-        width: 100%;
-        height: 600px;
-    }
-
-    .keunggulan h1 {
-        position: absolute;
-        width: 222px;
-        height: 27px;
-        /* margin-left: -50px; */
-
-
-        font-family: "Poppins-Bold";
-        font-style: normal;
-        font-size: 30px;
-        line-height: 49px;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-
-        color: #A10206;
-
-    }
-
-    .keunggulan hr {
-        position: absolute;
-        width: 100px;
-        height: 3.77px;
-        margin-top: 40px;
-        /* margin-left: -50px; */
-
-
-        background: #A10206;
-        border-radius: 20px;
-      }
-
-    .keunggulan .card {
-        background: #c4c4c4;
-        background: -webkit-linear-gradient(
-            to bottom,
-            #fafafa,
-            #fafafa,
-            #c4c4c4,
-            #474949
-        );
-        background: linear-gradient(to bottom, #fafafa, #fafafa, #c4c4c4, #474949);
-        border-radius: 20px;
-    }
-    .keunggulan .produk1 .card {
-        margin-bottom: 30px;
-    }
-    
-    .keunggulan .produk1 .card img {
-        margin-top: 13%;
-        margin-left: 15%;
-        margin-bottom: 9px;
-    }
-    
-    .keunggulan .produk2 .card img {
-        margin-top: 13%;
-        margin-left: 15%;
-    }
-    
-    .keunggulan .card-title {
-        font-family: "Poppins-bold";
-        font-size: 16px;
-        line-height: 33px;
-        text-align: center;
-        color: #000000;
-    }
-    
-    .keunggulan .card-text {
-        font-family: "Poppins-semibold";
-        font-size: 11px;
-        text-align: center;
-        color: #000000;
-    }
-    
-    .keunggulan .card button {
-        border-color: #000000;
-        border-radius: 20px;
-        align-content: center;
-    }
-    
-    .keunggulan .card button span {
-        font-family: "Poppins-bold";
-        font-style: normal;
-        font-size: x-small;
-        color: #000000;
-    }
-    
-    .keunggulan .card button:hover {
-        border-color: #f1f1ef;
-        color: white;
-        background-color: #fafafa;
-    }
-
-    .tujuan-aplikasi{
-        margin-bottom: 200px;
-    }
-    
-      .tujuan-aplikasi .row {
-        margin: 100px;
-      }
-    
-      .tujuan-aplikasi .row .desc {
-        display: flex;
-        width: 10px;
-        align-items: center;
-        justify-content: center;
-        color: #000000;
-    
-      }
-    
-      .tujuan-aplikasi .vl {
-        border-left: 6px solid #A10206;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        height: 100px;
-        position: absolute;
-      }
-
-
-    
-
-    footer {
-        position: absolute;
-        width: 100%;
-        height: 322px;
-
-        background: #000000;
-    }
-
-    footer .judul h3 {
-        width: 190px;
-        height: 23px;
-        font-family: "Poppins-bold";
         font-size: 14px;
-        color: #FFFFFF;
     }
 
-    footer .deskripsi p {
-        position: absolute;
-        width: 483.67px;
-        height: 51px;
-        margin-top: 20px;
-
-        font-family: "Poppins-semibold";
-        font-size: 10px;
-        line-height: 30px;
-        text-align: center;
-
-        color: #CAC0C9;
+    /* Tujuan Aplikasi */
+    .tujuan-aplikasi {
+        margin-top: -80px;
+        margin-bottom: -100px;
     }
-
-    footer .container .sosmed img {
-        margin-top: 50px;
-        margin-left: -10px;
-    }
-
-    footer .container .sosmed .col-sm-5 {
-        margin-left: 30px;
-    }
-
-    footer .container .list hr {
-        position: absolute;
-        width: 86%;
-        height: 0px;
-        margin-top: 60px;
-
-        border: 1px solid #DADADA;
-    }
-
-    footer .container .navigation {
-        position: absolute;
-        width: 106.95px;
-        height: 30px;
-        margin-top: 70px;
-
+    .tujuan-aplikasi .row .desc {
         font-family: "Poppins-bold";
-        font-size: 18px;
-        line-height: 30px;
-
-        color: #A10206;
+        color: #a10206;
+        border-bottom: 5px solid #a10206;
     }
 
-    footer .container .sub-navigation {
-        margin-top: 95px;
-
+    .tujuan-aplikasi .tujuan {
+        font-family: "Poppins-medium";
+        font-size: 14px;
+        color: #000000;
+        padding-top: 30px;
+    }
+}
+@media (min-width: 576px) {
+    /* Deskripsi produk */
+    .deskripsi .row .paragraph {
+        font-family: "Poppins-medium";
+        color: #000000;
+        font-size: 16px;
     }
 
-    footer .container .sub-navigation .col-sm-6 p a span {
-        font-family: "Poppins-semibold";
-        font-size: 13px;
-        color: #CAC0C9;
+    /* Tujuan Aplikasi */
+    .tujuan-aplikasi {
+        margin-bottom: 300px;
+    }
+    .tujuan-aplikasi .row .desc {
+        font-family: "Poppins-bold";
+        color: #a10206;
     }
 
-    footer .container .sub-navigation .col-sm-4 p {
-        font-family: "Poppins-semibold";
-        font-size: 13px;
-        color: #ffffff;
+    .tujuan-aplikasi .tujuan {
+        font-family: "Poppins-medium";
+        font-size: 16px;
+        color: #000000;
+        border-left: 6px solid #a10206;
+        padding-left: 30px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Deskripsi produk */
+    .deskripsi .row .paragraph {
+        font-family: "Poppins-medium";
+        color: #000000;
+        font-size: 20px;
     }
 
-    footer .container .sub-navigation .col-sm-4 p span {
-        color: #A10206;
+    /* Tujuan Aplikasi */
+    .tujuan-aplikasi .row .desc {
+        font-family: "Poppins-bold";
+        color: #a10206;
     }
-    
-   }
+
+    .tujuan-aplikasi .tujuan {
+        font-family: "Poppins-medium";
+        font-size: 20px;
+        color: #000000;
+        border-left: 6px solid #a10206;
+        padding-left: 30px;
+        height: 100px;
+    }
+}
+@media (min-width: 1000px) {
+}

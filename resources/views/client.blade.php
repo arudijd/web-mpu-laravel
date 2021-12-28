@@ -5,10 +5,10 @@
     <div class="jumbotron justify-content-center">
         <div class="container text-item">
             <div class="row d-flex justify-content-center">
-                <h1>Client Kami</h1>
+                <h1>Klien Kami</h1>
             </div>
             <div class="row d-flex justify-content-center text-center">
-                <p>Let’s get to know each other better, start with you.</p>
+                <p>Kami dipercaya oleh berbagai Kota/Kabupaten di Indonesia.</p>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
 <section class="ruang-lingkup">
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
+            <div class="col-9 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
                <h4 class="text-center">Ruang Lingkup</h4>
             </div>
             <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">
@@ -34,7 +34,7 @@
         </div>
         
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
+            <div class="col-4 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
                <h4 class="text-center">Sasaran</h>
             </div>
             <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">

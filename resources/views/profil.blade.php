@@ -8,7 +8,7 @@
                 <h1>Profile Kami</h1>
             </div>
             <div class="row d-flex justify-content-center text-center">
-                <p>Let’s get to know each other better, start with you.</p>
+                <p>Mari Berkenalan dengan Kami</p>
             </div>
         </div>
     </div>

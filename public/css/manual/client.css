@@ -61,17 +61,17 @@
     color: #a10206;
 }
 
-.ruang-lingkup .desc {
+/* .ruang-lingkup .desc {
     font-family: "Poppins-bold";
     font-size: 15px;
     color: #000000;
-}
-.ruang-lingkup .lingkup h4 {
+} */
+/* .ruang-lingkup .lingkup h4 {
     border-left: 6px solid #a10206;
     border-right: 6px solid #a10206;
     border-radius: 10px;
     padding: 10px;
-}
+} */
 
 .ruang-lingkup .lingkup,
 .ruang-lingkup .des,
@@ -129,4 +129,39 @@ footer .container .sub-navigation .col-sm-4 span {
     font-size: 13px;
     margin-left: 2px;
     color: #a10206;
+}
+
+@media (max-width: 576px) {
+    /* Ruang Lingkup */
+    .ruang-lingkup .lingkup h4 {
+        border-bottom: 4px solid #a10206;
+        padding: 10px;
+        border-radius: 10px ;
+    }
+
+    .ruang-lingkup .desc {
+        font-family: "Poppins-bold";
+        font-size: 12px;
+        color: #000000;
+    }
+}
+@media (min-width: 576px) {
+    /* Ruang Lingkup */
+    .ruang-lingkup .lingkup h4 {
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .ruang-lingkup .desc {
+        margin-top: 50px;
+        font-family: "Poppins-bold";
+        font-size: 15px;
+        color: #000000;
+        border-left: 6px solid #a10206;
+    }
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 1000px) {
 }
