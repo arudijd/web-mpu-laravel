@@ -83,7 +83,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Produk Aplikasi</h5>
                                 <p class="card-text">Kami menyediakan produk Aplikasi Pajak/Retribusi Daerah yang mempermudah dalam penyelenggaraannya</p>
-                                <a href="aplikasi" aria-pressed="true">
+                                <a href="/produk/aplikasi" aria-pressed="true">
                                     <button type="button" class="btn btn-outline-warning">    
                                         <span >Selengkapnya
                                             <i class="fa fa-arrow-right" aria-hidden="true"></i>
@@ -99,7 +99,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Produk Non Aplikasi</h5>
                                 <p class="card-text">Kami menyediakan layanan Konsultasi Perpajakan dan penyelengaraan Pelatihan/Workshop dengan berbagai materi Perpajakan</p>
-                                <a href="non-aplikasi" aria-pressed="true">
+                                <a href="/produk/non-aplikasi" aria-pressed="true">
                                     <button type="button" class="btn btn-outline-warning">
                                         <span>Selengkapnya
                                             <i class="fa fa-arrow-right" aria-hidden="true"></i>

@@ -28,15 +28,18 @@
             <hr><br><br><br><br>
         </div>
         <div class="d-flex row justify-content-center text-center produk">
+            @foreach ($detil->keunggulan as $keunggulan)
             <div class="col-11 col-sm-6 col-lg-3 produk1">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
-                    <img src="{{ asset("img/home/produk aplikasi.png") }}" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded" width="70%" height="auto">
                     <div class="card-body">
-                        <h5 class="card-title">Judul keunggulan</h5>
-                        <p class="card-text">{{ $detil->keunggulan }}</p>
+                        <h5 class="card-title">{{ $keunggulan->judul_keunggulan }}</h5>
+                        <p class="card-text">{{ $keunggulan->detil_keunggulan }}</p>
                     </div>
                 </div>
             </div>
+            @endforeach
+            
         </div>
     </section>
 
@@ -49,7 +52,7 @@
                     <div class="vl"></div>
                 </div>
                 <div class="col-md-8">
-                    {{ $detil->tujuan }}
+                     {{ $detil->tujuan }} 
                 </div>
             </div>
     </section>

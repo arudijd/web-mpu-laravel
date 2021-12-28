@@ -15,11 +15,10 @@ class CreateDetilsTable extends Migration
     {
         Schema::create('detils', function (Blueprint $table) {
             $table->string('id_produk')->primary();
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->string('nama_produk');
             $table->text('deskripsi_produk');
             $table->string('image_produk');
-            $table->text('keunggulan')->nullable(true);
             $table->text('tujuan');
         });
     }

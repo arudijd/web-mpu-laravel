@@ -143,7 +143,7 @@ background: #2ecc71;
 
 <body>
 
-  <form class="box" action="index3.html" method="post">
+  <form class="box" action="/admin/index" method="post">
 
   <h1>Login Here</h1>
 
