@@ -17,15 +17,12 @@ body{
 
   font-family: sans-serif;
 
-  height: 100%;
-
-  background: url(img/home/jumbotron.png); 
-
   background-repeat: no-repeat;
 
   background-size: cover;
 
 }
+
 
 .box{
 
@@ -144,23 +141,25 @@ background: #2ecc71;
 </head>
 
 <body>
-
+<div class="bg">
   <form class="box" action="/admin/index" method="post">
 
-  <h1>Login Here</h1>
-  @csrf
-  <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
-
-
-  <input type="password" name="password" placeholder="Password">
-  @error('username')
-  <div class="invalid-feedback" >
-    {{ $message }}
-  </div>
-@enderror
-  <input type="submit" name="" value="Login">
-
-  </form>
+    <h1>Login Here</h1>
+    @csrf
+    <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
+  
+  
+    <input type="password" name="password" placeholder="Password">
+    @error('username')
+        <div class="invalid-feedback" >
+          {{ $message }}
+        </div>
+    @enderror
+    <input type="submit" name="" value="Login">
+  
+    </form>
+</div>
+  
 
 </body>
 </html>

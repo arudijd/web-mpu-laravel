@@ -20,7 +20,7 @@
 <section class="link mt-5">
     <div class="container">
         <div class="row justify-content-center">
-            <a href="/produk" class="text-center {{ ($subtitle === "Semua" ? 'active-text' : '') }}">
+            <a href="{{ route('produk') }}" class="text-center {{ ($subtitle === "Semua" ? 'active-text' : '') }}">
                 <h6>Semua Produk</h6>
             </a>&emsp;
             <a href="/produk/aplikasi" class="text-center {{ ($subtitle === "Apps" ? 'active-text' : '') }}">
