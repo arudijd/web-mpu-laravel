@@ -4,10 +4,10 @@
         <a href="/" class="navbar-brand">
             <img src="{{ asset("img/logo.png") }}" alt="logo-img" width="100">
         </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarToggleExternalContent">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item ">
                 <a class="nav-link {{ ($title === "Home" ? 'active' : '') }}" href="/">Beranda</a>
