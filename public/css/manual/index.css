@@ -422,12 +422,21 @@ footer .container .sub-navigation .col-sm-4 span {
         letter-spacing: 0.01em;
         color: #ffffff;
         font-family: "Poppins-bold";
-        font-size: 15px;
+        font-size: 26px;
     }
 }
 
 @media (min-width: 576px) {
     /* background homepage */
+    .home .display-6 {
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        font-family: "Poppins-bold";
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
     .home .display-6 {
         letter-spacing: 0.01em;
         color: #ffffff;
