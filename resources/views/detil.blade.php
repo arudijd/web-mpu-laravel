@@ -4,7 +4,7 @@
     <div class="jumbotron justify-content-center">
         <div class="container">
             <div class="row d-flex justify-content-center namaproduk">
-                <h1 class="justify-content-center">{{ $detil->nama_produk }}</h1>
+                <h1 class="justify-content-center ">{{ $detil->nama_produk }}</h1>
             </div>
         </div>
     </div>
@@ -29,9 +29,9 @@
         </div>
         <div class="d-flex row justify-content-center text-center produk">
             @foreach ($detil->keunggulan as $keunggulan)
-            <div class="col-11 col-sm-6 col-lg-3 produk1">
+            <div class="col-10 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-center produk1">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
-                    <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded mx-auto d-block" width="40%" height="auto">
                     <div class="card-body">
                         <h5 class="card-title">{{ $keunggulan->judul_keunggulan }}</h5>
                         <p class="card-text">{{ $keunggulan->detil_keunggulan }}</p>
