@@ -35,7 +35,7 @@ Route::get('/client', function () {
         "title" => "Client",
         "css" => "/css/manual/client.css"
     ]);
-    
+
 });
 
 Route::get('/contact', function () {
@@ -43,22 +43,22 @@ Route::get('/contact', function () {
         "title" => "Contact",
         "css" => "/css/manual/contact.css"
     ]);
-    
+
 });
 
-Route::get('produk/detil/{detil:slug}', [DetilController::class, 'index']);
+Route::prefix('produk')->group(function () {
+    Route::get('', [ProdukController::class, 'index'])->name('produk');
+    Route::get('aplikasi', [ProdukController::class, 'appsOnly'])->name('produk-aplikasi');
+    Route::get('non-aplikasi', [ProdukController::class, 'nonappsOnly'])->name('produk-non-aplikasi');
+    Route::get('{detil:slug}', [DetilController::class, 'index']);
+});
+
 
 Route::get('/admin', [LoginController::class, 'index'] );
 Route::post('/admin/index', [LoginController::class, 'login'] );
 
 
-Route::get('/produk', [ProdukController::class, 'index']);
-
-Route::get('/produk/aplikasi', [ProdukController::class, 'appsOnly']);
-
-Route::get('/produk/non-aplikasi', [ProdukController::class, 'nonappsOnly']);
 
 
 
 
-    

@@ -23,10 +23,10 @@
             <a href="{{ route('produk') }}" class="text-center {{ ($subtitle === "Semua" ? 'active-text' : '') }}">
                 <h6>Semua Produk</h6>
             </a>&emsp;
-            <a href="/produk/aplikasi" class="text-center {{ ($subtitle === "Apps" ? 'active-text' : '') }}">
+            <a href="{{ route('produk-aplikasi') }}" class="text-center {{ ($subtitle === "Apps" ? 'active-text' : '') }}">
                 <h6>Produk Aplikasi</h6>
             </a>&emsp;
-            <a href="/produk/non-aplikasi" class="text-center {{ ($subtitle === "Nonapps" ? 'active-text' : '') }}">
+            <a href="{{ route('produk-non-aplikasi') }}" class="text-center {{ ($subtitle === "Nonapps" ? 'active-text' : '') }}">
                 <h6>Produk Non Aplikasi</h6>
             </a>
         </div>
@@ -51,7 +51,7 @@
             </div>
     @endforeach
         </div>
-    
+
    </div>
 </section>
 @endsection
