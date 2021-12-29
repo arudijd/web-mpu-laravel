@@ -6,6 +6,9 @@
             <div class="row d-flex justify-content-center namaproduk">
                 <h1 class="justify-content-center">{{ $detil->nama_produk }}</h1>
             </div>
+            <div class="row d-flex justify-content-center namaproduk">
+                <h1 class="justify-content-center">{{ $detil->singkatan_produk }}</h1>
+            </div>
         </div>
     </div>
     <section class="transisi-jumbotron">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DetilController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
 use Illuminate\Support\Facades\Route;
 
@@ -47,13 +48,9 @@ Route::get('/contact', function () {
 
 Route::get('produk/detil/{detil:slug}', [DetilController::class, 'index']);
 
-Route::get('/admin', function () {
-    return view('admin.login');
-});
+Route::get('/admin', [LoginController::class, 'index'] );
+Route::post('/admin/index', [LoginController::class, 'login'] );
 
-Route::post('/admin/index', function () {
-    return view('admin.index');
-});
 
 Route::get('/produk', [ProdukController::class, 'index']);
 

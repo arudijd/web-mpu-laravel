@@ -17,7 +17,9 @@ body{
 
   font-family: sans-serif;
 
-  background: url('https://www.myfitnesschat.com/wp-content/uploads/2019/03/pexels-photo-1509428.jpeg'); 
+  height: 100%;
+
+  background: url(img/home/jumbotron.png); 
 
   background-repeat: no-repeat;
 
@@ -39,7 +41,7 @@ body{
 
   transform: translate(-50%,-50%);
 
-  background: #191919;
+  background: #ffffff;
 
   text-align: center;
 
@@ -49,7 +51,7 @@ body{
 
 .box h1{
 
-color: white;
+color: black;
 
 text-transform: uppercase;
 
@@ -146,11 +148,16 @@ background: #2ecc71;
   <form class="box" action="/admin/index" method="post">
 
   <h1>Login Here</h1>
+  @csrf
+  <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
 
-  <input type="text" name="" placeholder="Username">
 
-  <input type="password" name="" placeholder="Password">
-
+  <input type="password" name="password" placeholder="Password">
+  @error('username')
+  <div class="invalid-feedback" >
+    {{ $message }}
+  </div>
+@enderror
   <input type="submit" name="" value="Login">
 
   </form>
