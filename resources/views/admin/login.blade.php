@@ -38,7 +38,7 @@ body{
 
   transform: translate(-50%,-50%);
 
-  background: #ffffff;
+  background: #000000;
 
   text-align: center;
 
@@ -48,7 +48,7 @@ body{
 
 .box h1{
 
-color: black;
+color: #ffffff;
 
 text-transform: uppercase;
 
@@ -126,6 +126,10 @@ cursor: pointer;
 
 }
 
+.box .invalid-feedback{
+  background: #ffffff
+}
+
 
 
 .box input[type = "submit"]:hover
@@ -142,7 +146,7 @@ background: #2ecc71;
 
 <body>
 <div class="bg">
-  <form class="box" action="/admin/index" method="post">
+  <form class="box" action="/login" method="post">
 
     <h1>Login Here</h1>
     @csrf

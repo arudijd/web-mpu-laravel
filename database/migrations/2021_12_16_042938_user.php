@@ -16,7 +16,7 @@ class User extends Migration
         Schema::create('user', function(Blueprint $table)
         {
             $table->id('id_user');
-            $table->string('email');
+            $table->string('username');
             $table->string('password');
             
         

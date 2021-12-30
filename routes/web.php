@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DetilController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProdukController;
@@ -50,14 +51,14 @@ Route::prefix('produk')->group(function () {
     Route::get('', [ProdukController::class, 'index'])->name('produk');
     Route::get('aplikasi', [ProdukController::class, 'appsOnly'])->name('produk-aplikasi');
     Route::get('non-aplikasi', [ProdukController::class, 'nonappsOnly'])->name('produk-non-aplikasi');
-    Route::get('{detil:slug}', [DetilController::class, 'index']);
+    Route::get('detil/{detil:slug}', [DetilController::class, 'index']);
 });
 
 
-Route::get('/admin', [LoginController::class, 'index'] );
-Route::post('/admin/index', [LoginController::class, 'login'] );
+Route::get('/login', [LoginController::class, 'index'] );
+Route::post('/login', [LoginController::class, 'login'] );
 
-
+Route::get('/dashboard', [AdminController::class, 'index']);
 
 
 
