@@ -148,7 +148,7 @@ background: #2ecc71;
 <div class="bg">
   <form class="box" action="/login" method="post">
 
-    <h1>Login Here</h1>
+    <h1>Selamat Datang</h1>
     @csrf
     <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
   
