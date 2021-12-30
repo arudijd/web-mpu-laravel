@@ -9,6 +9,15 @@
 
  <!-- <link rel="stylesheet" href="style.css"> -->
  <style>
+@font-face {
+    font-family: "Poppins-medium";
+    src: url("../../font/Poppins-medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url("../../font/Poppins-regular.ttf");
+}
 body{
 
   margin: 0;
@@ -20,19 +29,23 @@ body{
   background-repeat: no-repeat;
 
   background-size: cover;
-
+  background-image: url(../../../img/jumbotron.png);s
+  height: 100%;
 }
 
+.bg .img{
+  top: 20%:
+}
 
 .box{
 
-  width: 300px;
+  width: 350px;
 
   padding: 40px;
 
   position: absolute;
 
-  top: 50%;
+  top: 60%;
 
   left: 50%;
 
@@ -50,9 +63,10 @@ body{
 
 color: #ffffff;
 
-text-transform: uppercase;
+font-family: "Poppins-regular"; 
 
-font-weight: 500;
+font-weight: 100;
+font-size: 24px;
 
 
 
@@ -141,11 +155,34 @@ background: #2ecc71;
 }
 
  </style>
-
+<link rel="stylesheet" href="{{ asset("/css/bootstrap.css") }}">
 </head>
+
 
 <body>
 <div class="bg">
+  <div class="div d-flex justify-content-center align-items-center">
+    <div class="row mt-5">
+      <img src="{{asset("\img\logo.png")}}" alt="logo" width="60%" class="rounded mx-auto d-block">
+    </div>
+    <div class="row">
+      <form class="box" action="/login" method="post">
+          <h1>Selamat Datang</h1>
+          @csrf
+          <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
+
+
+          <input type="password" name="password" placeholder="Password">
+          @error('username')
+              <div class="invalid-feedback" >
+                {{ $message }}
+              </div>
+          @enderror
+          <input type="submit" name="" value="Login">
+      </form>
+    </div>
+    
+  </div>
   <form class="box" action="/login" method="post">
 
     <h1>Login Here</h1>
