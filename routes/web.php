@@ -60,6 +60,7 @@ Route::post('/login', [LoginController::class, 'login'] );
 
 Route::prefix('dashboard')->group(function() {
     Route::get('', [AdminController::class, 'index']);
+    Route::get('/client', [AdminController::class, 'index']);
 
 });
 
