@@ -10,6 +10,16 @@
  <!-- <link rel="stylesheet" href="style.css"> -->
  <style>
 @font-face {
+    font-family: "Poppins-bold";
+    src: url("../../font/Poppins-bold.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-extrabold";
+    src: url("../../font/Poppins-extrabold.ttf");
+}
+
+@font-face {
     font-family: "Poppins-medium";
     src: url("../../font/Poppins-medium.ttf");
 }
@@ -17,6 +27,11 @@
 @font-face {
     font-family: "Poppins-regular";
     src: url("../../font/Poppins-regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url("../../font/Poppins-semibold.ttf");
 }
 body{
 
@@ -30,7 +45,6 @@ body{
 
   background-size: cover;
   background-image: url(../../../img/jumbotron.png);s
-  height: 100%;
 }
 
 .bg .img{
@@ -39,19 +53,19 @@ body{
 
 .box{
 
-  width: 350px;
+  width: 360px;
 
   padding: 40px;
 
   position: absolute;
 
-  top: 60%;
+  top: 50%;
 
   left: 50%;
 
   transform: translate(-50%,-50%);
 
-  background: #000000;
+  background: #00000069;
 
   text-align: center;
 
@@ -86,7 +100,7 @@ text-align: center;
 
 border: 2px solid #3498db;
 
-padding: 14px 10px;
+padding: 8px 10px;
 
 width: 200px;
 
@@ -94,7 +108,7 @@ outline: none;
 
 color: white;
 
-border-radius: 24px;
+border-radius: 15px;
 
 transition: 0.25s;
 
@@ -126,22 +140,26 @@ text-align: center;
 
 border: 2px solid #2ecc71;
 
-padding: 14px 40px;
+padding: 8px 10px;
 
 outline: none;
 
 color: white;
 
-border-radius: 24px;
+border-radius: 15px;
 
 transition: 0.25s;
 
 cursor: pointer;
+font-family: "Poppins-regular"; 
+font-size: 20px;
 
 }
 
 .box .invalid-feedback{
-  background: #ffffff
+  font-family: "Poppins-semibold";
+  font-size: 14px;
+  color red: 
 }
 
 
@@ -169,37 +187,20 @@ background: #2ecc71;
       <form class="box" action="/login" method="post">
           <h1>Selamat Datang</h1>
           @csrf
-          <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
+          <input type="text" name="username" placeholder="Masukan email" class="@error('username') is-invalid @enderror">
 
 
-          <input type="password" name="password" placeholder="Password">
+          <input type="password" name="password" placeholder="Masukan Password">
           @error('username')
               <div class="invalid-feedback" >
                 {{ $message }}
               </div>
           @enderror
-          <input type="submit" name="" value="Login">
+          <input type="submit" name="" value="Masuk">
       </form>
     </div>
     
-  </div>
-  <form class="box" action="/login" method="post">
 
-    <h1>Selamat Datang</h1>
-    @csrf
-    <input type="text" name="username" placeholder="Username" class="@error('username') is-invalid @enderror">
-  
-  
-    <input type="password" name="password" placeholder="Password">
-    @error('username')
-        <div class="invalid-feedback" >
-          {{ $message }}
-        </div>
-    @enderror
-    <input type="submit" name="" value="Login">
-  
-    </form>
-</div>
   
 
 </body>
