@@ -74,7 +74,7 @@ body {
     width: 100%;
 }
 
-.keunggulan h1 {
+/* .keunggulan h1 {
     position: absolute;
     width: 222px;
     height: 27px;
@@ -98,7 +98,7 @@ body {
 
     background: #a10206;
     border-radius: 20px;
-}
+} */
 
 .keunggulan .produk .card {
     background: #ffffff;

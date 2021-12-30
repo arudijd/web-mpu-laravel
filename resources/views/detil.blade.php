@@ -26,13 +26,12 @@
     </section>
 
     <section class="keunggulan">
-        <!-- <div class="row justify-content-center"> -->
-        @foreach ($detil->keunggulan as $keunggulan)    
-        <!-- <h1>Keunggulan</h1>
+        <!-- <div class="row justify-content-center">
+        <h1>Keunggulan</h1>
             <hr><br><br><br><br>
         </div> -->
-        <div class="d-flex row justify-content-center text-center produk">
-            
+        <div class="row d-flex justify-content-center text-center produk">
+        @foreach ($detil->keunggulan as $keunggulan)
             <div class="col-10 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-center produk1">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
                     <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded mx-auto d-block" width="40%" height="auto">
@@ -42,8 +41,7 @@
                     </div>
                 </div>
             </div>
-            @endforeach
-            
+            @endforeach 
         </div>
     </section>
 
