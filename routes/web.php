@@ -59,8 +59,10 @@ Route::get('/login', [LoginController::class, 'index'] );
 Route::post('/login', [LoginController::class, 'login'] );
 
 Route::prefix('dashboard')->group(function() {
-    Route::get('', [AdminController::class, 'index']);
-    Route::get('/client', [AdminController::class, 'index']);
+    Route::get('', [AdminController::class, 'index'])->name('home');
+    Route::get('client', [AdminController::class, 'client'])->name('client');
+    Route::get('kontak', [AdminController::class, 'kontak'])->name('kontak');
+    Route::get('produk', [AdminController::class, 'produk'])->name('produk_admin');
 
 });
 
