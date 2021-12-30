@@ -19,7 +19,7 @@
                 <a class="nav-link {{ ($title === "Produk" ? 'active' : '') }}"  href="/produk">Produk</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">klien</a>
+                <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">Klien</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link {{ ($title === "Contact" ? 'active' : '') }}"  href="/contact">Kontak</a>

@@ -1,13 +1,13 @@
 @extends('layouts.main')
 @section('container')
 
-    <div class="jumbotron justify-content-center">
+    <div class="jumbotron d-flex justify-content-center align-items-center">
         <div class="container">
             <div class="row d-flex justify-content-center namaproduk">
-                <h1 class="justify-content-center">{{ $detil->nama_produk }}</h1>
+                <h1 class="text-center">{{ $detil->nama_produk }}</h1>
             </div>
-            <div class="row d-flex justify-content-center namaproduk">
-                <h1 class="justify-content-center">{{ $detil->singkatan_produk }}</h1>
+            <div class="row d-flex justify-content-center">
+                <h1 class="text-center">{{ $detil->singkatan_produk }}</h1>
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <section class="deskripsi">
             <div class="row d-flex justify-content-center">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-5 d-flex align-items-center justify-content-center">
-                        <img class="rounded"  width="80%" src="{{ asset("img/produk/$detil->image_produk") }}" >
+                        <img class="rounded"  width="75%" src="{{ asset("img/produk/$detil->image_produk") }}" >
                     </div>
                     <div class="col-11 col-sm-11 col-md-6 col-lg-5 d-flex align-items-center">
                         <p class=paragraph >{{ $detil->deskripsi_produk }}</h5>
@@ -26,15 +26,16 @@
     </section>
 
     <section class="keunggulan">
-        <div class="row justify-content-center">
-            <h1>Keunggulan</h1>
+        <!-- <div class="row justify-content-center"> -->
+        @foreach ($detil->keunggulan as $keunggulan)    
+        <!-- <h1>Keunggulan</h1>
             <hr><br><br><br><br>
-        </div>
+        </div> -->
         <div class="d-flex row justify-content-center text-center produk">
-            @foreach ($detil->keunggulan as $keunggulan)
-            <div class="col-11 col-sm-6 col-lg-3 produk1">
+            
+            <div class="col-10 col-sm-5 col-md-5 col-lg-3 d-flex justify-content-center produk1">
                 <div class="card shadow p-3 mb-5 bg-body rounded">
-                    <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded" width="70%" height="auto">
+                    <img src="{{ asset("img/produk/$keunggulan->image_keunggulan") }}" alt="produk aplikasi" class="rounded mx-auto d-block" width="40%" height="auto">
                     <div class="card-body">
                         <h5 class="card-title">{{ $keunggulan->judul_keunggulan }}</h5>
                         <p class="card-text">{{ $keunggulan->detil_keunggulan }}</p>
@@ -49,13 +50,10 @@
     <section class="tujuan-aplikasi">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-4 col-sm-3 col-md-3 d-flex justify-content-center align-items-center desc">
+                <div class="col-4 col-sm-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center desc ">
                     <h3 class="text-center">Tujuan</h3>
                 </div>
-                <div class="col-md-1 d-flex align-items-center">
-                    <div class="vl"></div>
-                </div>
-                <div class="col-md-8">
+                <div class="col-10 col-sm-9 col-md-9 col-lg-10 tujuan" >
                      {{ $detil->tujuan }} 
                 </div>
             </div>

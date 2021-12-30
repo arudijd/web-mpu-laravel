@@ -38,7 +38,7 @@
         <div class="row">
             @foreach($produk as $p)
             <div class="col-12 col-sm-6 col-md-6 mb-5 mt-3">
-                <img src="{{ asset("img/produk/$p->image_produk") }}" class="rounded" alt="" width="100%" >
+                <img src="{{ asset("img/produk/$p->image_produk") }}" class="rounded" alt="" width="100%" height="259px" >
                 <br>
                 <h3>{{ $p->nama_produk }}</h3>
                 <br>
