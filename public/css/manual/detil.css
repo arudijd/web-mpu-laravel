@@ -301,7 +301,7 @@ footer .container .sub-navigation .col-sm-4 span {
     .deskripsi .row .paragraph {
         font-family: "Poppins-medium";
         color: #000000;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Tujuan Aplikasi */
@@ -313,7 +313,7 @@ footer .container .sub-navigation .col-sm-4 span {
     /* Keunggulan */
     .keunggulan .card-title {
         font-family: "Poppins-bold";
-        font-size: 14px;
+        font-size: 12px;
         text-align: center;
         color: #000000;
     }
@@ -328,7 +328,7 @@ footer .container .sub-navigation .col-sm-4 span {
     /* Tujuan Aplikasi */
     .tujuan-aplikasi .tujuan {
         font-family: "Poppins-medium";
-        font-size: 20px;
+        font-size: 16px;
         color: #000000;
         border-left: 6px solid #a10206;
         padding-left: 30px;
