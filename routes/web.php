@@ -58,7 +58,11 @@ Route::prefix('produk')->group(function () {
 Route::get('/login', [LoginController::class, 'index'] );
 Route::post('/login', [LoginController::class, 'login'] );
 
-Route::get('/dashboard', [AdminController::class, 'index']);
+Route::prefix('dashboard')->group(function() {
+    Route::get('', [AdminController::class, 'index']);
+
+});
+
 
 
 
