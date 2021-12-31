@@ -62,4 +62,9 @@ class AdminController extends Controller
             "produk" => Produk::all()
         ]);
     }
+
+    public function editProduk ()
+    {
+        return view('admin.demo.editor');
+    }
 }
