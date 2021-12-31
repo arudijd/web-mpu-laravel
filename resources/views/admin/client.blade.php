@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset("plugins/fontawesome-free/css/all.min.css") }}">
+  <link rel="stylesheet" href="{{ asset("fontawesome/css/all.min.css") }}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="{{ asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css") }}">
   <!-- overlayScrollbars -->
@@ -57,7 +57,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{ route('home') }}" class="brand-link">
       <img src="../img/logo.png"
            alt=""
            class="brand-image img-circle elevation-3"
@@ -177,30 +177,14 @@
                 </tr>
               </thead>
               <tbody>
+                @foreach($clients as $client)
                 <tr>
-                  <td>1</td>
-                  <td>Aceh</td>
-                  <td>sumatra</td>
-                  <td>11-7-2014</td>
+                  <td>{{ $client->id_klien }}</td>
+                  <td>{{ $client->nama_kota }}</td>
+                  <td>{{ $client->nama_pulau }}</td>
+                  <td>{{ $client->created_at }}</td>
                 </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Lampung</td>
-                  <td>sumatra</td>
-                  <td>11-7-2014</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Probolinggo</td>
-                  <td>jawa</td>
-                  <td>11-7-2014</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>jakarta</td>
-                  <td>jawa</td>
-                  <td>11-7-2014</td>
-                </tr>
+                @endforeach
               </tbody>
             </table>
           </div>
@@ -364,12 +348,12 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="{{ asset('js/admin/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="{{ asset('js/demo.js') }}"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
 
 class AdminController extends Controller
 {
@@ -10,7 +11,9 @@ class AdminController extends Controller
     }
 
     public function client() {
-        return view('admin.client');
+        return view('admin.client', [
+            "clients" => Client::all()
+        ]);
     }
 
     public function kontak() {
