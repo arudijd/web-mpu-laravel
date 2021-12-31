@@ -31,7 +31,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto list-inline">
       <li class="nav-item list-inline-item" style="color: #1991EB">
-            <a href="..\home.blade.php" class="nav-link">
+            <a href="{{ route('home') }}" class="nav-link">
               <span class="fa-li">
                 <i class="nav-icon fas fa-undo text-info ml-4"></i>
               </span>&nbsp; Kembali Ke Website
@@ -173,6 +173,7 @@
     <div class="card card-solid">
       <div class="card-body pb-0">
         <div class="row d-flex align-items-stretch">
+          @foreach($produk as $p)
           <div class="col-6 col-sm-4 col-md-3 d-flex align-items-stretch">
             <div class="card bg-light">
               <div class="card-header text-muted border-bottom-0">
@@ -182,8 +183,8 @@
                     <img src="{{asset('img/produk/ebphtb.png')}}" class="rounded" alt="" width="95%" height="auto" >
                       <br>
                     <ul class="mt-4 ml-0 mb-0 fa-ul">
-                      <li><h2 class="lead"><b>E-BPHTB</b></h2></li>
-                      <li><h5 class="text-muted text-sm" style="">Produk Aplikasi</h5></li>
+                      <li><h2 class="lead"><b>{{ $p->nama_produk }}</b></h2></li>
+                      <li><h5 class="text-muted text-sm" style="">{{ $p->jenis_produk }}</h5></li>
                     </ul> 
                 </div>
               </div>
@@ -205,6 +206,7 @@
               </div>
             </div>
           </div>
+          @endforeach
           <!-- <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
             <div class="card bg-light">
               <div class="card-header text-muted border-bottom-0">
