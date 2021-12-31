@@ -197,7 +197,7 @@
                       </span>&nbsp; Terakhir Di edit: <br> &nbsp;&nbsp;20/02/2082
                     </div>
                     <div class="col-4">
-                      <a href="menudemo/editor.html" class="btn btn-sm btn-primary">
+                      <a href="/produk/edit" class="btn btn-sm btn-primary">
                         <i class="fas fa-user"></i> Edit
                       </a>
                     </div>
