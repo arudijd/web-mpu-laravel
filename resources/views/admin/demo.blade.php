@@ -180,7 +180,7 @@
               </div>
               <div class="card-body pt-0">
                 <div class="row">
-                    <img src="{{asset('img/produk/ebphtb.png')}}" class="rounded" alt="" width="95%" height="auto" >
+                    <img src="{{ asset("img/produk/$p->image_produk") }}" class="rounded" alt="" width="95%" height="auto" >
                       <br>
                     <ul class="mt-4 ml-0 mb-0 fa-ul">
                       <li><h2 class="lead"><b>{{ $p->nama_produk }}</b></h2></li>
