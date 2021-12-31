@@ -31,7 +31,7 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto list-inline">
       <li class="nav-item list-inline-item" style="color: #1991EB">
-            <a href="{{ route('home') }}" class="nav-link">
+            <a href="/dashboard" class="nav-link">
               <span class="fa-li">
                 <i class="nav-icon fas fa-undo text-info ml-4"></i>
               </span>&nbsp; Kembali Ke Website
@@ -90,7 +90,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="{{ route('home') }}" class="nav-link active">
+            <a href="/dashboard" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -100,7 +100,7 @@
           </li>
           <li class="nav-header text-danger">INFORMATION</li>
           <li class="nav-item">
-            <a href="{{ route('client') }}" class="nav-link">
+            <a href="/dashboard/client" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Klient MPU
@@ -109,7 +109,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ route('kontak') }}" class="nav-link">
+            <a href="/dashboard/kontak" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Kontak MPU
@@ -118,7 +118,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ route('produk_admin') }}" class="nav-link">
+            <a href="/dashboard/demo" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Produk
