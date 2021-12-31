@@ -44,7 +44,7 @@ body{
   background-repeat: no-repeat;
 
   background-size: cover;
-  background-image: url(../../../img/jumbotron.png);s
+  background-image: url(../../../img/jumbotron.png);
 }
 
 .bg .img{

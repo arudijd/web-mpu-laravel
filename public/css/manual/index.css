@@ -40,6 +40,10 @@ body {
     font-size: smaller;
 }
 
+.navbar .navbar-collapse .navbar-naw {
+    text-align: center;
+}
+
 .container-baru {
     height: fit-content;
 }

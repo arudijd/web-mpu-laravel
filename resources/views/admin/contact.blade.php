@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset("plugins/fontawesome-free/css/all.min.css") }}">
+  <link rel="stylesheet" href="{{ asset("fontawesome/css/all.min.css") }}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="{{ asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css") }}">
   <!-- overlayScrollbars -->
@@ -31,19 +31,12 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
-        <a class="nav-link" data-toggle="dropdown" href="#">
-          <i class="far fa-bell"></i>
-          <span class="badge badge-warning navbar-badge">15</span>
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <span class="dropdown-item dropdown-header">15 Notifications</span>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fas fa-envelope mr-2"></i> 4 new messages
-            <span class="float-right text-muted text-sm">3 mins</span>
-          </a>
-        </div>
+      <li class="nav-item list-inline-item" style="color: #1991EB">
+            <a href="\" class="nav-link">
+              <span class="fa-li">
+                <i class="nav-icon fas fa-undo text-info ml-4"></i>
+              </span>&nbsp; Kembali Ke Website
+            </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
@@ -126,13 +119,6 @@
               <p>Ganti Password</p>
             </a>
           </li>
-          <li class="nav-header text-warning">Website</li>
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">
-              <i class="nav-icon fas fa-undo text-info"></i>
-              <p>Kembali Ke Website</p>
-            </a>
-          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -151,7 +137,7 @@
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
             <li class="breadcrumb-item active">Inbox</li>
           </ol>
         </div>
