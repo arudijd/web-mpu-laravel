@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
+
+  
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -57,7 +59,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ route('home') }}" class="brand-link">
+    <a href="/dashboard" class="brand-link">
       <img src="../img/logo.png"
            alt=""
            class="brand-image img-circle elevation-3"
@@ -83,7 +85,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="{{ route('home') }}" class="nav-link active">
+            <a href="/dashboard" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -93,7 +95,7 @@
           </li>
           <li class="nav-header text-danger">INFORMATION</li>
           <li class="nav-item">
-            <a href="{{ route('client') }}" class="nav-link">
+            <a href="/dashboard/client" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Klient MPU
@@ -102,7 +104,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ route('kontak') }}" class="nav-link">
+            <a href="/dashboard/kontak" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Kontak MPU
@@ -111,7 +113,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ route('produk_admin') }}" class="nav-link">
+            <a href="/dashboard/kontak" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Produk
@@ -204,8 +206,8 @@
           <div class="col-md-12">
             <div class="card card-primary collapsed-card">
               <div class="card-header">
+                <form action="/dashboard/client/edit" method="post"></form>
                 <h3 class="card-title">Edit</h3>
-
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
                   </button>
@@ -218,11 +220,9 @@
                   <label for="inputStatus">Pilih Yang Diedit</label>
                       <select class="form-control custom-select">
                         <option selected disabled>Select one</option>
-                        <option>Biak</option>
-                        <option>Kayong</option>
-                        <option>Jakarta</option>
-                        <option>Sorong</option>
-                        <option>Jakarta</option>
+                        @foreach($clients as $client)
+                        <option>{{ $client->nama_kota }}</option>
+                        @endforeach
                       </select>
                 </div>
                 <div class="form-group">
@@ -269,6 +269,8 @@
           </div>
           <!-- /.card -->
           <div class="col-md-12">
+            <form action="/dashboard/client/add" method="post">
+              @csrf
             <div class="card card-primary collapsed-card">
               <div class="card-header">
                 <h3 class="card-title">Tambah</h3>
@@ -280,14 +282,16 @@
                 <!-- /.card-tools -->
               </div>
               <!-- /.card-header -->
+              
               <div class="card-body">
+                
                 <div class="form-group">
                   <label for="inputName">Nama Kabupaten</label>
-                  <input type="text" id="inputName" class="form-control">
+                  <input type="text" name="nama_kota" class="form-control">
                 </div>
                 <div class="form-group">
                   <label for="inputStatus">Pilih Jenis Pulau</label>
-                      <select class="form-control custom-select">
+                      <select class="form-control custom-select" name="nama_pulau">
                         <option selected disabled>Select one</option>
                         <option>Sumatra</option>
                         <option>Jawa</option>
@@ -296,20 +300,11 @@
                         <option>Kalimantan</option>
                       </select>
                 </div>
-                <div class="form-group">
-                  <label>Tanggal Ditambah</label>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                      </div>
-                      <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask disabled="disabled">
-                    </div>
-                  <!-- /.input group -->
-                </div>
+                
                 <div class="input-group">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">Pilih Gambar</label>
+                    <input type="file" class="custom-file-input" name="img_klien">
+                    <label class="custom-file-label" for="inputFile">Pilih Gambar</label>
                   </div>
                   <div class="input-group-append">
                     <span class="input-group-text" id="">Upload</span>
@@ -323,6 +318,7 @@
             </div>
             <!-- /.card -->
           </div>
+        </form>
           <!-- /.card -->
         </div>
       </div>
