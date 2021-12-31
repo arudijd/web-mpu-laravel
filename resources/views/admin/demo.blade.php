@@ -30,10 +30,11 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto list-inline">
-      <li class="nav-item list-inline-item">
+      <li class="nav-item list-inline-item" style="color: #1991EB">
             <a href="..\home.blade.php" class="nav-link">
-              <i class="nav-icon fas fa-undo text-info"></i>
-              <p>Kembali Ke Website</p>
+              <span class="fa-li">
+                <i class="nav-icon fas fa-undo text-info ml-4"></i>
+              </span>&nbsp; Kembali Ke Website
             </a>
       </li>
       <!-- Notifications Dropdown Menu -->
@@ -153,7 +154,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Demo</h1>
+          <h1>Produk MPU</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -182,17 +183,17 @@
                       <br>
                     <ul class="mt-4 ml-0 mb-0 fa-ul">
                       <li><h2 class="lead"><b>E-BPHTB</b></h2></li>
-                      <li><h5 class="text-muted text-sm">Produk Aplikasi</h5></li>
+                      <li><h5 class="text-muted text-sm" style="">Produk Aplikasi</h5></li>
                     </ul> 
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="text-right">
+              <div class="card-footer text-white bg-secondary mb-3">
+                <div class="text-left text-sm">
                   <div class="row">
-                    <div class="col-8">
+                    <div class="col-8 footer">
                       <span class="fa-li">
-                        <i class="fas fa-lg fa-clock"></i>
-                      </span> Terakhir Di edit : 20/02/2082
+                        <i class="fas fa-sm fa-clock ml-4"></i>
+                      </span>&nbsp; Terakhir Di edit: <br> &nbsp;&nbsp;20/02/2082
                     </div>
                     <div class="col-4">
                       <a href="menudemo/editor.html" class="btn btn-sm btn-primary">
