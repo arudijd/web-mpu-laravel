@@ -8,15 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{ asset("fontawesome/css/all.min.css") }}">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="{{ asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css") }}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{ asset("css/manual/admin/css/adminlte.min.css") }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/demo.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -31,9 +29,16 @@
     </ul>
 
     <!-- Right navbar links -->
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto list-inline">
+      <li class="nav-item list-inline-item" style="color: #1991EB">
+            <a href="..\home.blade.php" class="nav-link">
+              <span class="fa-li">
+                <i class="nav-icon fas fa-undo text-info ml-4"></i>
+              </span>&nbsp; Kembali Ke Website
+            </a>
+      </li>
       <!-- Notifications Dropdown Menu -->
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-bell"></i>
           <span class="badge badge-warning navbar-badge">15</span>
@@ -46,7 +51,7 @@
             <span class="float-right text-muted text-sm">3 mins</span>
           </a>
         </div>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
@@ -84,8 +89,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview">
-            <a href="index3.html" class="nav-link">
+          <li class="nav-item has-treeview menu-open">
+            <a href="{{ route('home') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -94,8 +99,8 @@
             </a>
           </li>
           <li class="nav-header text-danger">INFORMATION</li>
-          <li class="nav-item has-treeview">
-            <a href="klient.html" class="nav-link">
+          <li class="nav-item">
+            <a href="{{ route('client') }}" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Klient MPU
@@ -104,7 +109,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="kontak.html" class="nav-link">
+            <a href="{{ route('kontak') }}" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Kontak MPU
@@ -113,19 +118,10 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="berita.html" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Information & News
-                <!-- <i class="fas fa-angle-left right"></i> -->
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="{{ route('produk_admin') }}" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Demo
+                Produk
                 <!-- <i class="fas fa-angle-left right"></i> -->
               </p>
             </a>
@@ -137,13 +133,13 @@
               <p>Ganti Password</p>
             </a>
           </li>
-          <li class="nav-header text-warning">Website</li>
+          <!-- <li class="nav-header text-warning">Website</li>
           <li class="nav-item">
             <a href="../index.html" class="nav-link">
               <i class="nav-icon fas fa-undo text-info"></i>
               <p>Kembali Ke Website</p>
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -158,7 +154,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Demo</h1>
+          <h1>Produk MPU</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -177,35 +173,39 @@
     <div class="card card-solid">
       <div class="card-body pb-0">
         <div class="row d-flex align-items-stretch">
-          <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+          <div class="col-6 col-sm-4 col-md-3 d-flex align-items-stretch">
             <div class="card bg-light">
               <div class="card-header text-muted border-bottom-0">
-                
               </div>
               <div class="card-body pt-0">
                 <div class="row">
-                  <div class="col-7">
-                    <h2 class="lead"><b>E-BPHTB</b></h2>
-                    <p class="text-muted text-sm"><b>About: </b> BPHTB adalah Bea Perolehan Hak Atas .... </p>
-                    <ul class="ml-4 mb-0 fa-ul text-muted">
-                      <li class="small"><span class="fa-li"><i class="fas fa-lg fa-clock"></i></span> Terakhir Di edit : 20/02/2082</li>
-                    </ul>
-                  </div>
-                  <div class="col-5 text-center">
-                    <i id="demo_logo" class="fas fa-home"></i>
-                  </div>
+                    <img src="{{asset('img/produk/ebphtb.png')}}" class="rounded" alt="" width="95%" height="auto" >
+                      <br>
+                    <ul class="mt-4 ml-0 mb-0 fa-ul">
+                      <li><h2 class="lead"><b>E-BPHTB</b></h2></li>
+                      <li><h5 class="text-muted text-sm" style="">Produk Aplikasi</h5></li>
+                    </ul> 
                 </div>
               </div>
-              <div class="card-footer">
-                <div class="text-right">
-                  <a href="menudemo/editor.html" class="btn btn-sm btn-primary">
-                    <i class="fas fa-user"></i> Edit
-                  </a>
+              <div class="card-footer text-white bg-secondary mb-3">
+                <div class="text-left text-sm">
+                  <div class="row">
+                    <div class="col-8 footer">
+                      <span class="fa-li">
+                        <i class="fas fa-sm fa-clock ml-4"></i>
+                      </span>&nbsp; Terakhir Di edit: <br> &nbsp;&nbsp;20/02/2082
+                    </div>
+                    <div class="col-4">
+                      <a href="menudemo/editor.html" class="btn btn-sm btn-primary">
+                        <i class="fas fa-user"></i> Edit
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+          <!-- <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
             <div class="card bg-light">
               <div class="card-header text-muted border-bottom-0">
                 
@@ -559,13 +559,13 @@
                     <i id="demo_logo" class="fas fa-info-circle"></i>
                   </div>
                 </div>
-              </div>
-              <div class="card-footer">
+              </div> -->
+              <!-- <div class="card-footer">
                 <div class="text-right">
                   <a href="menudemo/editor.html" class="btn btn-sm btn-primary">
                     <i class="fas fa-user"></i> Edit
                   </a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -597,12 +597,12 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="{{ asset('js/admin/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="{{ asset('js/demo.js') }}"></script>
 </body>
 </html>

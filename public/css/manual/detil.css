@@ -23,31 +23,38 @@
     src: url("../../font/Poppins-semibold.ttf");
 }
 
-/* .navbar {
-    background: hsla(0, 2%, 9%, 0.801);
-  }
-  
-  .navbar .nav-item a {
-    font-size: smaller;
-  } */
-
-.jumbotron {
-    background-color: black;
-    height: 412px;
+html,
+body {
+    width: 100% !important;
+    padding: 0px;
+    font-family: "poppins-medium";
 }
 
+.navbar {
+    background: hsla(0, 2%, 9%, 0.801);
+}
+
+.navbar .nav-item a {
+    font-size: smaller;
+}
+
+.jumbotron {
+    background-color: rgb(0, 0, 0);
+    height: 312px;
+}
+
+/* .jumbotron .namaproduk {
+    font-family: "Poppins-bold";
+    color: #ffffff;
+    margin-top: 100px;
+}
 .jumbotron h1 {
     font-family: "Poppins-bold";
     color: #ffffff;
-    margin-top: 200px;
-}
-.jumbotron p {
-    font-family: "Poppins-medium";
-    color: #ffffff;
-}
+} */
 
 .transisi-jumbotron {
-    margin-top: -45px;
+    margin-top: -70px;
 }
 
 /* deskripsi produk */
@@ -65,10 +72,9 @@
     align-content: center;
     margin-top: 100px;
     width: 100%;
-    height: 600px;
 }
 
-.keunggulan h1 {
+/* .keunggulan h1 {
     position: absolute;
     width: 222px;
     height: 27px;
@@ -92,19 +98,12 @@
 
     background: #a10206;
     border-radius: 20px;
-}
+} */
 
-.keunggulan .card {
-    background: #c4c4c4;
-    background: -webkit-linear-gradient(
-        to bottom,
-        #fafafa,
-        #fafafa,
-        #c4c4c4,
-        #474949
-    );
-    background: linear-gradient(to bottom, #fafafa, #fafafa, #c4c4c4, #474949);
-    border-radius: 20px;
+.keunggulan .produk .card {
+    background: #ffffff;
+    /* background: linear-gradient(to bottom, #fafafa, #fafafa, #c4c4c4, #474949); */
+    border-radius: 100px;
 }
 .keunggulan .produk1 .card {
     margin-bottom: 30px;
@@ -112,49 +111,14 @@
 
 .keunggulan .produk1 .card img {
     margin-top: 13%;
-    margin-left: 15%;
     margin-bottom: 9px;
 }
 
-.keunggulan .produk2 .card img {
-    margin-top: 13%;
-    margin-left: 15%;
+/* Tujuan Aplikasi */
+.tujuan-aplikasi {
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
-
-.keunggulan .card-title {
-    font-family: "Poppins-bold";
-    font-size: 16px;
-    line-height: 33px;
-    text-align: center;
-    color: #000000;
-}
-
-.keunggulan .card-text {
-    font-family: "Poppins-semibold";
-    font-size: 11px;
-    text-align: center;
-    color: #000000;
-}
-
-.keunggulan .card button {
-    border-color: #000000;
-    border-radius: 20px;
-    align-content: center;
-}
-
-.keunggulan .card button span {
-    font-family: "Poppins-bold";
-    font-style: normal;
-    font-size: x-small;
-    color: #000000;
-}
-
-.keunggulan .card button:hover {
-    border-color: #f1f1ef;
-    color: white;
-    background-color: #fafafa;
-}
-
 /* Hubungin kami */
 .hubungi-kami {
     margin-top: 200px;
@@ -191,6 +155,10 @@ footer .judul h3 {
     color: #ffffff;
 }
 
+footer .deskripsi {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 footer .deskripsi p {
     width: 483.67px;
     height: 51px;
@@ -221,7 +189,18 @@ footer .container .sub-navigation .col-sm-4 span {
     margin-left: 2px;
     color: #a10206;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 575px) {
+    /* Jumbroton */
+    .jumbotron .namaproduk {
+        margin-top: 100px;
+    }
+    .jumbotron h1 {
+        font-family: "Poppins-bold";
+        color: #ffffff;
+        font-size: 20px;
+    }
+
     /* Deskripsi produk */
     .deskripsi .row .paragraph {
         font-family: "Poppins-medium";
@@ -229,11 +208,21 @@ footer .container .sub-navigation .col-sm-4 span {
         font-size: 14px;
     }
 
-    /* Tujuan Aplikasi */
-    .tujuan-aplikasi {
-        margin-top: -80px;
-        margin-bottom: -100px;
+    /* Keunggulan */
+    .keunggulan .card-title {
+        font-family: "Poppins-bold";
+        font-size: 12px;
+        text-align: center;
+        color: #000000;
     }
+
+    .keunggulan .card-text {
+        font-family: "Poppins-semibold";
+        font-size: 10px;
+        text-align: center;
+        color: #000000;
+    }
+    /* Tujuan Aplikasi */
     .tujuan-aplikasi .row .desc {
         font-family: "Poppins-bold";
         color: #a10206;
@@ -248,6 +237,16 @@ footer .container .sub-navigation .col-sm-4 span {
     }
 }
 @media (min-width: 576px) {
+    /* Jumbroton */
+    .jumbotron .namaproduk {
+        margin-top: 100px;
+    }
+    .jumbotron h1 {
+        font-family: "Poppins-bold";
+        color: #ffffff;
+        font-size: 25px;
+    }
+
     /* Deskripsi produk */
     .deskripsi .row .paragraph {
         font-family: "Poppins-medium";
@@ -255,10 +254,22 @@ footer .container .sub-navigation .col-sm-4 span {
         font-size: 16px;
     }
 
-    /* Tujuan Aplikasi */
-    .tujuan-aplikasi {
-        margin-bottom: 300px;
+    /* Keunggulan */
+    .keunggulan .card-title {
+        font-family: "Poppins-bold";
+        font-size: 14px;
+        text-align: center;
+        color: #000000;
     }
+
+    .keunggulan .card-text {
+        font-family: "Poppins-semibold";
+        font-size: 11px;
+        text-align: center;
+        color: #000000;
+    }
+
+    /* Tujuan Aplikasi */
     .tujuan-aplikasi .row .desc {
         font-family: "Poppins-bold";
         color: #a10206;
@@ -275,11 +286,22 @@ footer .container .sub-navigation .col-sm-4 span {
 }
 
 @media (min-width: 768px) {
+    /* Jumbroton */
+    .jumbotron .namaproduk {
+        font-family: "Poppins-bold";
+        color: #ffffff;
+        margin-top: 100px;
+    }
+    .jumbotron h1 {
+        font-family: "Poppins-bold";
+        color: #ffffff;
+    }
+
     /* Deskripsi produk */
     .deskripsi .row .paragraph {
         font-family: "Poppins-medium";
         color: #000000;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* Tujuan Aplikasi */
@@ -288,9 +310,25 @@ footer .container .sub-navigation .col-sm-4 span {
         color: #a10206;
     }
 
+    /* Keunggulan */
+    .keunggulan .card-title {
+        font-family: "Poppins-bold";
+        font-size: 12px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .keunggulan .card-text {
+        font-family: "Poppins-semibold";
+        font-size: 11px;
+        text-align: center;
+        color: #000000;
+    }
+
+    /* Tujuan Aplikasi */
     .tujuan-aplikasi .tujuan {
         font-family: "Poppins-medium";
-        font-size: 20px;
+        font-size: 16px;
         color: #000000;
         border-left: 6px solid #a10206;
         padding-left: 30px;

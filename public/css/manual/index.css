@@ -40,6 +40,10 @@ body {
     font-size: smaller;
 }
 
+.navbar .navbar-collapse .navbar-naw {
+    text-align: center;
+}
+
 .container-baru {
     height: fit-content;
 }
@@ -89,11 +93,11 @@ nav .btn {
     border-color: transparent;
 }
 
-.home .display-6 {
+/* .home .display-6 {
     letter-spacing: 0.01em;
     color: #ffffff;
     font-family: "Poppins-bold";
-}
+} */
 
 /* PT INFO */
 .aplikasi-utama-mpu {
@@ -277,12 +281,10 @@ nav .btn {
     align-items: center;
     color: #cc0001;
 }
-
 .client-kami .row .client-desc hr {
-    position: absolute;
-    width: 100px;
-    height: 3.77px;
-    margin-top: 40px;
+    width: 101px;
+    height: 3px;
+    margin-top: -6px;
     background: #a10206;
     border-radius: 20px;
 }
@@ -414,4 +416,32 @@ footer .container .sub-navigation .col-sm-4 span {
     font-size: 13px;
     margin-left: 2px;
     color: #a10206;
+}
+
+@media (max-width: 576px) {
+    /* background homepage */
+    .home .display-6 {
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        font-family: "Poppins-bold";
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 576px) {
+    /* background homepage */
+    .home .display-6 {
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        font-family: "Poppins-bold";
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .home .display-6 {
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        font-family: "Poppins-bold";
+    }
 }

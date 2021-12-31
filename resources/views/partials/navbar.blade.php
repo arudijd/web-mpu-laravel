@@ -9,19 +9,19 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
-            <li class="nav-item ">
+            <li class="nav-item text-center">
                 <a class="nav-link {{ ($title === "Home" ? 'active' : '') }}" href="/">Beranda</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item text-center ">
                 <a class="nav-link {{ ($title === "Profil" ? 'active' : '') }}"  href="/profil">Profil</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item text-center">
                 <a class="nav-link {{ ($title === "Produk" ? 'active' : '') }}"  href="/produk">Produk</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">klien</a>
+            <li class="nav-item text-center">
+                <a class="nav-link {{ ($title === "Client" ? 'active' : '') }}"  href="/client">Klien</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item text-center">
                 <a class="nav-link {{ ($title === "Contact" ? 'active' : '') }}"  href="/contact">Kontak</a>
             </li>
         </ul>

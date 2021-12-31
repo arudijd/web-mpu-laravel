@@ -12,14 +12,14 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="{{ asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css") }}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{ asset("css/manual/admin/css/adminlte.min.css") }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
-  <!-- Navbar -->
+  {{-- <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
@@ -53,7 +53,7 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-
+ --}}
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -83,7 +83,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="{{ route('home') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -93,7 +93,7 @@
           </li>
           <li class="nav-header text-danger">INFORMATION</li>
           <li class="nav-item">
-            <a href="klient.html" class="nav-link">
+            <a href="{{ route('client') }}" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Klient MPU
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="kontak.html" class="nav-link">
+            <a href="{{ route('kontak') }}" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Kontak MPU
@@ -111,19 +111,10 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="berita.html" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Information & News
-                <!-- <i class="fas fa-angle-left right"></i> -->
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="demo.html" class="nav-link">
+            <a href="{{ route('produk_admin') }}" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Demo
+                Produk
                 <!-- <i class="fas fa-angle-left right"></i> -->
               </p>
             </a>

@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{ asset("fontawesome/css/all.min.css") }}">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="{{ asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css") }}">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="{{ asset("css/manual/admin/css/adminlte.min.css") }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -57,7 +57,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="{{ route('home') }}" class="brand-link">
       <img src="../img/logo.png"
            alt=""
            class="brand-image img-circle elevation-3"
@@ -82,8 +82,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview">
-            <a href="index3.html" class="nav-link">
+          <li class="nav-item has-treeview menu-open">
+            <a href="{{ route('home') }}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -92,8 +92,8 @@
             </a>
           </li>
           <li class="nav-header text-danger">INFORMATION</li>
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="{{ route('client') }}" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Klient MPU
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="kontak.html" class="nav-link">
+            <a href="{{ route('kontak') }}" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Kontak MPU
@@ -111,19 +111,10 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="berita.html" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Information & News
-                <!-- <i class="fas fa-angle-left right"></i> -->
-              </p>
-            </a>
-          </li>
-          <li class="nav-item has-treeview">
-            <a href="demo.html" class="nav-link">
+            <a href="{{ route('produk_admin') }}" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                Demo
+                Produk
                 <!-- <i class="fas fa-angle-left right"></i> -->
               </p>
             </a>
@@ -186,30 +177,14 @@
                 </tr>
               </thead>
               <tbody>
+                @foreach($clients as $client)
                 <tr>
-                  <td>1</td>
-                  <td>Aceh</td>
-                  <td>sumatra</td>
-                  <td>11-7-2014</td>
+                  <td>{{ $client->id_klien }}</td>
+                  <td>{{ $client->nama_kota }}</td>
+                  <td>{{ $client->nama_pulau }}</td>
+                  <td>{{ $client->created_at }}</td>
                 </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Lampung</td>
-                  <td>sumatra</td>
-                  <td>11-7-2014</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Probolinggo</td>
-                  <td>jawa</td>
-                  <td>11-7-2014</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>jakarta</td>
-                  <td>jawa</td>
-                  <td>11-7-2014</td>
-                </tr>
+                @endforeach
               </tbody>
             </table>
           </div>
@@ -373,12 +348,12 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="{{ asset('js/admin/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="{{ asset('js/demo.js') }}"></script>
 </body>
 </html>
