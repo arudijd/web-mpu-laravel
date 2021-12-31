@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Produk;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -57,6 +58,8 @@ class AdminController extends Controller
     }
 
     public function produk() {
-        return view('admin.demo');
+        return view('admin.demo',[
+            "produk" => Produk::all()
+        ]);
     }
 }

@@ -9,13 +9,7 @@
             </div>
             <div class="row d-flex justify-content-center namaproduk">
                 <h1 class="justify-content-center text-center">{{ $detil->singkatan_produk }}</h1>
-                
-=======
-                <h1 class="text-center">{{ $detil->nama_produk }}</h1>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <h1 class="text-center">{{ $detil->singkatan_produk }}</h1>
->>>>>>> 25b1786e0627ac3416e38d2a4419c6a6d96bcb78
+            
             </div>
         </div>
     </div>
