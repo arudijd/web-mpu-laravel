@@ -277,12 +277,10 @@ nav .btn {
     align-items: center;
     color: #cc0001;
 }
-
 .client-kami .row .client-desc hr {
-    position: absolute;
-    width: 100px;
-    height: 3.77px;
-    margin-top: 40px;
+    width: 101px;
+    height: 3px;
+    margin-top: -6px;
     background: #a10206;
     border-radius: 20px;
 }
