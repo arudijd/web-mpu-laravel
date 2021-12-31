@@ -63,6 +63,7 @@ Route::get('/dashboard', [AdminController::class, 'index']);
 Route::get('/dashboard/client', [AdminController::class, 'client']);
 Route::get('/dashboard/kontak', [AdminController::class, 'kontak']);
 Route::get('/dashboard/produk', [AdminController::class, 'produk']);
+Route::get('/dashboard/produk/edit', [AdminController::class, 'editProduk']);
 
 
 
