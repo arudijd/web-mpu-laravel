@@ -4,10 +4,12 @@
     <div class="jumbotron justify-content-center">
         <div class="container">
             <div class="row d-flex justify-content-center namaproduk">
-                <h1 class="justify-content-center">{{ $detil->nama_produk }}</h1>
+                <h1 class="justify-content-center text-center">{{ $detil->nama_produk }}</h1>
+                
             </div>
             <div class="row d-flex justify-content-center namaproduk">
-                <h1 class="justify-content-center">{{ $detil->singkatan_produk }}</h1>
+                <h1 class="justify-content-center text-center">{{ $detil->singkatan_produk }}</h1>
+                
             </div>
         </div>
     </div>
