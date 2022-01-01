@@ -113,7 +113,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="/dashboard/kontak" class="nav-link">
+            <a href="/dashboard/produk" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Produk
@@ -269,7 +269,7 @@
           </div>
           <!-- /.card -->
           <div class="col-md-12">
-            <form action="/dashboard/client/add" method="post">
+            <form action="/dashboard/client" method="post" enctype="multipart/form-data">
               @csrf
             <div class="card card-primary collapsed-card">
               <div class="card-header">

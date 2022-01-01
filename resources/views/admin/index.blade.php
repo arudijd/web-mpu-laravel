@@ -83,7 +83,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="{{ route('home') }}" class="nav-link active">
+            <a href="/dashboard" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -93,7 +93,7 @@
           </li>
           <li class="nav-header text-danger">INFORMATION</li>
           <li class="nav-item">
-            <a href="{{ route('client') }}" class="nav-link">
+            <a href="/dashboard/client" class="nav-link">
               <i class="nav-icon far fa-calendar-alt"></i>
               <p>
                 Klient MPU
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ route('kontak') }}" class="nav-link">
+            <a href="/dashboard/kontak" class="nav-link">
               <i class="nav-icon far fa-envelope"></i>
               <p>
                 Kontak MPU
@@ -111,7 +111,7 @@
             </a>
           </li>
           <li class="nav-item has-treeview">
-            <a href="{{ route('produk_admin') }}" class="nav-link">
+            <a href="/dashboard/produk" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
                 Produk

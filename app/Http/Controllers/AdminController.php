@@ -23,15 +23,11 @@ class AdminController extends Controller
         $validateData = $request->validate([
             'nama_kota' => 'required|max:255',
             'nama_pulau' => 'required',
-            'img_klien' => 'required'
+            'img_klien' => 'image'
         ]);
 
-        if($file = $request->hasFile('img_klien')){
-            $file = $request->file('img_klien');
-            $extension = $file->getClientOriginalExtension();
-            $filename = time().'.'.$extension;
-            $file->move('img/client',$filename);
-            $validateData['img_klien'] = $filename;
+        if($request->file('img_klien')){
+            $validateData['img_klien'] = $request->file('img_klien')->store('client');
 
         }
 
@@ -61,5 +57,10 @@ class AdminController extends Controller
         return view('admin.demo',[
             "produk" => Produk::all()
         ]);
+    }
+
+    public function editProduk ()
+    {
+        return view('admin.demo.editor');
     }
 }
