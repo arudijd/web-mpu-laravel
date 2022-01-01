@@ -9,11 +9,14 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function index() {
-        return view('admin.index');
+        return view('admin.index',[
+            "title" => 'Dashboard'
+        ]);
     }
 
     public function client() {
         return view('admin.client', [
+            "title" => "Klien",
             "clients" => Client::all()
         ]);
     }
@@ -50,17 +53,22 @@ class AdminController extends Controller
     }
 
     public function kontak() {
-        return view('admin.contact');
+        return view('admin.contact',[
+            "title" => "Kontak"
+        ]);
     }
 
     public function produk() {
         return view('admin.demo',[
+            "title" => "Produk",
             "produk" => Produk::all()
         ]);
     }
 
     public function editProduk ()
     {
-        return view('admin.demo.editor');
+        return view('admin.demo.editor',[
+            "title" => "Produk"
+        ]);
     }
 }
