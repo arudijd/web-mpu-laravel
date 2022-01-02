@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Poppins-bold";
-  src: url('../../font/Poppins-bold.ttf');
+    font-family: "Poppins-bold";
+    src: url("../../font/Poppins-bold.ttf");
 }
 
 @font-face {
-  font-family: "Poppins-extrabold";
-  src: url('../../font/Poppins-extrabold.ttf');
+    font-family: "Poppins-extrabold";
+    src: url("../../font/Poppins-extrabold.ttf");
 }
 
 @font-face {
-  font-family: "Poppins-medium";
-  src: url('../../font/Poppins-medium.ttf');
+    font-family: "Poppins-medium";
+    src: url("../../font/Poppins-medium.ttf");
 }
 
 @font-face {
-  font-family: "Poppins-regular";
-  src: url('../../font/Poppins-regular.ttf');
+    font-family: "Poppins-regular";
+    src: url("../../font/Poppins-regular.ttf");
 }
 
 @font-face {
-  font-family: "Poppins-semibold";
-  src: url('../../font/Poppins-semibold.ttf');
+    font-family: "Poppins-semibold";
+    src: url("../../font/Poppins-semibold.ttf");
 }
 
 html,
@@ -31,139 +31,135 @@ body {
 }
 
 .navbar {
-  background: hsla(0, 2%, 9%, 0.801);
+    background: hsla(0, 2%, 9%, 0.801);
 }
 
 .navbar .nav-item a {
-  font-size: smaller;
+    font-size: smaller;
 }
 
 .jumbotron {
-  background-color: black;
-  height: 512px;
+    background-color: black;
+    height: 512px;
 }
 
 .jumbotron h1 {
-  font-family: "Poppins-bold";
-  color: #FFFFFF;
-  margin-top: 200px;
+    font-family: "Poppins-bold";
+    color: #ffffff;
+    margin-top: 200px;
 }
 .jumbotron p {
-  font-family: "Poppins-medium";
-  color: #ffffff;
+    font-family: "Poppins-medium";
+    color: #ffffff;
 }
 
 .transisi-jumbotron {
-  margin-top: -35px;
+    margin-top: -35px;
 }
 
 /* link filter */
 .link .container .row h6 {
-
-  font-family: "Poppins-bold";
-  color: #979797;
+    font-family: "Poppins-bold";
+    color: #979797;
 }
 
 .link .container .row .active-text h6 {
-  color: #A10206 !important;
+    color: #a10206 !important;
 }
 
 /* all product */
 .all-produk h3 {
-  margin-top: 20px;
-  font-family: "Poppins-bold";
-  font-style: normal;
-  font-size: 20px;
-  line-height: 49px;
-  display: flex;
-  align-items: center;
+    margin-top: 20px;
+    font-family: "Poppins-bold";
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
 
-  color: #000000;
+    color: #000000;
 }
 
 .all-produk p {
-  font-family: "Poppins-medium";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 23px;
-  display: flex;
-  align-items: center;
+    font-family: "Poppins-medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
 
-  color: #000000;
+    color: #000000;
 }
 
 .all-produk button {
-
-  font-family: "Poppins-bold";
-  font-size: 10px;
-  line-height: 23px;
-
+    font-family: "Poppins-bold";
+    font-size: 10px;
+    line-height: 23px;
 }
 
 .all-produk .btn-produk {
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 .all-produk h5 {
-  font-family: "Poppins-medium";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 33px;
-  display: flex;
-  align-items: center;
+    font-family: "Poppins-medium";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
 
-  color: #979797;
+    color: #979797;
 }
 
 .all-produk i {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 /* Footer */
 
 footer {
-  width: 100%;
-  background: #000000;
-  margin-top: -2px;
+    width: 100%;
+    background: #000000;
+    margin-top: -2px;
 }
 
 footer .judul h3 {
-  width: 190px;
-  font-family: "Poppins-bold";
-  margin-top: 10px;
-  font-size: 14px;
-  color: #ffffff;
+    width: 190px;
+    font-family: "Poppins-bold";
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 footer .deskripsi p {
-  width: 483.67px;
-  height: 51px;
-  margin-top: 20px;
-  font-family: "Poppins-regular";
-  font-size: 14px;
-  text-align: center;
-  color: #cac0c9;
-  padding-left: 10px;
-  padding-right: 10px;
+    width: 483.67px;
+    height: 51px;
+    margin-top: 20px;
+    font-family: "Poppins-regular";
+    font-size: 14px;
+    text-align: center;
+    color: #cac0c9;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer .container .row hr {
-  height: 0px;
-  margin-top: 20px;
-  border: 1px solid #dadada;
+    height: 0px;
+    margin-top: 20px;
+    border: 1px solid #dadada;
 }
 
 footer .container .sub-navigation .col-sm-4 p {
-  font-family: "Poppins-semibold";
-  font-size: 13px;
-  color: #cac0c9;
+    font-family: "Poppins-semibold";
+    font-size: 13px;
+    color: #cac0c9;
 }
 
 footer .container .sub-navigation .col-sm-4 span {
-  font-family: "Poppins-semibold";
-  font-size: 13px;
-  margin-left: 2px;
-  color: #a10206;
+    font-family: "Poppins-semibold";
+    font-size: 13px;
+    margin-left: 2px;
+    color: #a10206;
 }
