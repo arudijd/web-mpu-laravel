@@ -29,7 +29,7 @@
     <a href="/dashboard" class="brand-link">
       <img src="{{ asset('img/logo.png') }}"
            alt=""
-           class="brand-image img-circle elevation-3"
+           class="brand-image img-circle elevation-3 ml-1"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Admin MPU</span>
     </a>
