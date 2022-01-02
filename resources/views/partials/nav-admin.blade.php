@@ -12,12 +12,12 @@
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item">
         <a href="/" class="nav-link">
-          <span><i class="nav-icon fas fa-undo text-info"></i>&nbsp Kembali Ke Website</span>
+          <span style="color:#17a2b8;"><i class="nav-icon fas fa-undo text-info"></i>&nbsp Kembali Ke Website</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
+        <a href="/login" class="nav-link">
+          <span style="color:#c22017;"><i class="nav-icon fas fa-sign-out-alt text-info2" style="color:#c22017;"></i></i>&nbsp Keluar</span>
         </a>
       </li>
     </ul>
