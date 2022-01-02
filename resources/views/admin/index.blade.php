@@ -5,7 +5,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <div class="container-fluid">
-      <div class="row mb-2">
+      <div class="row mb-2 justify-content-center">
         <div class="col-sm-4">
           <div class="info-box bg-gradient-primary">
             <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
@@ -18,6 +18,7 @@
             </div>
           </div><!-- end info-box -->
         </div><!-- end col -->
+        <div class="col-sm-2"></div>
         <div class="col-sm-4">
           <div class="info-box bg-gradient-success">
             <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
@@ -26,18 +27,6 @@
               <span class="info-box-number">16</span>
               <span class="progress-description">
                 Kritik Dan Saran Web MPU
-              </span>
-            </div>
-          </div><!-- end info-box -->
-        </div><!-- end col -->
-        <div class="col-sm-4">
-          <div class="info-box bg-gradient-warning">
-            <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
-            <div class="info-box-content">
-              <span class="info-box-text">Jumlah Berita</span>
-              <span class="info-box-number">3</span>
-              <span class="progress-description">
-                Informasi dan Berita
               </span>
             </div>
           </div><!-- end info-box -->

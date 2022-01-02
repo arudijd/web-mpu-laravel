@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Kritik;
 use App\Models\Produk;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 
 class AdminController extends Controller
 {
@@ -21,40 +23,53 @@ class AdminController extends Controller
         ]);
     }
 
-    public function clientAdd(Request $request){
+    public function clientAddAndUpdate(Request $request){
     
-        $validateData = $request->validate([
-            'nama_kota' => 'required|max:255',
-            'nama_pulau' => 'required',
-            'img_klien' => 'image'
-        ]);
-
-        if($request->file('img_klien')){
-            $validateData['img_klien'] = $request->file('img_klien')->store('client');
-
+        if($request->has('formAdd')){
+            $validateData = $request->validate([
+                'nama_kota' => 'required|max:255',
+                'nama_pulau' => 'required',
+                'img_klien' => 'image'
+            ]);
+    
+            if($request->file('img_klien')){
+                $imageName = time().'.'.$request->img_klien->extension();
+                $validateData['img_klien'] = $request->file('img_klien')->move(public_path('img/client'), $imageName);
+    
+            }
+    
+            Client::create($validateData);
+            return redirect()->back();
         }
 
-        Client::create($validateData);
-        return redirect()->back();
+        if($request->has('formEdit')){
+            $validateData = $request->validate([
+                'nama_kota' => 'required|max:255',
+                'nama_pulau' => 'required',
+                'img_klien' => 'image'
+            ]);
 
-        
-    }
+            $klien = Client::where('nama_kota', $request->kota_lama)->first();
+            if(File::exists($klien->img_klien)){
+                File::delete($klien->img_klien);
+                $imageName = time().'.'.$request->img_klien->extension();
+                $validateData['img_klien'] = $request->file('img_klien')->move(public_path('img/client'), $imageName);
 
-    public function clientUpdate(Request $request, Client $client){
-        $validateData = $request->validate([
-            'nama_kota' => 'required|max:255',
-            'nama_pulau' => 'required',
-            'img_klien' => 'required'
-        ]);
+            }
 
-        
+            Client::where('nama_kota', $request->kota_lama)
+                        ->update($validateData);
+            return redirect()->back();
+
+        }
 
         
     }
 
     public function kontak() {
         return view('admin.contact',[
-            "title" => "Kontak"
+            "title" => "Kontak",
+            "kritik" => Kritik::all()
         ]);
     }
 

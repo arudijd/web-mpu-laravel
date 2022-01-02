@@ -11,7 +11,7 @@
     <ul class="navbar-nav ml-auto">
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item">
-        <a href="../index.html" class="nav-link">
+        <a href="/" class="nav-link">
           <i class="nav-icon fas fa-undo text-info"></i>
           <p>Kembali Ke Website</p>
         </a>

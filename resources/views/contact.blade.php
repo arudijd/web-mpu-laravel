@@ -22,20 +22,21 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-11 col-sm-11 col-md-8 col-lg-8 col-xl-8 kritik-saran">
-                <form action="" method="post">
+                <form action="/kontak" method="post">
+                    @csrf
                     <div class="row">
                         <!-- Pesan -->
                         <div class="col-12 d-flex justify-content-center">
-                            <textarea class="form-control name="Pesan" class="border" id="pesan" cols="75%" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Masukan Pesan'" placeholder=" Masukan Pesan" required></textarea>
+                            <textarea class="form-control name="body" class="border" id="pesan" cols="75%" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Masukan Pesan'" placeholder=" Masukan Pesan" required></textarea>
                         </div>
                         <div class="col-6 col-lg-6">
-                            <input class="form-control nama" name="name" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Nama Anda'" placeholder="Masukan Nama">
+                            <input class="form-control nama" name="penulis" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Nama Anda'" placeholder="Masukan Nama">
                         </div>
                         <div class="col-6 col-lg-6">
                             <input class="form-control email" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Email'" placeholder="Email" required>
                         </div>
                         <div class="col-12 col-sm-8 col-md-8 col-lg-9">
-                            <input class="form-control judul" name="subject" id="judul" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Judul'" placeholder="Masukan Judul">
+                            <input class="form-control judul" name="judul" id="judul" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Judul'" placeholder="Masukan Judul">
                         </div>
                         <div class="col-6 col-sm-4 col-md-4 col-lg-3 button-verification">
                             <button type="button" class="btn btn-outline-danger" id="submit-verification" data-toggle="modal" data-target="#modal-verification"><span>Submit </span><i class="fa fa-arrow-right" aria-hidden="true"></i></button>

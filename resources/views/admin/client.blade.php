@@ -62,9 +62,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <form action="/dashboard/client" method="post" enctype="multipart/form-data">
+            @csrf
           <div class="card card-primary collapsed-card">
             <div class="card-header">
-              <form action="/dashboard/client/edit" method="post"></form>
               <h3 class="card-title">Edit</h3>
               <div class="card-tools">
                 <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"></i>
@@ -76,7 +77,7 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputStatus">Pilih Yang Diedit</label>
-                    <select class="form-control custom-select">
+                    <select class="form-control custom-select" name="kota_lama">
                       <option selected disabled>Select one</option>
                       @foreach($clients as $client)
                       <option>{{ $client->nama_kota }}</option>
@@ -85,11 +86,11 @@
               </div>
               <div class="form-group">
                 <label for="inputName">Nama Kabupaten</label>
-                <input type="text" id="inputName" class="form-control">
+                <input type="text" name="nama_kota" class="form-control">
               </div>
               <div class="form-group">
                 <label for="inputStatus">Pilih Jenis Pulau</label>
-                    <select class="form-control custom-select">
+                    <select class="form-control custom-select" name="nama_pulau">
                       <option selected disabled>Select one</option>
                       <option>Sumatra</option>
                       <option>Jawa</option>
@@ -98,29 +99,18 @@
                       <option>Kalimantan</option>
                     </select>
               </div>
-              <div class="form-group">
-                <label>Tanggal ditambah</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                    </div>
-                    <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask disabled="disabled">
-                  </div>
-                <!-- /.input group -->
-              </div>
               <div class="input-group">
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="exampleInputFile">
+                  <input type="file" class="custom-file-input" id="exampleInputFile" name="img_klien">
                   <label class="custom-file-label" for="exampleInputFile">Pilih Gambar</label>
-                </div>
-                <div class="input-group-append">
-                  <span class="input-group-text" id="">Upload</span>
                 </div>
               </div>
             </div>
+          </form>
+             
             <!-- /.card-body -->
             <div class="card-footer">
-              <button type="submit" class="btn btn-primary">Save</button>
+              <button type="submit" class="btn btn-primary" name="formEdit">Save</button>
             </div>
           </div>
           <!-- /.card -->
@@ -164,14 +154,11 @@
                   <input type="file" class="custom-file-input" name="img_klien">
                   <label class="custom-file-label" for="inputFile">Pilih Gambar</label>
                 </div>
-                <div class="input-group-append">
-                  <span class="input-group-text" id="">Upload</span>
-                </div>
               </div>
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
-              <button type="submit" class="btn btn-primary">Tambah</button>
+              <button type="submit" class="btn btn-primary" name="formAdd">Tambah</button>
             </div>
           </div>
           <!-- /.card -->
