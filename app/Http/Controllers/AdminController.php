@@ -73,6 +73,22 @@ class AdminController extends Controller
         ]);
     }
 
+    public function kontakFavorite()
+    {
+        return view('admin.contact',[
+            "title" => "Kontak",
+            "kritik" => Kritik::where('isFavorite', true)->get()
+        ]);
+    }
+
+    public function detilKontak(Kritik $kritik)
+    {
+        return view('admin.read', [
+            "title" => "Kontak",
+            "kritik" => $kritik
+        ]);
+    }
+
     public function produk() {
         return view('admin.demo',[
             "title" => "Produk",

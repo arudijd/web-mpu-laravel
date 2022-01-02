@@ -45,7 +45,7 @@ class HomeController extends Controller
     public function kritik(Request $request)
     {
         $validateData = $request->validate([
-            'judul' => 'required|max255',
+            'judul' => 'required|max:255',
             'penulis' => 'required',
             'email' => 'required',
             'body' => 'required'

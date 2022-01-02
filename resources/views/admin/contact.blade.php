@@ -34,13 +34,12 @@
           <div class="card-body p-0">
             <ul class="nav nav-pills flex-column">
               <li class="nav-item active">
-                <a href="#" class="nav-link">
+                <a href="/dashboard/kontak" class="nav-link">
                   <i class="fas fa-inbox"></i> Inbox
-                  <span class="badge bg-primary float-right">12</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="/dashboard/kontak/favorite" class="nav-link">
                   <i class="fas fa-star"></i> Favorite
                 </a>
               </li>
@@ -87,11 +86,11 @@
                       </div>
                     </td>  
                   @if ($k->isFavorite==true)
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
+                    <td class="mailbox-star"><a href="#"><i class="far fa-star text-warning"></i></a></td>
                   @else
-                    <td class="mailbox-star"><a href="#"><i class="fas fa-star"></i></a></td>   
+                    <td class="mailbox-star"><a href="#"><i class="far fa-star"></i></a></td>   
                   @endif
-                    <td class="mailbox-name"><a href="menumailbox/read.html">{{ $k->penulis }}</a></td>
+                    <td class="mailbox-name"><a href="/dashboard/kontak/{{ $k->id_kritik }}">{{ $k->penulis }}</a></td>
                     <td class="mailbox-subject"><b>{{ $k->judul }}</b> - {{ $k->excerpt() }}
                     </td>
                     <td class="mailbox-attachment"></td>
