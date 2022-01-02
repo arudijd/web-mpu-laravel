@@ -10558,6 +10558,15 @@ a.text-info:focus {
     color: #0f6674 !important;
 }
 
+.text-info2 {
+    color: #ab0f07 !important;
+}
+
+a.text-info2:hover,
+a.text-info2:focus {
+    color: #ab0f07 !important;
+}
+
 .text-warning {
     color: #ffc107 !important;
 }
