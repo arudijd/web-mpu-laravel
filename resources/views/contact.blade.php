@@ -22,12 +22,12 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-11 col-sm-11 col-md-8 col-lg-8 col-xl-8 kritik-saran">
-                <form action="/kontak" method="post">
+                <form action="/contact" method="post">
                     @csrf
                     <div class="row">
                         <!-- Pesan -->
                         <div class="col-12 d-flex justify-content-center">
-                            <textarea class="form-control name="body" class="border" id="pesan" cols="75%" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Masukan Pesan'" placeholder=" Masukan Pesan" required></textarea>
+                            <textarea class="form-control" name="body" class="border" id="pesan" cols="75%" rows="10" onfocus="this.placeholder = ''" onblur="this.placeholder = ' Masukan Pesan'" placeholder=" Masukan Pesan" required></textarea>
                         </div>
                         <div class="col-6 col-lg-6">
                             <input class="form-control nama" name="penulis" id="nama" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Masukan Nama Anda'" placeholder="Masukan Nama">
@@ -218,3 +218,14 @@
 </section>
 
 @endsection
+
+@push('contact')
+    <script>
+        document.getElementById('submit-verification').addEventListener('click', function() {
+            document.getElementById('modal-nama').innerHTML = document.getElementById('nama').value.trim()
+            document.getElementById('modal-email').innerHTML = document.getElementById('email').value.trim()
+            document.getElementById('modal-judul').innerHTML = document.getElementById('judul').value.trim()
+            document.getElementById('modal-pesan').innerHTML = document.getElementById('pesan').value.trim()
+        })
+    </script>
+@endpush

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Detil;
 use App\Models\Produk;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class ProdukController extends Controller
 {
@@ -33,6 +34,13 @@ class ProdukController extends Controller
             "css" => "/css/manual/produk.css",
             "subtitle" => "Nonapps",
             "produk" => Produk::where('jenis_produk', 'LIKE', 'Non Aplikasi')->get()
+        ]);
+    }
+    public function detilProduk(Detil $detil){
+        return view('detil', [
+            "title" => "Produk",
+            "css" => "/css/manual/detil.css",
+            "detil" => $detil
         ]);
     }
 }

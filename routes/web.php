@@ -32,7 +32,7 @@ Route::prefix('produk')->group(function () {
     Route::get('', [ProdukController::class, 'index'])->name('produk');
     Route::get('aplikasi', [ProdukController::class, 'appsOnly'])->name('produk-aplikasi');
     Route::get('non-aplikasi', [ProdukController::class, 'nonappsOnly'])->name('produk-non-aplikasi');
-    Route::get('detil/{detil:slug}', [DetilController::class, 'index']);
+    Route::get('detil/{detil:slug}', [ProdukController::class, 'detilProduk']);
 });
 
 
@@ -43,6 +43,8 @@ Route::post('/dashboard/client/', [AdminController::class, 'clientAddAndUpdate']
 Route::get('/dashboard', [AdminController::class, 'index']);
 Route::get('/dashboard/client', [AdminController::class, 'client']);
 Route::get('/dashboard/kontak', [AdminController::class, 'kontak']);
+Route::get('/dashboard/kontak/favorite', [AdminController::class, 'kontakFavorite']);
+Route::get('/dashboard/kontak/{kritik:id_kritik}', [AdminController::class, 'detilKontak']);
 Route::get('/dashboard/produk', [AdminController::class, 'produk']);
 Route::get('/dashboard/produk/edit', [AdminController::class, 'editProduk']);
 
