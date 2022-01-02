@@ -53,165 +53,174 @@
 
 <section class="list-client-mpu">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">Client Kami</h3>
-                <hr>
-            </div>
+        <div class="row justify-content-center">
+            <h1>Klien Kami</h1> 
+        </div>
+        <div class="row justify-content-center">
+            <hr>
         </div>
     </div>
 </section>
 
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide list-klien" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000" >
-          <div class="row justify-content-center ml-3">
-              <div class="col-1 col-md-1">
-              </div>
-              <div class="col-2 col-md-2">
+        <div class="carousel-item active" data-bs-interval="10000" >
+            <div class="row d-flex justify-content-center ">
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>  
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+          </div>
+          <div class="row justify-content-center">
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+                <div class="col-2 col-md-2 d-flex justify-content-center">
+                    <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
                 <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
             </div>
-          </div>
-          <div class="row justify-content-center ml-3">
-            <div class="col-md-1">
-            </div>
-            <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
         </div>
-        <div class="row justify-content-center ml-3">
-            <div class="col-1 col-md-1">
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+        <div class="row justify-content-center">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-wa.png" alt="img-1" class="mt-5" width="50px" height="auto">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <div class="row justify-content-center ml-3">
-            <div class="col-1 col-md-1">
-            </div>
-            <div class="col-2 col-md-2">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
               <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
-          </div>
-        </div>
-        <div class="row justify-content-center ml-3">
-            <div class="col-1 col-md-1">
+             </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-        </div>
-        <div class="row justify-content-center ml-3">
-            <div class="col1 col-md-1">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="10000">
-        <div class="row justify-content-center ml-3">
-            <div class="col-1 col-md-1">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" class="mt-5" alt="" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-twitter.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+        <div class="row justify-content-center">
+        <div class="col-2 col-md-2 d-flex justify-content-center">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
         </div>    
-        <div class="row justify-content-center ml-3">
-            <div class="col-1 col-md-1">
+        <div class="row justify-content-center">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
         </div>
-        <div class="row justify-content-center ml-3">
-            <div class="col-1 col-md-1">
+        <div class="row justify-content-center">
+        <div class="col-2 col-md-2 d-flex justify-content-center">
+              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
             </div>
-            <div class="col-2 col-md-2">
+            <div class="col-2 col-md-2 d-flex justify-content-center">
               <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
-          <div class="col-2 col-md-2">
-              <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
-          </div>
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-center">
+                <img src="img/logo-fb.png" alt="" class="mt-5" width="50px" height="auto">
+            </div>
         </div>      
       </div>
     </div>
