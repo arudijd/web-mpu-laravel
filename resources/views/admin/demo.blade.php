@@ -30,7 +30,7 @@
             <div class="card bg-light">
               <div class="card-header text-muted border-bottom-0">
               </div>
-              <div class="card-body pt-0">
+              <div class="card-body bg-light pt-0">
                 <div class="row">
                     <img src="{{ asset("img/produk/$p->image_produk") }}" class="rounded" alt="" width="95%" height="auto" >
                       <br>
