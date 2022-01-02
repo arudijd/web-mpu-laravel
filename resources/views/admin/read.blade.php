@@ -60,12 +60,20 @@
               <h3 class="card-title">Read Mail</h3>
 
               <div class="card-tools">
-                <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
+                <form action="/dashboard/kontak/{{ $kritik->id_kritik }}" method="post">
+                    @csrf
+                <button type="submit" name="buttonDelete" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
                     <i class="far fa-trash-alt"></i></button>
-                <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Delete">
-                     <i class="far fa-star"></i></button>
-                <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Previous"><i class="fas fa-chevron-left"></i></a>
-                <a href="#" class="btn btn-tool" data-toggle="tooltip" title="Next"><i class="fas fa-chevron-right"></i></a>
+                <button type="submit" name="buttonFav" class="btn btn-default btn-sm" data-toggle="tooltip" data-container="body" title="Favorite">
+                    @if ($kritik->isFavorite == true)
+                    <i class="fas fa-star text-warning"></i></button>    
+                    @else
+                    <i class="far fa-star "></i></button>
+                    @endif 
+                    
+                
+                    </form>
+            
               </div>
             </div>
             <!-- /.card-header -->

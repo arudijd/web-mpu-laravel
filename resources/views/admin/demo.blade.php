@@ -43,13 +43,8 @@
               <div class="card-footer text-white bg-secondary mb-3">
                 <div class="text-left text-sm">
                   <div class="row">
-                    <div class="col-8 footer">
-                      <span class="fa-li">
-                        <i class="fas fa-sm fa-clock ml-4"></i>
-                      </span>&nbsp; Terakhir Di edit: <br> &nbsp;&nbsp;20/02/2082
-                    </div>
                     <div class="col-4">
-                      <a href="/dashboard/produk/edit" class="btn btn-sm btn-primary">
+                      <a href="/dashboard/produk/{{ $p->slug }}/edit" class="btn btn-sm btn-primary">
                         <i class="fas fa-user"></i> Edit
                       </a>
                     </div>

@@ -52,7 +52,7 @@
                     <h3 class="text-center">Tujuan</h3>
                 </div>
                 <div class="col-10 col-sm-9 col-md-9 col-lg-10 tujuan" >
-                     {{ $detil->tujuan }} 
+                     {!! $detil->tujuan !!} 
                 </div>
             </div>
         </div>

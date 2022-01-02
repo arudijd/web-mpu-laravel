@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="{{ asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css") }}">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{ asset("css/manual/admin/css/adminlte.min.css") }}">
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{ asset('js/summernote/summernote-bs4.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -46,6 +48,11 @@
 <script src="{{ asset('js/admin/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('js/demo.js') }}"></script>
+<!-- Summernote -->
+<script src="{{ asset('js/summernote/summernote-bs4.min.js') }}"></script>
+
+@stack('editor')
+
 <script>
   //-------------
     //- DONUT CHART -

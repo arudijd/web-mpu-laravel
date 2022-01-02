@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Detil;
 use App\Models\Kritik;
 use App\Models\Produk;
 use Illuminate\Http\Request;
@@ -89,6 +90,29 @@ class AdminController extends Controller
         ]);
     }
 
+    public function favOrDestroy(Request $request, Kritik $kritik)
+    {
+        if($request->has('buttonFav')){
+            if($kritik->isFavorite == false){
+                Kritik::where('id_kritik', $kritik->id_kritik)
+                ->update(['isFavorite' => true]);
+            } 
+            if($kritik->isFavorite == true){
+                Kritik::where('id_kritik', $kritik->id_kritik)
+                ->update(['isFavorite' => false]);
+            }
+
+            
+
+            return redirect()->back();
+        }
+
+        if($request->has('buttonDelete')){
+            Kritik::destroy($kritik->id_kritik);
+            return redirect('/dashboard/kontak');
+        }
+    }
+
     public function produk() {
         return view('admin.demo',[
             "title" => "Produk",
@@ -96,10 +120,31 @@ class AdminController extends Controller
         ]);
     }
 
-    public function editProduk ()
+    public function editProduk (Detil $detil)
     {
         return view('admin.demo.editor',[
-            "title" => "Produk"
+            "title" => "Produk",
+            "detil" => $detil
         ]);
+    }
+
+    public function updateProduk(Request $request, Detil $detil)
+    {
+        $validateData = $request->validate([
+            'nama_produk' => 'required',
+            'deskripsi_produk' => 'required',
+            'image_produk' => 'image',
+            'tujuan' => 'required'
+        ]);
+
+
+            
+                File::delete($detil->image_produk);
+                $imageName = time().'.'.$request->image_produk->extension();
+                $validateData['image_produk'] = $request->file('image_produk')->move(public_path('img/produk'), $imageName);
+
+        Detil::where('slug', $detil->slug)
+                ->update($validateData);
+        return redirect('/dashboard/produk');
     }
 }

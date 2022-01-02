@@ -86,7 +86,7 @@
                       </div>
                     </td>  
                   @if ($k->isFavorite==true)
-                    <td class="mailbox-star"><a href="#"><i class="far fa-star text-warning"></i></a></td>
+                    <td class="mailbox-star"><a href="#"><i class="fas fa-star text-warning"></i></a></td>
                   @else
                     <td class="mailbox-star"><a href="#"><i class="far fa-star"></i></a></td>   
                   @endif

@@ -45,8 +45,10 @@ Route::get('/dashboard/client', [AdminController::class, 'client']);
 Route::get('/dashboard/kontak', [AdminController::class, 'kontak']);
 Route::get('/dashboard/kontak/favorite', [AdminController::class, 'kontakFavorite']);
 Route::get('/dashboard/kontak/{kritik:id_kritik}', [AdminController::class, 'detilKontak']);
+Route::post('/dashboard/kontak/{kritik:id_kritik}', [AdminController::class, 'favOrDestroy']);
 Route::get('/dashboard/produk', [AdminController::class, 'produk']);
-Route::get('/dashboard/produk/edit', [AdminController::class, 'editProduk']);
+Route::get('/dashboard/produk/{detil:slug}/edit', [AdminController::class, 'editProduk']);
+Route::post('/dashboard/produk/{detil:slug}/edit', [AdminController::class, 'updateProduk']);
 
 
 
