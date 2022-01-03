@@ -30,7 +30,7 @@ class HomeController extends Controller
         return view('client', [
             "title" => "Client",
             "css" => "/css/manual/client.css",
-            "client" => Client::all()
+            "clients" => Client::all()
         ]);
     }
 

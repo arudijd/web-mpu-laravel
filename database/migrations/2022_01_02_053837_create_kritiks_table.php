@@ -20,7 +20,6 @@ class CreateKritiksTable extends Migration
             $table->string('email');
             $table->text('body');
             $table->boolean('isFavorite')->default(false);
-            $table->boolean('isRead')->default(false);
             $table->timestamps();
         });
     }

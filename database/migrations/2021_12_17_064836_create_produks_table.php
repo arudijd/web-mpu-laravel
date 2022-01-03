@@ -18,8 +18,7 @@ class CreateProduksTable extends Migration
             $table->string('nama_produk');
             $table->string('jenis_produk');
             $table->string('image_produk');
-            $table->string('slug');
-            $table->timestamps();
+        $table->string('slug');
             
         });
     }

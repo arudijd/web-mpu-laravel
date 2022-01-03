@@ -13,7 +13,9 @@ class AdminController extends Controller
 {
     public function index() {
         return view('admin.index',[
-            "title" => 'Dashboard'
+            "title" => 'Dashboard',
+            "client" => Client::all(),
+            "kritik" => Kritik::all()
         ]);
     }
 
@@ -35,7 +37,8 @@ class AdminController extends Controller
     
             if($request->file('img_klien')){
                 $imageName = time().'.'.$request->img_klien->extension();
-                $validateData['img_klien'] = $request->file('img_klien')->move(public_path('img/client'), $imageName);
+                $validateData['img_klien'] = $imageName; 
+                $request->file('img_klien')->move(public_path('img/client'), $imageName);
     
             }
     

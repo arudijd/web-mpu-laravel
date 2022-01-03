@@ -11,7 +11,7 @@
             <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
             <div class="info-box-content">
               <span class="info-box-text">Jumlah Klient</span>
-              <span class="info-box-number">121</span>
+              <span class="info-box-number">{{ $client->count() }}</span>
               <span class="progress-description">
                 Klien MPU All Produk
               </span>
@@ -24,7 +24,7 @@
             <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
             <div class="info-box-content">
               <span class="info-box-text">Jumlah Masukan</span>
-              <span class="info-box-number">16</span>
+              <span class="info-box-number">{{ $kritik->count() }}</span>
               <span class="progress-description">
                 Kritik Dan Saran Web MPU
               </span>
