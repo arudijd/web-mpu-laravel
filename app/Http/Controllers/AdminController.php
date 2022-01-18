@@ -144,7 +144,8 @@ class AdminController extends Controller
             
                 File::delete($detil->image_produk);
                 $imageName = time().'.'.$request->image_produk->extension();
-                $validateData['image_produk'] = $request->file('image_produk')->move(public_path('img/produk'), $imageName);
+                $request->file('image_produk')->move(public_path('img/produk'), $imageName);
+                $validateData['image_produk'] = $imageName;
 
         Detil::where('slug', $detil->slug)
                 ->update($validateData);

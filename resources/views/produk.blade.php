@@ -28,7 +28,10 @@
             </a>&emsp;
             <a href="{{ route('produk-non-aplikasi') }}" class="text-center {{ ($subtitle === "Nonapps" ? 'active-text' : '') }}">
                 <h6>Produk Non Aplikasi</h6>
-            </a>
+            </a>&emsp;
+            <a href="{{ route('produk-workshop') }}" class="text-center {{ ($subtitle === "Workshop" ? 'active-text' : '') }}">
+                <h6>Produk Workshop</h6>
+            </a>&emsp;
         </div>
     </div>
 </section>
@@ -42,7 +45,7 @@
                 <br>
                 <h3>{{ $p->nama_produk }}</h3>
                 <br>
-                <h5>{{ $p->jenis_produk }}</h5>
+                <h5>Produk {{ $p->jenis_produk }}</h5>
                 <a href="/produk/detil/{{ $p->slug }}">
                     <button class="btn btn-outline-dark btn-produk mt-3">Selengkapnya
                         <i class="fa fa-arrow-right"></i>

@@ -17,7 +17,7 @@ class CreateDetilsTable extends Migration
             $table->string('id_produk')->primary();
             $table->string('slug')->unique();
             $table->string('nama_produk');
-            $table->string('singkatan_produk');
+            $table->string('singkatan_produk')->nullable(true);
             $table->text('deskripsi_produk');
             $table->string('image_produk');
             $table->text('tujuan');

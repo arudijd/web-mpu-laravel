@@ -7,7 +7,9 @@
                 <h1 class="justify-content-center text-center">{{ $detil->nama_produk }}</h1>
             </div>
             <div class="row d-flex justify-content-center">
-                <h1 class="justify-content-center text-center">{{ $detil->singkatan_produk }}</h1>
+                @if ($detil->singkatan_produk != null)
+                <h1 class="justify-content-center text-center">({{ $detil->singkatan_produk }})</h1>
+                @endif
             </div>
         </div>
     </div>
@@ -49,7 +51,12 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center desc ">
+                    @if ($produk->jenis_produk == "Workshop")
+                    <h3 class="text-center">Materi</h3>    
+                    @else
                     <h3 class="text-center">Tujuan</h3>
+                    @endif
+                    
                 </div>
                 <div class="col-10 col-sm-9 col-md-9 col-lg-10 tujuan" >
                      {!! $detil->tujuan !!} 

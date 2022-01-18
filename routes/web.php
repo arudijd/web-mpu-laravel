@@ -32,6 +32,7 @@ Route::prefix('produk')->group(function () {
     Route::get('', [ProdukController::class, 'index'])->name('produk');
     Route::get('aplikasi', [ProdukController::class, 'appsOnly'])->name('produk-aplikasi');
     Route::get('non-aplikasi', [ProdukController::class, 'nonappsOnly'])->name('produk-non-aplikasi');
+    Route::get('workshop', [ProdukController::class, 'workshopOnly'])->name('produk-workshop');
     Route::get('detil/{detil:slug}', [ProdukController::class, 'detilProduk']);
 });
 
