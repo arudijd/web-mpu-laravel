@@ -73,8 +73,9 @@
                 @foreach ($row as $col)
                 <div class="row justify-content-center ml-3">
                     @foreach ($col as $item)
-                        <div class="col-md-2 d-flex justify-content-center">
-                            <img src="{{ asset("img/$item") }}" alt="img-1" class="mt-5" width="50px" height="auto">
+                        <div class="col-md-2 justify-content-center">
+                            <img src="{{ asset("img/$item") }}" alt="img-1" class=" d-block mx-auto mt-5 mb-3" width="50px" height="auto">
+                            <p class="text-center">Kab. Jakarta Barat</p>
                         </div>
                     @endforeach
                 </div>

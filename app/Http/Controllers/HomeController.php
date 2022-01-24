@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function client()
     {
         $i = 0;
-        $data = [];
+        $dataImage = [];
         while($i<31){
             $data[$i] = 'logo.png';
             $i++;
