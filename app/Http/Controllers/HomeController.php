@@ -27,10 +27,20 @@ class HomeController extends Controller
 
     public function client()
     {
+        $i = 0;
+        $data = [];
+        while($i<31){
+            $data[$i] = 'logo.png';
+            $i++;
+        }
+        
+        $col = collect($data)->chunk(5);
+        $row = collect($col)->chunk(3);
+        
         return view('client', [
             "title" => "Client",
-            "css" => "/css/manual/client.css"
-            //"client" => Client::all()
+            "css" => "/css/manual/client.css",
+            "client" => $row->all()
         ]);
     }
 

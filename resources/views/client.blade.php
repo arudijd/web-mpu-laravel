@@ -65,33 +65,28 @@
 <div id="carouselExampleControls" class="carousel slide list-klien" data-ride="carousel">
     <div class="carousel-inner">
         @php
-            $a = 0;
-            $b = 0;
-            $image = [];
+            $i = 0;
         @endphp
-        @while ($a<45)
-            @php
-            $image[$a] = 'logo.png';
-            $a++;
-            @endphp
-        @endwhile
         
-        @for ($i = 0; $i < 3; $i++)
+            @foreach ($client as $row)
             <div class="carousel-item {{ ($i==0 ? 'active' : '') }}">      
-            @for ($j = 0; $j < 3; $j++)
+                @foreach ($row as $col)
                 <div class="row justify-content-center ml-3">
-                    @for ($k = 0; $k < 5; $k++)
+                    @foreach ($col as $item)
                         <div class="col-md-2 d-flex justify-content-center">
-                            <img src="{{ asset("img/$image[$b]") }}" alt="img-1" class="mt-5" width="50px" height="auto">
-                            @php
-                                $b++;
-                            @endphp
+                            <img src="{{ asset("img/$item") }}" alt="img-1" class="mt-5" width="50px" height="auto">
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
-            @endfor
+                @endforeach
             </div>
-        @endfor
+            @php
+            $i++;    
+            @endphp
+            @endforeach
+                
+            
+       
 </div>
 
     <a class="carousel-control-prev mt-5" href="#carouselExampleControls" role="button" data-slide="prev">
