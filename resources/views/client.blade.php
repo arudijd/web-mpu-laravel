@@ -35,7 +35,7 @@
         
         <div class="row d-flex justify-content-center">
             <div class="col-4 col-sm-3 col-md-3 d-flex justify-content-center align-items-center lingkup">
-               <h4 class="text-center">Sasaran</h>
+               <h4 class="text-center">Sasaran</h4>
             </div>
             <div class="col-12 col-sm-9 col-md-9 d-flex  align-items-center desc">
                 <ul>
@@ -64,18 +64,36 @@
 
 <div id="carouselExampleControls" class="carousel slide list-klien" data-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000" >
-            <div class="row d-flex justify-content-center ">
-            @foreach ($clients as $client)
-                <div class="col-2 col-md-2 d-flex justify-content-center">
-                    <img src="{{ asset("img/client/$client->img_klien") }}" alt="img-1" class="mt-5" width="50px" height="auto">
-                </div>  
-              
-            @endforeach
+        @php
+            $a = 0;
+            $b = 0;
+            $image = [];
+        @endphp
+        @while ($a<45)
+            @php
+            $image[$a] = 'logo.png';
+            $a++;
+            @endphp
+        @endwhile
+        
+        @for ($i = 0; $i < 3; $i++)
+            <div class="carousel-item {{ ($i==0 ? 'active' : '') }}">      
+            @for ($j = 0; $j < 3; $j++)
+                <div class="row justify-content-center ml-3">
+                    @for ($k = 0; $k < 5; $k++)
+                        <div class="col-md-2 d-flex justify-content-center">
+                            <img src="{{ asset("img/$image[$b]") }}" alt="img-1" class="mt-5" width="50px" height="auto">
+                            @php
+                                $b++;
+                            @endphp
+                        </div>
+                    @endfor
+                </div>
+            @endfor
             </div>
-          
-    </div>
-    
+        @endfor
+</div>
+
     <a class="carousel-control-prev mt-5" href="#carouselExampleControls" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>

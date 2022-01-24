@@ -828,7 +828,7 @@ class DatabaseSeeder extends Seeder
             "keunggulan_id" => "PA010",
             "image_keunggulan" => "upload.png",
             "judul_keunggulan" => "DAPAT MELAKUKAN UPLOAD DOKUMEN",
-            "detil_keunggulan" => "Sistem dapat melakukan upload/pengiriman data ke Aplikasi SIMPATDA & dapat melakukan download data dari Aplikasi SIMPATDA melalui Internet"
+            "detil_keunavnggulan" => "Sistem dapat melakukan upload/pengiriman data ke Aplikasi SIMPATDA & dapat melakukan download data dari Aplikasi SIMPATDA melalui Internet"
         ]);
 
         Keunggulan::create([
