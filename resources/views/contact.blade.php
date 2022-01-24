@@ -4,7 +4,7 @@
 <div class="jumbotron justify-content-center">
     <div class="container text-item">
         <div class="row d-flex justify-content-center">
-            <h1>Contact Kami</h1>
+            <h1>Kontak Kami</h1>
         </div>
         <div class="row d-flex justify-content-center text-center">
             <p>Hubungi kami kapan saja...</p>

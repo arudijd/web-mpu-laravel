@@ -71,11 +71,11 @@
             @foreach ($client as $row)
             <div class="carousel-item {{ ($i==0 ? 'active' : '') }}">      
                 @foreach ($row as $col)
-                <div class="row justify-content-center ml-3">
+                <div class="row justify-content-center">
                     @foreach ($col as $item)
-                        <div class="col-md-2 justify-content-center">
-                            <img src="{{ asset("img/$item") }}" alt="img-1" class=" d-block mx-auto mt-5 mb-3" width="50px" height="auto">
-                            <p class="text-center">Kab. Jakarta Barat</p>
+                        <div class="col-3 col-sm-3 col-md-2 justify-content-center">
+                            <img src="{{ asset("img/$item") }}" alt="img-1" class=" d-block mx-auto mt-5 mb-3 ml-3" width="50px" height="auto">
+                            <p class="text-center" >Kab. Jakarta Barat</p>
                         </div>
                     @endforeach
                 </div>

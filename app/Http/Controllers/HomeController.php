@@ -34,7 +34,7 @@ class HomeController extends Controller
             $i++;
         }
         
-        $col = collect($data)->chunk(5);
+        $col = collect($data)->chunk(4);
         $row = collect($col)->chunk(3);
         
         return view('client', [
