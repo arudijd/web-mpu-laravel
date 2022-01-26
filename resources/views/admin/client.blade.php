@@ -31,6 +31,7 @@
             <thead>
               <tr>
                 <th>Kolom</th>
+                <th>Kategori Kabupaten</th>
                 <th>Nama Kab</th>
                 <th>Jenis Pulau</th>
                 <th>Tanggal Ditambahkan</th>
@@ -39,6 +40,7 @@
             <tbody>
               @foreach($clients as $client)
               <tr>
+                <td>{{ $client->kategori_kab }}</td>
                 <td>{{ $client->id_klien }}</td>
                 <td>{{ $client->nama_kota }}</td>
                 <td>{{ $client->nama_pulau }}</td>
@@ -82,6 +84,14 @@
                       @foreach($clients as $client)
                       <option>{{ $client->nama_kota }}</option>
                       @endforeach
+                    </select>
+              </div>
+              <div class="form-group">
+                <label for="inputStatus">Pilih Jenis Kabupaten/Kota</label>
+                    <select class="form-control custom-select" name="kategori_kab">
+                      <option selected disabled>Select one</option>
+                      <option>Kabupaten</option>
+                      <option>Kota</option>
                     </select>
               </div>
               <div class="form-group">
@@ -132,7 +142,14 @@
             <!-- /.card-header -->
             
             <div class="card-body">
-              
+              <div class="form-group">
+                <label for="inputStatus">Pilih Jenis Kabupaten/Kota</label>
+                    <select class="form-control custom-select" name="kategori_kab">
+                      <option selected disabled>Select one</option>
+                      <option>Kabupaten</option>
+                      <option>Kota</option>
+                    </select>
+              </div>
               <div class="form-group">
                 <label for="inputName">Nama Kabupaten</label>
                 <input type="text" name="nama_kota" class="form-control">
@@ -149,7 +166,8 @@
                     </select>
               </div>
               
-              <div class="input-group">
+              <div class="form-group">
+                <label for="inputStatus">Pilih Logo Kabupaten/Kota</label>
                 <div class="custom-file">
                   <input type="file" class="custom-file-input" name="img_klien">
                   <label class="custom-file-label" for="inputFile">Pilih Gambar</label>

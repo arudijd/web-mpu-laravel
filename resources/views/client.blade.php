@@ -66,6 +66,7 @@
     <div class="carousel-inner">
         @php
             $i = 0;
+            //dd($client);
         @endphp
         
             @foreach ($client as $row)
@@ -74,8 +75,13 @@
                 <div class="row justify-content-center">
                     @foreach ($col as $item)
                         <div class="col-3 col-sm-3 col-md-2 justify-content-center">
-                            <img src="{{ asset("img/$item") }}" alt="img-1" class=" d-block mx-auto mt-5 mb-3 ml-3" width="50px" height="auto">
-                            <p class="text-center" >Kab. Jakarta Barat</p>
+                            <img src="{{ asset("img/client/$item->img_klien") }}" alt="img-1" class=" d-block mx-auto mt-5 mb-3 ml-3" width="50px" height="auto">
+                            @if ($item->kategori_kab == 'Kabupaten')
+                            <p class="text-center" >Kab. {{ $item->nama_kota }}</p>    
+                            @else
+                            <p class="text-center" >Kota {{ $item->nama_kota }}</p>
+                            @endif
+                            
                         </div>
                     @endforeach
                 </div>

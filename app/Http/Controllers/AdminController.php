@@ -30,6 +30,7 @@ class AdminController extends Controller
     
         if($request->has('formAdd')){
             $validateData = $request->validate([
+                'kategori_kab' => 'required',
                 'nama_kota' => 'required|max:255',
                 'nama_pulau' => 'required',
                 'img_klien' => 'image'
@@ -48,6 +49,7 @@ class AdminController extends Controller
 
         if($request->has('formEdit')){
             $validateData = $request->validate([
+                'kategori_kab' => 'required',
                 'nama_kota' => 'required|max:255',
                 'nama_pulau' => 'required',
                 'img_klien' => 'image'

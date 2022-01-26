@@ -170,6 +170,7 @@ footer .container .sub-navigation .col-sm-4 span {
     /* Carousel */
     .list-klien {
         font-size: 10px;
+        font-family: "Poppins-bold";
     }
 }
 @media (min-width: 576px) {
@@ -189,6 +190,7 @@ footer .container .sub-navigation .col-sm-4 span {
     /* Carousel */
     .list-klien {
         font-size: 10px;
+        font-family: "Poppins-bold";
     }
 }
 
@@ -196,6 +198,7 @@ footer .container .sub-navigation .col-sm-4 span {
     /* Carousel */
     .list-klien {
         font-size: small;
+        font-family: "Poppins-bold";
     }
 }
 @media (min-width: 1000px) {

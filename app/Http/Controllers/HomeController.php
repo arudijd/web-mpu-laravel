@@ -27,14 +27,8 @@ class HomeController extends Controller
 
     public function client()
     {
-        $i = 0;
-        $dataImage = [];
-        while($i<31){
-            $data[$i] = 'logo.png';
-            $i++;
-        }
         
-        $col = collect($data)->chunk(4);
+        $col = Client::all()->chunk(4);
         $row = collect($col)->chunk(3);
         
         return view('client', [
